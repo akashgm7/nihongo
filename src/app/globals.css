@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================== */
+/*  NihonGo — Japanese Learning App               */
+/*  Palette: Off-White / Japanese Red / Charcoal  */
+/* ============================================== */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* ── Backgrounds ── */
+    --bg-root:      #FAFAFA;   /* off-white */
+    --bg-elevated:  #FFFFFF;   /* pure white cards */
+    --bg-card:      #FFFFFF;
+    --bg-hover:     #F3F3F3;
+    --bg-active:    #EEE9E9;   /* warm tinted hover */
+    --bg-muted:     #F0F0F0;
+
+    /* ── Borders ── */
+    --border:       rgba(0, 0, 0, 0.09);
+    --border-strong: rgba(0, 0, 0, 0.16);
+
+    /* ── Accent — Japanese Red ── */
+    --accent:         #E63946;
+    --accent-hover:   #CC2F3B;
+    --accent-light:   #FF6B6B;
+    --accent-dim:     rgba(230, 57, 70, 0.08);
+    --accent-glow:    0 4px 16px rgba(230, 57, 70, 0.25);
+
+    /* ── Secondary — Soft Pink ── */
+    --secondary:      #FF6B81;
+    --secondary-hover: #E85C71;
+    --secondary-dim:  rgba(255, 107, 129, 0.10);
+
+    /* ── Success ── */
+    --success:        #16a34a;
+    --success-dim:    rgba(22, 163, 74, 0.08);
+
+    /* ── Danger ── */
+    --danger:         #E63946;
+    --danger-dim:     rgba(230, 57, 70, 0.08);
+
+    /* ── Text — Charcoal ── */
+    --text-primary:   #2B2B2B;
+    --text-secondary: #5A5A6E;
+    --text-muted:     #9696A8;
+    --text-inverse:   #FFFFFF;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-root);
+    color: var(--text-primary);
+    font-family: 'Inter', 'SF Pro Display', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background: rgba(230, 57, 70, 0.15);
+    color: var(--text-primary);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ============================================== */
+/*  Custom Utilities                              */
+/* ============================================== */
+
+@utility glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+@utility accent-text {
+  color: var(--accent);
+}
+
+@utility muted-text {
+  color: var(--text-secondary);
+}
+
+/* ============================================== */
+/*  Components                                   */
+/* ============================================== */
+
+@layer components {
+  /* Backward-compat alias */
+  .card-duo {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  /* Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }
+
+  /* Input */
+  .input-field {
+    background: var(--bg-root);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    padding: 10px 14px;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .input-field::placeholder { color: var(--text-muted); }
+  .input-field:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-dim);
+  }
 }

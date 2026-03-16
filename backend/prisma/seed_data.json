@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Introduction to Hiragana: A-I-U-E-O",
+    "category": "Hiragana",
+    "difficulty": 1,
+    "xpReward": 10,
+    "order": 1,
+    "content": [
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "あ",
+        "options": ["a", "i", "u", "e"],
+        "answer": "a",
+        "hint": "Think of an apple."
+      },
+      {
+        "type": "quiz",
+        "question": "Select the character for 'i'",
+        "options": ["あ", "い", "う", "え"],
+        "answer": "い",
+        "hint": "Looks like two parallel lines."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          {"character": "う", "sound": "u"},
+          {"character": "え", "sound": "e"},
+          {"character": "お", "sound": "o"}
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ka-Row Hiragana: Ka-Ki-Ku-Ke-Ko",
+    "category": "Hiragana",
+    "difficulty": 1,
+    "xpReward": 20,
+    "order": 2,
+    "content": [
+      { "type": "quiz", "question": "What sound does 'か' make?", "options": ["ka", "ki", "ku", "ke"], "answer": "ka" },
+      { "type": "quiz", "question": "Select the character for 'ki'", "options": ["か", "き", "く", "け"], "answer": "き" },
+      { "type": "match", "pairs": [ { "character": "か", "sound": "ka" }, { "character": "き", "sound": "ki" }, { "character": "く", "sound": "ku" } ] },
+      { "type": "quiz", "question": "What sound does 'け' make?", "options": ["ke", "ko", "ka", "ki"], "answer": "ke" },
+      { "type": "quiz", "question": "Select the character for 'ko'", "options": ["け", "こ", "く", "か"], "answer": "こ" },
+      { "type": "translate", "question": "How do you say 'Squid'?", "options": ["いか", "あき", "あお", "かお"], "answer": "いか" },
+      { "type": "translate", "question": "How do you say 'Autumn'?", "options": ["あき", "いけ", "かさ", "こえ"], "answer": "あき" }
+    ]
+  },
+  {
+    "title": "Lesson 3: S-Row Hiragana",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 3,
+    "content": [
+      { "type": "quiz", "question": "What is 'さ'?", "options": ["sa", "shi", "su", "se"], "answer": "sa" },
+      { "type": "quiz", "question": "What is 'し'?", "options": ["sa", "shi", "su", "so"], "answer": "shi" },
+      { "type": "quiz", "question": "What is 'す'?", "options": ["su", "se", "so", "sa"], "answer": "su" },
+      { "type": "quiz", "question": "What is 'せ'?", "options": ["se", "so", "sa", "shi"], "answer": "se" },
+      { "type": "quiz", "question": "What is 'そ'?", "options": ["so", "sa", "shi", "su"], "answer": "so" },
+      { "type": "match", "pairs": [ { "character": "さ", "sound": "sa" }, { "character": "し", "sound": "shi" }, { "character": "す", "sound": "su" } ] },
+      { "type": "match", "pairs": [ { "character": "せ", "sound": "se" }, { "character": "そ", "sound": "so" }, { "character": "す", "sound": "su" } ] },
+      { "type": "translate", "question": "How do you say 'Sushi'?", "options": ["すし", "あさ", "いか", "さけ"], "answer": "すし" },
+      { "type": "translate", "question": "How do you say 'Sake'?", "options": ["さけ", "すし", "かさ", "こえ"], "answer": "さけ" },
+      { "type": "translate", "question": "How do you say 'Umbrella'?", "options": ["かさ", "あさ", "すし", "いか"], "answer": "かさ" },
+      { "type": "quiz", "question": "Identify 'shi'", "options": ["さ", "し", "す", "せ"], "answer": "し" },
+      { "type": "quiz", "question": "Identify 'so'", "options": ["せ", "そ", "す", "さ"], "answer": "そ" },
+      { "type": "match", "pairs": [ { "character": "あさ", "sound": "morning" }, { "character": "すし", "sound": "sushi" }, { "character": "かさ", "sound": "umbrella" } ] },
+      { "type": "translate", "question": "What is 'Morning'?", "options": ["あさ", "あき", "あおい", "あかい"], "answer": "あさ" },
+      { "type": "quiz", "question": "Character for 'se'?", "options": ["さ", "し", "す", "せ"], "answer": "せ" },
+      { "type": "quiz", "question": "Character for 'su'?", "options": ["す", "せ", "そ", "さ"], "answer": "す" },
+      { "type": "match", "pairs": [ { "character": "せ", "sound": "se" }, { "character": "そ", "sound": "so" }, { "character": "さ", "sound": "sa" } ] },
+      { "type": "translate", "question": "How do you say 'Salt'?", "options": ["しお", "さけ", "あさ", "いか"], "answer": "しお" },
+      { "type": "quiz", "question": "What sound does 'し' make?", "options": ["shi", "si", "hi", "chi"], "answer": "shi" },
+      { "type": "drag_drop", "question": "Construct 'Sake'", "words": ["さ", "け"], "answer": ["さ", "け"] }
+    ]
+  },
+  {
+    "title": "Lesson 4: Vocab Review (A, K, S Rows)",
+    "category": "Vocab",
+    "difficulty": 2,
+    "xpReward": 50,
+    "order": 4,
+    "content": [
+      { "type": "typing", "question": "Type the reading for 'あさ' (Morning)", "character": "あさ", "answer": "asa" },
+      { "type": "typing", "question": "Type the reading for 'すし' (Sushi)", "character": "すし", "answer": "sushi" },
+      { "type": "quiz", "question": "What does 'かさ' mean?", "options": ["Morning", "Sushi", "Umbrella", "Sake"], "answer": "Umbrella" },
+      { "type": "typing", "question": "Type the reading for 'さけ' (Sake)", "character": "さけ", "answer": "sake" },
+      { "type": "typing", "question": "Type the reading for 'うし' (Cow)", "character": "うし", "answer": "ushi" },
+      { "type": "translate", "question": "How do you say 'Squid'?", "options": ["うし", "いか", "あき", "すし"], "answer": "いか" },
+      { "type": "typing", "question": "Type the reading for 'あき' (Autumn)", "character": "あき", "answer": "aki" },
+      { "type": "typing", "question": "Type the reading for 'おかし' (Sweets)", "character": "おかし", "answer": "okashi" },
+      { "type": "quiz", "question": "What is 'せかい'?", "options": ["World", "Wait", "Station", "Pond"], "answer": "World" },
+      { "type": "typing", "question": "Type the reading for 'あい' (Love)", "character": "あい", "answer": "ai" },
+      { "type": "typing", "question": "Type the reading for 'うえ' (Above)", "character": "うえ", "answer": "ue" },
+      { "type": "typing", "question": "Type the reading for 'あう' (To meet)", "character": "あう", "answer": "au" },
+      { "type": "quiz", "question": "What does 'いい' mean?", "options": ["No", "Yes", "Good", "Bad"], "answer": "Good" },
+      { "type": "typing", "question": "Type the reading for 'いえ' (House)", "character": "いえ", "answer": "ie" },
+      { "type": "typing", "question": "Type the reading for 'いう' (To say)", "character": "いう", "answer": "iu" },
+      { "type": "typing", "question": "Type the reading for 'かう' (To buy)", "character": "かう", "answer": "kau" },
+      { "type": "translate", "question": "How do you say 'Voice'?", "options": ["こえ", "かお", "あお", "いえ"], "answer": "こえ" },
+      { "type": "typing", "question": "Type the reading for 'かく' (To write)", "character": "かく", "answer": "kaku" },
+      { "type": "typing", "question": "Type the reading for 'きく' (To listen)", "character": "きく", "answer": "kiku" },
+      { "type": "typing", "question": "Type the reading for 'さす' (To point)", "character": "さす", "answer": "sasu" },
+      { "type": "quiz", "question": "Where is 'あそこ'?", "options": ["Here", "There", "Over there", "Where"], "answer": "Over there" },
+      { "type": "translate", "question": "What is 'There' (near you)?", "options": ["ここ", "そこ", "あそこ", "どこ"], "answer": "そこ" },
+      { "type": "typing", "question": "Type the reading for 'ここ' (Here)", "character": "ここ", "answer": "koko" },
+      { "type": "translate", "question": "Which color is 'あかい'?", "options": ["Blue", "Red", "Black", "White"], "answer": "Red" },
+      { "type": "typing", "question": "Type the reading for 'あおい' (Blue)", "character": "あおい", "answer": "aoi" },
+      { "type": "quiz", "question": "What is 'おそい'?", "options": ["Fast", "Big", "Slow", "Small"], "answer": "Slow" },
+      { "type": "typing", "question": "Type the reading for 'おおきい' (Big)", "character": "おおきい", "answer": "ookii" },
+      { "type": "typing", "question": "Type the reading for 'すこし' (A little)", "character": "すこし", "answer": "sukoshi" },
+      { "type": "translate", "question": "What is 'しか'?", "options": ["Cow", "Deer", "Squid", "Dog"], "answer": "Deer" },
+      { "type": "typing", "question": "Type the reading for 'すいか' (Watermelon)", "character": "すいか", "answer": "suika" }
+    ]
+  },
+  {
+    "title": "Sentence Builder: A, K, S Rows",
+    "category": "Grammar",
+    "difficulty": 2,
+    "xpReward": 40,
+    "order": 5,
+    "content": [
+      { "type": "translate", "question": "Blue sky", "options": ["あおい そら", "あかい そら", "おおい そら", "あさい そら"], "answer": "あおい そら" },
+      { "type": "typing", "question": "Type the reading for 'あかい' (Red)", "character": "あかい", "answer": "akai" },
+      { "type": "translate", "question": "Red cow", "options": ["あかい うし", "あおい うし", "きいろい うし", "しろい うし"], "answer": "あかい うし" },
+      { "type": "drag_drop", "question": "Construct 'To write a book'", "words": ["かく", "を", "ほん"], "answer": ["ほん", "を", "かく"] },
+      { "type": "translate", "question": "Morning voice", "options": ["あさ の こえ", "よる の こえ", "ひる の こえ", "ゆう の こえ"], "answer": "あさ の こえ" },
+      { "type": "typing", "question": "Type the reading for 'すき' (To like/Like)", "character": "すき", "answer": "suki" },
+      { "type": "translate", "question": "A little sushi", "options": ["すこし すし", "たくさん すし", "とても すし", "かなり すし"], "answer": "すこし すし" },
+      { "type": "quiz", "question": "Which one is 'Autumn'?", "options": ["あき", "あさ", "あお", "あか"], "answer": "あき" },
+      { "type": "translate", "question": "Big umbrella", "options": ["おおきい かさ", "ちいさい かさ", "あかい かさ", "あおい かさ"], "answer": "おおきい かさ" },
+      { "type": "typing", "question": "Type the reading for 'せかい' (World)", "character": "せかい", "answer": "sekai" },
+      { "type": "translate", "question": "To buy sweets", "options": ["おかし を かう", "おかし を たべる", "おかし を つくる", "おかし を うる"], "answer": "おかし を かう" },
+      { "type": "drag_drop", "question": "Construct 'To listen to a voice'", "words": ["こえ", "を", "きく"], "answer": ["こえ", "を", "きく"] },
+      { "type": "translate", "question": "Wait a little", "options": ["すこし おかし", "すこし すし", "すこし しお", "すこし ..."], "answer": "すこし ..." },
+      { "type": "typing", "question": "Type the reading for 'しか' (Deer)", "character": "しか", "answer": "shika" },
+      { "type": "translate", "question": "Blue squid", "options": ["あおい いか", "あかい いか", "しろい いか", "くろい いか"], "answer": "あおい いか" },
+      { "type": "quiz", "question": "Which one is 'Sake'?", "options": ["さけ", "すし", "いか", "あさ"], "answer": "さけ" },
+      { "type": "translate", "question": "Above the house", "options": ["いえ の うえ", "いえ の した", "いえ の なか", "いえ の まえ"], "answer": "いえ の うえ" },
+      { "type": "typing", "question": "Type the reading for 'きく' (To listen)", "character": "きく", "answer": "kiku" },
+      { "type": "translate", "question": "Red sweets", "options": ["あかい おかし", "あおい おかし", "しろい おかし", "くろい おかし"], "answer": "あかい おかし" },
+      { "type": "drag_drop", "question": "Construct 'Red deer'", "words": ["あかい", "しか"], "answer": ["あかい", "しか"] }
+    ]
+  }
+]

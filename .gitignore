@@ -38,4 +38,12 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# logs
+*_log.txt
+*.log
+
+# test scripts
+test_api.js
+test_streak.js
+test_gen.js
+verify_gemini.js

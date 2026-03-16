@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String         @id @default(uuid())
+  email         String         @unique
+  password      String
+  name          String
+  xp            Int            @default(0)
+  streak        Int            @default(0)
+  lastActive    DateTime       @default(now())
+  hearts        Int            @default(5)
+  maxHearts     Int            @default(5)
+  level         Int            @default(1)
+  progress      UserProgress[]
+  achievements  Achievement[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+}
+
+model Lesson {
+  id           String         @id @default(uuid())
+  title        String
+  category     String         // e.g., "Hiragana", "Katakana", "Vocabulary"
+  difficulty   Int            // 1-10
+  content      String         // Array of exercises (JSON stringified)
+  xpReward     Int            @default(10)
+  order        Int            // Position in the roadmap
+  userProgress UserProgress[]
+  createdAt    DateTime       @default(now())
+}
+
+model UserProgress {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  lessonId  String
+  lesson    Lesson   @relation(fields: [lessonId], references: [id])
+  completed Boolean  @default(false)
+  score     Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, lessonId])
+}
+
+model Achievement {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  type        String   // e.g., "STREAK_7_DAYS", "COMPLETED_HIRAGANA"
+  unlockedAt  DateTime @default(now())
+}

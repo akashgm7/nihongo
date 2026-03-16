@@ -1,0 +1,3515 @@
+[
+  {
+    "title": "Introduction to Hiragana: A-I-U-E-O",
+    "category": "Hiragana",
+    "difficulty": 1,
+    "xpReward": 10,
+    "order": 1,
+    "id": "lesson-1",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "あ",
+          "romaji": "a",
+          "hint": "Think of an apple."
+        },
+        {
+          "type": "intro",
+          "character": "い",
+          "romaji": "i",
+          "hint": "Looks like two parallel lines."
+        },
+        {
+          "type": "intro",
+          "character": "う",
+          "romaji": "u",
+          "hint": "Shape of an ear (Uuh? Hear?)"
+        },
+        {
+          "type": "intro",
+          "character": "え",
+          "romaji": "e",
+          "hint": "Looks like an exotic bird."
+        },
+        {
+          "type": "intro",
+          "character": "お",
+          "romaji": "o",
+          "hint": "Think of someone on a golf ball."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does this character make?",
+          "character": "あ",
+          "options": [
+            "a",
+            "i",
+            "u",
+            "o"
+          ],
+          "answer": "a"
+        },
+        {
+          "type": "quiz",
+          "question": "Which character is 'i'?",
+          "options": [
+            "あ",
+            "い",
+            "う",
+            "え"
+          ],
+          "answer": "い"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            {
+              "character": "う",
+              "sound": "u"
+            },
+            {
+              "character": "え",
+              "sound": "e"
+            },
+            {
+              "character": "お",
+              "sound": "o"
+            }
+          ]
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "Identify 'あ'",
+          "options": [
+            "a",
+            "o",
+            "u",
+            "e"
+          ],
+          "answer": "a"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'い'",
+          "character": "い",
+          "answer": "i"
+        },
+        {
+          "type": "quiz",
+          "question": "Select the character for 'u'",
+          "options": [
+            "う",
+            "え",
+            "い",
+            "あ"
+          ],
+          "answer": "う"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'え'",
+          "character": "え",
+          "answer": "e"
+        },
+        {
+          "type": "quiz",
+          "question": "Which one is 'o'?",
+          "options": [
+            "あ",
+            "お",
+            "う",
+            "え"
+          ],
+          "answer": "お"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Ka-Row Hiragana: Ka-Ki-Ku-Ke-Ko",
+    "category": "Hiragana",
+    "difficulty": 1,
+    "xpReward": 20,
+    "order": 2,
+    "id": "lesson-2",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "か",
+          "romaji": "ka",
+          "hint": "Think of a 'K' sound."
+        },
+        {
+          "type": "intro",
+          "character": "き",
+          "romaji": "ki",
+          "hint": "Looks like an old-fashioned key."
+        },
+        {
+          "type": "intro",
+          "character": "く",
+          "romaji": "ku",
+          "hint": "Think of a cuckoo bird's beak."
+        },
+        {
+          "type": "intro",
+          "character": "け",
+          "romaji": "ke",
+          "hint": "Looks like a keg of beer."
+        },
+        {
+          "type": "intro",
+          "character": "こ",
+          "romaji": "ko",
+          "hint": "Two worms (co-existing)."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'か' make?",
+          "options": [
+            "ka",
+            "ki",
+            "ku",
+            "ke"
+          ],
+          "answer": "ka"
+        },
+        {
+          "type": "quiz",
+          "question": "Select the character for 'ki'",
+          "options": [
+            "か",
+            "き",
+            "く",
+            "け"
+          ],
+          "answer": "き"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            {
+              "character": "か",
+              "sound": "ka"
+            },
+            {
+              "character": "き",
+              "sound": "ki"
+            },
+            {
+              "character": "く",
+              "sound": "ku"
+            }
+          ]
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'け' make?",
+          "options": [
+            "ke",
+            "ko",
+            "ka",
+            "ki"
+          ],
+          "answer": "ke"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'こ'",
+          "character": "こ",
+          "answer": "ko"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Squid'?",
+          "options": [
+            "いか",
+            "あき",
+            "あお",
+            "かお"
+          ],
+          "answer": "いか"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'き'",
+          "character": "き",
+          "answer": "ki"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Autumn'?",
+          "options": [
+            "あき",
+            "いけ",
+            "かさ",
+            "こえ"
+          ],
+          "answer": "あき"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Lesson 3: S-Row Hiragana",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 3,
+    "id": "lesson-3",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "さ",
+          "romaji": "sa",
+          "hint": "Think of a salsa dancer."
+        },
+        {
+          "type": "intro",
+          "character": "し",
+          "romaji": "shi",
+          "hint": "Looks like a fish hook (She goes fishing)."
+        },
+        {
+          "type": "intro",
+          "character": "す",
+          "romaji": "su",
+          "hint": "Think of a swing or a loop."
+        },
+        {
+          "type": "intro",
+          "character": "せ",
+          "romaji": "se",
+          "hint": "Think of a sunset or a seat."
+        },
+        {
+          "type": "intro",
+          "character": "そ",
+          "romaji": "so",
+          "hint": "Think of a zigzag sewing stitch."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What is 'さ'?",
+          "options": [
+            "sa",
+            "shi",
+            "su",
+            "se"
+          ],
+          "answer": "sa"
+        },
+        {
+          "type": "quiz",
+          "question": "What is 'し'?",
+          "options": [
+            "sa",
+            "shi",
+            "su",
+            "so"
+          ],
+          "answer": "shi"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            {
+              "character": "さ",
+              "sound": "sa"
+            },
+            {
+              "character": "し",
+              "sound": "shi"
+            },
+            {
+              "character": "す",
+              "sound": "su"
+            }
+          ]
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What is 'せ'?",
+          "options": [
+            "se",
+            "so",
+            "sa",
+            "shi"
+          ],
+          "answer": "se"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'そ'",
+          "character": "そ",
+          "answer": "so"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Sushi'?",
+          "options": [
+            "すし",
+            "あさ",
+            "いか",
+            "さけ"
+          ],
+          "answer": "すし"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'す'",
+          "character": "す",
+          "answer": "su"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Umbrella'?",
+          "options": [
+            "かさ",
+            "あさ",
+            "すし",
+            "いか"
+          ],
+          "answer": "かさ"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Lesson 4: Vocab Review (A, K, S Rows)",
+    "category": "Vocab",
+    "difficulty": 2,
+    "xpReward": 50,
+    "order": 4,
+    "content": [
+      {
+        "type": "typing",
+        "question": "Type the reading for 'あさ' (Morning)",
+        "character": "あさ",
+        "answer": "asa"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'すし' (Sushi)",
+        "character": "すし",
+        "answer": "sushi"
+      },
+      {
+        "type": "quiz",
+        "question": "What does 'かさ' mean?",
+        "options": [
+          "Morning",
+          "Sushi",
+          "Umbrella",
+          "Sake"
+        ],
+        "answer": "Umbrella"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'さけ' (Sake)",
+        "character": "さけ",
+        "answer": "sake"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'うし' (Cow)",
+        "character": "うし",
+        "answer": "ushi"
+      },
+      {
+        "type": "translate",
+        "question": "How do you say 'Squid'?",
+        "options": [
+          "うし",
+          "いか",
+          "あき",
+          "すし"
+        ],
+        "answer": "いか"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'あき' (Autumn)",
+        "character": "あき",
+        "answer": "aki"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'おかし' (Sweets)",
+        "character": "おかし",
+        "answer": "okashi"
+      },
+      {
+        "type": "quiz",
+        "question": "What is 'せかい'?",
+        "options": [
+          "World",
+          "Wait",
+          "Station",
+          "Pond"
+        ],
+        "answer": "World"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'あい' (Love)",
+        "character": "あい",
+        "answer": "ai"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'うえ' (Above)",
+        "character": "うえ",
+        "answer": "ue"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'あう' (To meet)",
+        "character": "あう",
+        "answer": "au"
+      },
+      {
+        "type": "quiz",
+        "question": "What does 'いい' mean?",
+        "options": [
+          "No",
+          "Yes",
+          "Good",
+          "Bad"
+        ],
+        "answer": "Good"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'いえ' (House)",
+        "character": "いえ",
+        "answer": "ie"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'いう' (To say)",
+        "character": "いう",
+        "answer": "iu"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'かう' (To buy)",
+        "character": "かう",
+        "answer": "kau"
+      },
+      {
+        "type": "translate",
+        "question": "How do you say 'Voice'?",
+        "options": [
+          "こえ",
+          "かお",
+          "あお",
+          "いえ"
+        ],
+        "answer": "こえ"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'かく' (To write)",
+        "character": "かく",
+        "answer": "kaku"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'きく' (To listen)",
+        "character": "きく",
+        "answer": "kiku"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'さす' (To point)",
+        "character": "さす",
+        "answer": "sasu"
+      },
+      {
+        "type": "quiz",
+        "question": "Where is 'あそこ'?",
+        "options": [
+          "Here",
+          "There",
+          "Over there",
+          "Where"
+        ],
+        "answer": "Over there"
+      },
+      {
+        "type": "translate",
+        "question": "What is 'There' (near you)?",
+        "options": [
+          "ここ",
+          "そこ",
+          "あそこ",
+          "どこ"
+        ],
+        "answer": "そこ"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'ここ' (Here)",
+        "character": "ここ",
+        "answer": "koko"
+      },
+      {
+        "type": "translate",
+        "question": "Which color is 'あかい'?",
+        "options": [
+          "Blue",
+          "Red",
+          "Black",
+          "White"
+        ],
+        "answer": "Red"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'あおい' (Blue)",
+        "character": "あおい",
+        "answer": "aoi"
+      },
+      {
+        "type": "quiz",
+        "question": "What is 'おそい'?",
+        "options": [
+          "Fast",
+          "Big",
+          "Slow",
+          "Small"
+        ],
+        "answer": "Slow"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'おおきい' (Big)",
+        "character": "おおきい",
+        "answer": "ookii"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'すこし' (A little)",
+        "character": "すこし",
+        "answer": "sukoshi"
+      },
+      {
+        "type": "quiz",
+        "question": "What is 'しか'?",
+        "options": [
+          "Cow",
+          "Deer",
+          "Squid",
+          "Dog"
+        ],
+        "answer": "Deer"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'すいか' (Watermelon)",
+        "character": "すいか",
+        "answer": "suika"
+      }
+    ],
+    "id": "lesson-4",
+    "subModule": "hiragana-basics"
+  },
+  {
+    "title": "Sentence Builder: A, K, S Rows",
+    "category": "Grammar",
+    "difficulty": 2,
+    "xpReward": 40,
+    "order": 5,
+    "id": "lesson-5",
+    "subModule": "hiragana-basics",
+    "content": [
+      {
+        "type": "translate",
+        "question": "Blue",
+        "options": [
+          "あおい",
+          "あかい",
+          "あさ",
+          "いか"
+        ],
+        "answer": "あおい"
+      },
+      {
+        "type": "typing",
+        "question": "あかい",
+        "answer": "red"
+      },
+      {
+        "type": "quiz",
+        "question": "Which Hiragana character represents 'ko'?",
+        "options": [
+          "か",
+          "き",
+          "く",
+          "け",
+          "こ"
+        ],
+        "answer": "こ"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Red house",
+        "words": [
+          "あかい",
+          "いえ",
+          "いか",
+          "さけ"
+        ],
+        "answer": [
+          "あかい",
+          "いえ"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Umbrella",
+        "options": [
+          "かさ",
+          "うし",
+          "さけ",
+          "いえ"
+        ],
+        "answer": "かさ"
+      },
+      {
+        "type": "typing",
+        "question": "すし",
+        "answer": "sushi"
+      },
+      {
+        "type": "quiz",
+        "question": "What does 'あき' mean?",
+        "options": [
+          "spring",
+          "summer",
+          "autumn",
+          "winter"
+        ],
+        "answer": "autumn"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Red umbrella",
+        "words": [
+          "あかい",
+          "かさ",
+          "あおい",
+          "いか"
+        ],
+        "answer": [
+          "あかい",
+          "かさ"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "House",
+        "options": [
+          "いけ",
+          "いえ",
+          "うえ",
+          "いか"
+        ],
+        "answer": "いえ"
+      },
+      {
+        "type": "typing",
+        "question": "うし",
+        "answer": "cow"
+      },
+      {
+        "type": "quiz",
+        "question": "What does 'こえ' mean?",
+        "options": [
+          "voice",
+          "sound",
+          "light",
+          "wind"
+        ],
+        "answer": "voice"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Red sweets",
+        "words": [
+          "あかい",
+          "おかし",
+          "さけ",
+          "うし"
+        ],
+        "answer": [
+          "あかい",
+          "おかし"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "To write",
+        "options": [
+          "かく",
+          "きく",
+          "すき",
+          "あさ"
+        ],
+        "answer": "かく"
+      },
+      {
+        "type": "typing",
+        "question": "せかい",
+        "answer": "world"
+      },
+      {
+        "type": "quiz",
+        "question": "Which Hiragana character represents 'shi'?",
+        "options": [
+          "さ",
+          "し",
+          "す",
+          "せ",
+          "そ"
+        ],
+        "answer": "し"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Autumn morning",
+        "words": [
+          "あき",
+          "あさ",
+          "しか",
+          "いけ"
+        ],
+        "answer": [
+          "あき",
+          "あさ"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lesson 6: T-Row Hiragana (ta, chi, tsu, te, to)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 100,
+    "order": 6,
+    "id": "lesson-6",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "た",
+          "romaji": "ta",
+          "hint": "Think of a 'T' shape inside."
+        },
+        {
+          "type": "intro",
+          "character": "ち",
+          "romaji": "chi",
+          "hint": "Looks like the number 5 (or Cheerleader)."
+        },
+        {
+          "type": "intro",
+          "character": "つ",
+          "romaji": "tsu",
+          "hint": "Think of a 'Tsunami' wave."
+        },
+        {
+          "type": "intro",
+          "character": "て",
+          "romaji": "te",
+          "hint": "Looks like a simple curved hand (Te is hand)."
+        },
+        {
+          "type": "intro",
+          "character": "と",
+          "romaji": "to",
+          "hint": "Looks like a 'Toe' with a splinter."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does this character make?",
+          "character": "た",
+          "options": [
+            "ta",
+            "da",
+            "na",
+            "ka"
+          ],
+          "answer": "ta"
+        },
+        {
+          "type": "quiz",
+          "question": "Select the character for 'chi'",
+          "options": [
+            "た",
+            "ち",
+            "つ",
+            "さ"
+          ],
+          "answer": "ち"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            {
+              "character": "た",
+              "sound": "ta"
+            },
+            {
+              "character": "ち",
+              "sound": "chi"
+            },
+            {
+              "character": "つ",
+              "sound": "tsu"
+            }
+          ]
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'と' make?",
+          "options": [
+            "to",
+            "te",
+            "ko",
+            "ro"
+          ],
+          "answer": "to"
+        },
+        {
+          "type": "typing",
+          "question": "Type the reading for 'て'",
+          "character": "て",
+          "answer": "te"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Octopus'?",
+          "options": [
+            "たこ",
+            "いか",
+            "さけ",
+            "とり"
+          ],
+          "answer": "たこ"
+        },
+        {
+          "type": "typing",
+          "question": "Type the reading for 'つき' (Moon)",
+          "character": "つき",
+          "answer": "tsuki"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Hand'?",
+          "options": [
+            "て",
+            "め",
+            "き",
+            "お"
+          ],
+          "answer": "て"
+        }
+      ]
+    }
+  },
+  {
+    "id": "boss-hiragana-1",
+    "subModule": "hiragana-basics",
+    "title": "Hiragana Boss Challenge 1",
+    "category": "Boss",
+    "difficulty": 3,
+    "xpReward": 50,
+    "order": 7,
+    "isBoss": true,
+    "timeLimit": 90,
+    "content": [
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "か",
+        "options": [
+          "ka",
+          "ki",
+          "ku",
+          "ke"
+        ],
+        "answer": "ka"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "し",
+        "options": [
+          "sa",
+          "shi",
+          "su",
+          "so"
+        ],
+        "answer": "shi"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "つ",
+        "options": [
+          "ta",
+          "tsu",
+          "to",
+          "chi"
+        ],
+        "answer": "tsu"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "え",
+        "options": [
+          "e",
+          "o",
+          "a",
+          "i"
+        ],
+        "answer": "e"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "き",
+        "options": [
+          "ka",
+          "ki",
+          "ku",
+          "ke"
+        ],
+        "answer": "ki"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "そ",
+        "options": [
+          "sa",
+          "shi",
+          "su",
+          "so"
+        ],
+        "answer": "so"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "ち",
+        "options": [
+          "chi",
+          "tsu",
+          "ta",
+          "to"
+        ],
+        "answer": "chi"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "お",
+        "options": [
+          "a",
+          "o",
+          "e",
+          "u"
+        ],
+        "answer": "o"
+      },
+      {
+        "type": "quiz",
+        "question": "Which character represents \"ku\"?",
+        "options": [
+          "か",
+          "き",
+          "く",
+          "け"
+        ],
+        "answer": "く"
+      },
+      {
+        "type": "quiz",
+        "question": "Which character represents \"sa\"?",
+        "options": [
+          "さ",
+          "し",
+          "す",
+          "せ"
+        ],
+        "answer": "さ"
+      },
+      {
+        "type": "quiz",
+        "question": "Which character represents \"to\"?",
+        "options": [
+          "た",
+          "ち",
+          "つ",
+          "と"
+        ],
+        "answer": "と"
+      },
+      {
+        "type": "quiz",
+        "question": "Which character represents \"i\"?",
+        "options": [
+          "あ",
+          "い",
+          "う",
+          "え"
+        ],
+        "answer": "い"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Build the word: kite",
+        "words": [
+          "た",
+          "こ"
+        ],
+        "answer": [
+          "た",
+          "こ"
+        ]
+      },
+      {
+        "type": "drag_drop",
+        "question": "Build the word: autumn",
+        "words": [
+          "あ",
+          "き"
+        ],
+        "answer": [
+          "あ",
+          "き"
+        ]
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this make?",
+        "character": "す",
+        "options": [
+          "su",
+          "so",
+          "sa",
+          "shi"
+        ],
+        "answer": "su"
+      }
+    ]
+  },
+  {
+    "title": "N-Row Hiragana: Na-Ni-Nu-Ne-No",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 8,
+    "id": "lesson-8",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "な",
+          "romaji": "na",
+          "hint": "Think of a nun kneeling at a cross."
+        },
+        {
+          "type": "intro",
+          "character": "に",
+          "romaji": "ni",
+          "hint": "Looks like a needle and thread."
+        },
+        {
+          "type": "intro",
+          "character": "ぬ",
+          "romaji": "nu",
+          "hint": "Looks like noodles (with chopsticks)."
+        },
+        {
+          "type": "intro",
+          "character": "ね",
+          "romaji": "ne",
+          "hint": "Think of a Nellie the cat (curled tail)."
+        },
+        {
+          "type": "intro",
+          "character": "の",
+          "romaji": "no",
+          "hint": "Think of a 'No Smoking' sign."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'な' make?",
+          "options": [
+            "na",
+            "ni",
+            "nu",
+            "ne"
+          ],
+          "answer": "na"
+        },
+        {
+          "type": "quiz",
+          "question": "Select the character for 'ni'",
+          "options": [
+            "な",
+            "に",
+            "ぬ",
+            "ね"
+          ],
+          "answer": "に"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            {
+              "character": "な",
+              "sound": "na"
+            },
+            {
+              "character": "に",
+              "sound": "ni"
+            },
+            {
+              "character": "ぬ",
+              "sound": "nu"
+            }
+          ]
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'ね' make?",
+          "options": [
+            "ne",
+            "no",
+            "na",
+            "ni"
+          ],
+          "answer": "ne"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'の'",
+          "character": "の",
+          "answer": "no"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Dog'?",
+          "options": [
+            "いぬ",
+            "ねこ",
+            "うし",
+            "しか"
+          ],
+          "answer": "いぬ"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'ぬ'",
+          "character": "ぬ",
+          "answer": "nu"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Cat'?",
+          "options": [
+            "ねこ",
+            "いぬ",
+            "しか",
+            "うし"
+          ],
+          "answer": "ねこ"
+        }
+      ]
+    }
+  },
+  {
+    "title": "H-Row Hiragana: Ha-Hi-Fu-He-Ho",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 9,
+    "id": "lesson-9",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "は",
+          "romaji": "ha",
+          "hint": "Think of a 'Ha!' laughing face (or keg)."
+        },
+        {
+          "type": "intro",
+          "character": "ひ",
+          "romaji": "hi",
+          "hint": "Looks like a big smile (He-he!)."
+        },
+        {
+          "type": "intro",
+          "character": "ふ",
+          "romaji": "fu",
+          "hint": "Think of Mt. Fuji."
+        },
+        {
+          "type": "intro",
+          "character": "へ",
+          "romaji": "he",
+          "hint": "Looks like a mountain (Heaven)."
+        },
+        {
+          "type": "intro",
+          "character": "ほ",
+          "romaji": "ho",
+          "hint": "Think of a Santa saying 'Ho Ho Ho!'."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'は' make?",
+          "options": [
+            "ha",
+            "hi",
+            "fu",
+            "he"
+          ],
+          "answer": "ha"
+        },
+        {
+          "type": "quiz",
+          "question": "Select the character for 'fu'",
+          "options": [
+            "は",
+            "ひ",
+            "ふ",
+            "へ"
+          ],
+          "answer": "ふ"
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'ほ' make?",
+          "options": [
+            "ho",
+            "he",
+            "ha",
+            "hi"
+          ],
+          "answer": "ho"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'へ'",
+          "character": "へ",
+          "answer": "he"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Flower'?",
+          "options": [
+            "はな",
+            "ほし",
+            "ひと",
+            "ふね"
+          ],
+          "answer": "はな"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'ひ'",
+          "character": "ひ",
+          "answer": "hi"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Star'?",
+          "options": [
+            "ほし",
+            "はな",
+            "ひと",
+            "ふね"
+          ],
+          "answer": "ほし"
+        }
+      ]
+    }
+  },
+  {
+    "title": "M-Row Hiragana: Ma-Mi-Mu-Me-Mo",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 10,
+    "id": "lesson-10",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "ま",
+          "romaji": "ma",
+          "hint": "Think of a mama's face (or mast)."
+        },
+        {
+          "type": "intro",
+          "character": "み",
+          "romaji": "mi",
+          "hint": "Who is 21? Me! (Mi)."
+        },
+        {
+          "type": "intro",
+          "character": "む",
+          "romaji": "mu",
+          "hint": "Looks like a cow's head (Moo!)."
+        },
+        {
+          "type": "intro",
+          "character": "め",
+          "romaji": "me",
+          "hint": "Looks like an eye (Me is eye)."
+        },
+        {
+          "type": "intro",
+          "character": "も",
+          "romaji": "mo",
+          "hint": "Think of a fishhook catching more (Mo) fish."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'ま' make?",
+          "options": [
+            "ma",
+            "mi",
+            "mu",
+            "me"
+          ],
+          "answer": "ma"
+        },
+        {
+          "type": "quiz",
+          "question": "Select the character for 'mu'",
+          "options": [
+            "ま",
+            "み",
+            "む",
+            "め"
+          ],
+          "answer": "む"
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'も' make?",
+          "options": [
+            "mo",
+            "me",
+            "ma",
+            "mi"
+          ],
+          "answer": "mo"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'め'",
+          "character": "め",
+          "answer": "me"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Eye'?",
+          "options": [
+            "め",
+            "みみ",
+            "まめ",
+            "むし"
+          ],
+          "answer": "め"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'み'",
+          "character": "み",
+          "answer": "mi"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Insect'?",
+          "options": [
+            "むし",
+            "め",
+            "みみ",
+            "まめ"
+          ],
+          "answer": "むし"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Y-Row Hiragana: Ya-Yu-Yo",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 11,
+    "id": "lesson-11",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "や",
+          "romaji": "ya",
+          "hint": "Think of a yak (or yacht)."
+        },
+        {
+          "type": "intro",
+          "character": "ゆ",
+          "romaji": "yu",
+          "hint": "Looks like a unique fish."
+        },
+        {
+          "type": "intro",
+          "character": "よ",
+          "romaji": "yo",
+          "hint": "Think of a yo-yo."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'や' make?",
+          "options": [
+            "ya",
+            "yu",
+            "yo",
+            "wa"
+          ],
+          "answer": "ya"
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'ゆ' make?",
+          "options": [
+            "yu",
+            "ya",
+            "yo",
+            "wa"
+          ],
+          "answer": "yu"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'よ'",
+          "character": "よ",
+          "answer": "yo"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Mountain'?",
+          "options": [
+            "やま",
+            "ゆき",
+            "よる",
+            "かわ"
+          ],
+          "answer": "やま"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'や'",
+          "character": "や",
+          "answer": "ya"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Snow'?",
+          "options": [
+            "ゆき",
+            "やま",
+            "よる",
+            "かわ"
+          ],
+          "answer": "ゆき"
+        }
+      ]
+    }
+  },
+  {
+    "title": "R-Row Hiragana: Ra-Ri-Ru-Re-Ro",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 12,
+    "id": "lesson-12",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "ら",
+          "romaji": "ra",
+          "hint": "Think of a rabbit."
+        },
+        {
+          "type": "intro",
+          "character": "り",
+          "romaji": "ri",
+          "hint": "Two reeds in a river."
+        },
+        {
+          "type": "intro",
+          "character": "る",
+          "romaji": "ru",
+          "hint": "Think of a road (with a loop)."
+        },
+        {
+          "type": "intro",
+          "character": "れ",
+          "romaji": "re",
+          "hint": "Think of a resting person (or reindeer)."
+        },
+        {
+          "type": "intro",
+          "character": "ろ",
+          "romaji": "ro",
+          "hint": "Think of a road (no loop)."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'ら' make?",
+          "options": [
+            "ra",
+            "ri",
+            "ru",
+            "re"
+          ],
+          "answer": "ra"
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'る' make?",
+          "options": [
+            "ru",
+            "ro",
+            "re",
+            "ra"
+          ],
+          "answer": "ru"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'れ'",
+          "character": "れ",
+          "answer": "re"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Bird'?",
+          "options": [
+            "とり",
+            "さくら",
+            "さる",
+            "いぬ"
+          ],
+          "answer": "とり"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'ろ'",
+          "character": "ろ",
+          "answer": "ro"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Cherry Blossom'?",
+          "options": [
+            "さくら",
+            "とり",
+            "さる",
+            "はな"
+          ],
+          "answer": "さくら"
+        }
+      ]
+    }
+  },
+  {
+    "title": "W-Row Hiragana: Wa-Wo-N",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 13,
+    "id": "lesson-13",
+    "subModule": "hiragana-basics",
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "わ",
+          "romaji": "wa",
+          "hint": "Think of a wasp."
+        },
+        {
+          "type": "intro",
+          "character": "を",
+          "romaji": "wo",
+          "hint": "Think of an old lady walking."
+        },
+        {
+          "type": "intro",
+          "character": "ん",
+          "romaji": "n",
+          "hint": "Looks like the letter 'n'."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'わ' make?",
+          "options": [
+            "wa",
+            "wo",
+            "n",
+            "ra"
+          ],
+          "answer": "wa"
+        }
+      ],
+      "play": [
+        {
+          "type": "quiz",
+          "question": "What sound does 'ん' make?",
+          "options": [
+            "n",
+            "wa",
+            "wo",
+            "ra"
+          ],
+          "answer": "n"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'を'",
+          "character": "を",
+          "answer": "wo"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'River'?",
+          "options": [
+            "かわ",
+            "やま",
+            "ゆき",
+            "よる"
+          ],
+          "answer": "かわ"
+        },
+        {
+          "type": "typing",
+          "question": "Type the romaji for 'ん'",
+          "character": "ん",
+          "answer": "n"
+        },
+        {
+          "type": "translate",
+          "question": "How do you say 'Book'?",
+          "options": [
+            "ほん",
+            "わん",
+            "こん",
+            "てん"
+          ],
+          "answer": "ほん"
+        }
+      ]
+    }
+  },
+  {
+    "id": "generated-lesson-1773639839059",
+    "title": "Topic: food",
+    "category": "AI Generated",
+    "difficulty": 1,
+    "xpReward": 30,
+    "order": 14,
+    "content": [
+      {
+        "type": "quiz",
+        "question": "What is the Japanese word for 'fish'?",
+        "character": "魚",
+        "options": [
+          "さかな",
+          "にく",
+          "やさい",
+          "みず"
+        ],
+        "answer": "さかな",
+        "hint": "Think of sushi ingredients from the sea."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          {
+            "character": "肉",
+            "sound": "niku"
+          },
+          {
+            "character": "卵",
+            "sound": "tamago"
+          },
+          {
+            "character": "ご飯",
+            "sound": "gohan"
+          },
+          {
+            "character": "水",
+            "sound": "mizu"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "How do you say 'I eat bread' in Japanese?",
+        "options": [
+          "パンをたべます",
+          "パンをのみます",
+          "ごはんをたべます"
+        ],
+        "answer": "パンをたべます"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Translate 'Rice is delicious' into Japanese.",
+        "words": [
+          "ごはん",
+          "は",
+          "おいしい",
+          "です",
+          "さかな"
+        ],
+        "answer": [
+          "ごはん",
+          "は",
+          "おいしい",
+          "です"
+        ]
+      },
+      {
+        "type": "quiz",
+        "question": "Which of these words means 'vegetable'?",
+        "character": "野菜",
+        "options": [
+          "くだもの",
+          "やさい",
+          "おかし",
+          "にく"
+        ],
+        "answer": "やさい",
+        "hint": "The first character is 'ya' in Hiragana."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          {
+            "character": "りんご",
+            "sound": "ringo"
+          },
+          {
+            "character": "お茶",
+            "sound": "ocha"
+          },
+          {
+            "character": "牛乳",
+            "sound": "gyuunyuu"
+          },
+          {
+            "character": "寿司",
+            "sound": "sushi"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "What is the Japanese translation for 'Apple'?",
+        "options": [
+          "みかん",
+          "いちご",
+          "りんご"
+        ],
+        "answer": "りんご"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Translate 'Eat meat' using polite form.",
+        "words": [
+          "を",
+          "にく",
+          "たべます",
+          "のみます"
+        ],
+        "answer": [
+          "にく",
+          "を",
+          "たべます"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boss-hiragana-2",
+    "subModule": "hiragana-basics",
+    "title": "Hiragana Boss Challenge 2",
+    "category": "Boss",
+    "difficulty": 3,
+    "xpReward": 100,
+    "order": 14,
+    "isBoss": true,
+    "timeLimit": 120,
+    "content": [
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "な",
+        "options": [
+          "na",
+          "ni",
+          "nu",
+          "ne"
+        ],
+        "answer": "na"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "ひ",
+        "options": [
+          "hi",
+          "ha",
+          "fu",
+          "he"
+        ],
+        "answer": "hi"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "も",
+        "options": [
+          "mo",
+          "me",
+          "ma",
+          "mi"
+        ],
+        "answer": "mo"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "ゆ",
+        "options": [
+          "yu",
+          "ya",
+          "yo",
+          "wa"
+        ],
+        "answer": "yu"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "れ",
+        "options": [
+          "re",
+          "ra",
+          "ri",
+          "ru"
+        ],
+        "answer": "re"
+      },
+      {
+        "type": "quiz",
+        "question": "What sound does this character make?",
+        "character": "を",
+        "options": [
+          "wo",
+          "wa",
+          "n",
+          "o"
+        ],
+        "answer": "wo"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'いぬ'",
+        "character": "いぬ",
+        "answer": "inu"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'はな'",
+        "character": "はな",
+        "answer": "hana"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'やま'",
+        "character": "やま",
+        "answer": "yama"
+      },
+      {
+        "type": "typing",
+        "question": "Type the reading for 'ほん'",
+        "character": "ほん",
+        "answer": "hon"
+      },
+      {
+        "type": "translate",
+        "question": "How do you say 'Cat'?",
+        "options": [
+          "ねこ",
+          "いぬ",
+          "しか",
+          "うし"
+        ],
+        "answer": "ねこ"
+      },
+      {
+        "type": "translate",
+        "question": "How do you say 'Bird'?",
+        "options": [
+          "とり",
+          "さくら",
+          "さる",
+          "いぬ"
+        ],
+        "answer": "とり"
+      },
+      {
+        "type": "translate",
+        "question": "How do you say 'River'?",
+        "options": [
+          "かわ",
+          "やま",
+          "ゆき",
+          "よる"
+        ],
+        "answer": "かわ"
+      }
+    ]
+  },
+  {
+    "id": "generated-lesson-1773640180173",
+    "title": "Topic: color",
+    "category": "AI Generated",
+    "difficulty": 1,
+    "xpReward": 30,
+    "order": 16,
+    "content": [
+      {
+        "type": "match",
+        "pairs": [
+          {
+            "character": "赤",
+            "sound": "aka"
+          },
+          {
+            "character": "青",
+            "sound": "ao"
+          },
+          {
+            "character": "白",
+            "sound": "shiro"
+          },
+          {
+            "character": "黒",
+            "sound": "kuro"
+          }
+        ]
+      },
+      {
+        "type": "quiz",
+        "question": "What is the Japanese word for 'yellow'?",
+        "character": "黄色",
+        "options": [
+          "みどり",
+          "きいろ",
+          "ちゃいろ"
+        ],
+        "answer": "きいろ",
+        "hint": "Think of the word 'kiiro'."
+      },
+      {
+        "type": "translate",
+        "question": "A blue car",
+        "options": [
+          "あおい　くるま",
+          "あかい　くるま",
+          "しろい　くるま"
+        ],
+        "answer": "あおい　くるま"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Arrange the words to say: 'This is red.'",
+        "words": [
+          "これ",
+          "は",
+          "あか",
+          "です"
+        ],
+        "answer": [
+          "これ",
+          "は",
+          "あか",
+          "です"
+        ]
+      },
+      {
+        "type": "quiz",
+        "question": "Which color is 'midori'?",
+        "character": "緑",
+        "options": [
+          "Purple",
+          "Green",
+          "Pink"
+        ],
+        "answer": "Green",
+        "hint": "It is the color of nature and leaves."
+      },
+      {
+        "type": "match",
+        "pairs": [
+          {
+            "character": "色",
+            "sound": "iro"
+          },
+          {
+            "character": "黄色",
+            "sound": "kiiro"
+          },
+          {
+            "character": "緑",
+            "sound": "midori"
+          },
+          {
+            "character": "茶色",
+            "sound": "chairo"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "A white cat",
+        "options": [
+          "くろい　ねこ",
+          "しろい　ねこ",
+          "あかい　ねこ"
+        ],
+        "answer": "しろい　ねこ"
+      },
+      {
+        "type": "drag_drop",
+        "question": "Arrange the words to say: 'I like blue.'",
+        "words": [
+          "あお",
+          "が",
+          "すき",
+          "です"
+        ],
+        "answer": [
+          "あお",
+          "が",
+          "すき",
+          "です"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lesson-15",
+    "subModule": "hiragana-basics",
+    "title": "Dakuten: G, Z, D, B Rows",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 15,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "が", "romaji": "ga", "hint": "K + tenten = G" },
+        { "type": "intro", "character": "ざ", "romaji": "za", "hint": "S + tenten = Z" },
+        { "type": "intro", "character": "だ", "romaji": "da", "hint": "T + tenten = D" },
+        { "type": "intro", "character": "ば", "romaji": "ba", "hint": "H + tenten = B" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What sound does 'が' make?", "options": ["ga", "za", "da", "ba"], "answer": "ga" },
+        { "type": "quiz", "question": "What sound does 'ざ' make?", "options": ["za", "ga", "da", "ba"], "answer": "za" },
+        { "type": "quiz", "question": "What sound does 'だ' make?", "options": ["da", "ba", "ga", "za"], "answer": "da" },
+        { "type": "quiz", "question": "What sound does 'ば' make?", "options": ["ba", "pa", "da", "za"], "answer": "ba" }
+      ],
+      "play": [
+        { "type": "translate", "question": "How do you say 'University'?", "options": ["だいがく", "かぜ", "かぞく", "ぎんこう"], "answer": "だいがく" },
+        { "type": "typing", "question": "Type the reading for 'かぜ' (Wind)", "character": "かぜ", "answer": "kaze" },
+        { "type": "typing", "question": "Type the reading for 'ぎんこう' (Bank)", "character": "ぎんこう", "answer": "ginkou" },
+        { "type": "translate", "question": "How do you say 'Family'?", "options": ["かぞく", "かぜ", "だいがく", "ぎんこう"], "answer": "かぞく" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-16",
+    "subModule": "hiragana-basics",
+    "title": "Handakuten: P Row",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 16,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ぱ", "romaji": "pa", "hint": "H + maru = P" },
+        { "type": "intro", "character": "ぴ", "romaji": "pi", "hint": "H + maru = P" },
+        { "type": "intro", "character": "ぷ", "romaji": "pu", "hint": "H + maru = P" },
+        { "type": "intro", "character": "ぺ", "romaji": "pe", "hint": "H + maru = P" },
+        { "type": "intro", "character": "ぽ", "romaji": "po", "hint": "H + maru = P" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What sound does 'ぱ' make?", "options": ["pa", "ba", "ha", "pi"], "answer": "pa" },
+        { "type": "quiz", "question": "What sound does 'ぴ' make?", "options": ["pi", "hi", "bi", "po"], "answer": "pi" },
+        { "type": "quiz", "question": "What sound does 'ぷ' make?", "options": ["pu", "bu", "fu", "po"], "answer": "pu" },
+        { "type": "quiz", "question": "What sound does 'ぽ' make?", "options": ["po", "bo", "ho", "pu"], "answer": "po" }
+      ],
+      "play": [
+        { "type": "translate", "question": "How do you say 'Bread'?", "options": ["ぱん", "ぺん", "ぽん", "ぴん"], "answer": "ぱん" },
+        { "type": "typing", "question": "Type the reading for 'えんぴつ' (Pencil)", "character": "えんぴつ", "answer": "enpitsu" },
+        { "type": "translate", "question": "How do you read 'かんぱい' (Cheers)?", "options": ["kanpai", "kanbai", "ganpai", "kanhai"], "answer": "kanpai" },
+        { "type": "typing", "question": "Type the reading for 'てんぷら' (Tempura)", "character": "てんぷら", "answer": "tenpura" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-17",
+    "subModule": "hiragana-basics",
+    "title": "Yoon: Combinations using ya, yu, yo",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 17,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "きゃ", "romaji": "kya", "hint": "ki + small ya" },
+        { "type": "intro", "character": "しゅ", "romaji": "shu", "hint": "shi + small yu" },
+        { "type": "intro", "character": "ちょ", "romaji": "cho", "hint": "chi + small yo" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What sound does 'きゃ' make?", "options": ["kya", "kyu", "kyo", "sha"], "answer": "kya" },
+        { "type": "quiz", "question": "What sound does 'しゅ' make?", "options": ["shu", "sha", "sho", "chu"], "answer": "shu" },
+        { "type": "quiz", "question": "What sound does 'ちょ' make?", "options": ["cho", "chu", "cha", "jo"], "answer": "cho" },
+        { "type": "quiz", "question": "What sound does 'びょ' make?", "options": ["byo", "byu", "hyo", "pyo"], "answer": "byo" }
+      ],
+      "play": [
+        { "type": "translate", "question": "How do you say 'Today'?", "options": ["きょう", "きゃく", "しゅくだい", "おちゃ"], "answer": "きょう" },
+        { "type": "typing", "question": "Type the reading for 'おちゃ' (Tea)", "character": "おちゃ", "answer": "ocha" },
+        { "type": "typing", "question": "Type the reading for 'しゅくだい' (Homework)", "character": "しゅくだい", "answer": "shukudai" },
+        { "type": "translate", "question": "How do you read 'びょういん' (Hospital)?", "options": ["byouin", "hyouin", "pyouin", "myouin"], "answer": "byouin" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-18",
+    "subModule": "hiragana-basics",
+    "title": "Sokuon: Small tsu (Double Consonants)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 18,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "っ", "romaji": "(pause)", "hint": "Double the following consonant (e.g., ki-p-pu)." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "How do you read 'きっぷ' (ticket)?", "options": ["kippu", "kipupu", "kitsupu", "kipu"], "answer": "kippu" },
+        { "type": "quiz", "question": "How do you read 'ざっし' (magazine)?", "options": ["zasshi", "zatsushi", "zasushi", "zashi"], "answer": "zasshi" },
+        { "type": "quiz", "question": "How do you read 'きって' (stamp)?", "options": ["kitte", "kitetsu", "kite", "shite"], "answer": "kitte" },
+        { "type": "quiz", "question": "Which word has a double consonant pause?", "options": ["がっこう", "がこう", "かこ", "かこう"], "answer": "がっこう" }
+      ],
+      "play": [
+        { "type": "translate", "question": "How do you say 'School'?", "options": ["がっこう", "ざっし", "きっぷ", "きって"], "answer": "がっこう" },
+        { "type": "typing", "question": "Type the reading for 'がっこう'", "character": "がっこう", "answer": "gakkou" },
+        { "type": "translate", "question": "How do you say 'Ticket'?", "options": ["きっぷ", "きって", "ざっし", "がっこう"], "answer": "きっぷ" },
+        { "type": "typing", "question": "Type the reading for 'ざっし' (Magazine)", "character": "ざっし", "answer": "zasshi" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-19",
+    "subModule": "hiragana-basics",
+    "title": "Chouon: Long Vowels",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 19,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "あ行＋あ", "romaji": "aa", "hint": "Extend the 'a' sound (e.g., okaasan)." },
+        { "type": "intro", "character": "い行＋い", "romaji": "ii", "hint": "Extend the 'i' sound (e.g., ojiisan)." },
+        { "type": "intro", "character": "え行＋い", "romaji": "ei", "hint": "Usually pronounced 'ee' (e.g., sensei)." },
+        { "type": "intro", "character": "お行＋う", "romaji": "ou", "hint": "Usually pronounced 'oo' (e.g., arigatou)." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "How do you read 'せんせい'?", "options": ["sensei", "sensai", "sensie", "sensoi"], "answer": "sensei" },
+        { "type": "quiz", "question": "How do you read 'ありがとう'?", "options": ["arigatou", "arigato", "arigatau", "arigatai"], "answer": "arigatou" },
+        { "type": "quiz", "question": "How do you read 'おばあさん' (Grandmother)?", "options": ["obaasan", "obasan", "obausan", "obeisan"], "answer": "obaasan" },
+        { "type": "quiz", "question": "How do you read 'おじいさん' (Grandfather)?", "options": ["ojiisan", "ojisan", "ojousan", "ojiosan"], "answer": "ojiisan" }
+      ],
+      "play": [
+        { "type": "translate", "question": "How do you say 'Older brother'?", "options": ["おにいさん", "おねえさん", "おかあさん", "おとうさん"], "answer": "おにいさん" },
+        { "type": "typing", "question": "Type the reading for 'おとうさん'", "character": "おとうさん", "answer": "otousan" },
+        { "type": "translate", "question": "How do you say 'Older sister'?", "options": ["おねえさん", "おにいさん", "おかあさん", "おとうさん"], "answer": "おねえさん" },
+        { "type": "typing", "question": "Type the reading for 'おかあさん' (Mother)", "character": "おかあさん", "answer": "okaasan" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-20",
+    "subModule": "hiragana-basics",
+    "title": "Word Building & Vocabulary",
+    "category": "Grammar",
+    "difficulty": 2,
+    "xpReward": 40,
+    "order": 20,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "こんにちは", "romaji": "konnichiwa", "hint": "Hello (Note: wa is written with は)" },
+        { "type": "intro", "character": "ありがとう", "romaji": "arigatou", "hint": "Thank you" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does 'こんにちは' mean?", "options": ["Hello", "Goodbye", "Thank you", "Sorry"], "answer": "Hello" },
+        { "type": "quiz", "question": "What does 'ありがとう' mean?", "options": ["Thank you", "Hello", "Goodbye", "Sorry"], "answer": "Thank you" }
+      ],
+      "play": [
+        { "type": "translate", "question": "How do you say 'Hello'?", "options": ["こんにちは", "ありがとう", "さようなら", "すみません"], "answer": "こんにちは" },
+        { "type": "typing", "question": "Type the reading for 'さようなら' (Goodbye)", "character": "さようなら", "answer": "sayounara" }
+      ]
+    }
+  },
+  {
+    "id": "boss-hiragana-3",
+    "subModule": "hiragana-basics",
+    "title": "Hiragana Boss Challenge 3",
+    "category": "Hiragana",
+    "difficulty": 3,
+    "xpReward": 100,
+    "order": 21,
+    "timeLimit": 120,
+    "content": [
+      { "type": "quiz", "question": "What sound does 'ぴ' make?", "character": "ぴ", "options": ["pi", "bi", "hi", "pa"], "answer": "pi" },
+      { "type": "typing", "question": "Type the reading for 'だいがく' (University)", "character": "だいがく", "answer": "daigaku" },
+      { "type": "match", "pairs": [ { "character": "きょう", "sound": "kyou" }, { "character": "かぜ", "sound": "kaze" }, { "character": "ぱん", "sound": "pan" }, { "character": "きっぷ", "sound": "kippu" } ] },
+      { "type": "translate", "question": "How do you say 'School'?", "options": ["がっこう", "きょう", "せんせい", "だいがく"], "answer": "がっこう" },
+      { "type": "typing", "question": "Type the reading for 'ありがとう'", "character": "ありがとう", "answer": "arigatou" }
+    ]
+  },
+  {
+    "id": "lesson-21",
+    "subModule": "hiragana-basics",
+    "title": "Topic Particle: は (wa)",
+    "category": "Grammar",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 22,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "は", "romaji": "wa", "hint": "Marks the topic of the sentence. Written as 'ha' but pronounced 'wa'." },
+        { "type": "intro", "character": "わたし は", "romaji": "watashi wa", "hint": "As for me..." },
+        { "type": "intro", "character": "きょう は", "romaji": "kyou wa", "hint": "As for today..." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "How is the topic particle 'は' pronounced?", "options": ["wa", "ha", "ga", "wo"], "answer": "wa" },
+        { "type": "quiz", "question": "Which particle marks the topic of a sentence?", "options": ["は", "を", "の"], "answer": "は" }
+      ],
+      "play": [
+        { "type": "translate", "question": "I am a student", "options": ["わたしは がくせいです", "わたしが がくせいです", "わたしを がくせいです", "わたしの がくせいです"], "answer": "わたしは がくせいです" },
+        { "type": "translate", "question": "As for today, it is good weather", "options": ["きょうは いいてんきです", "きょうが いいてんきです"], "answer": "きょうは いいてんきです" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-22",
+    "subModule": "hiragana-basics",
+    "title": "Object Particle: を (o/wo)",
+    "category": "Grammar",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 23,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "を", "romaji": "o (wo)", "hint": "Marks the direct object of a verb. Usually pronounced 'o'." },
+        { "type": "intro", "character": "りんご を たべる", "romaji": "ringo o taberu", "hint": "Eat an apple" },
+        { "type": "intro", "character": "みず を のむ", "romaji": "mizu o nomu", "hint": "Drink water" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "Which particle marks the direct object?", "options": ["を", "は", "が", "の"], "answer": "を" },
+        { "type": "quiz", "question": "How is the object particle 'を' usually pronounced?", "options": ["o (wo)", "wa", "no"], "answer": "o (wo)" }
+      ],
+      "play": [
+        { "type": "translate", "question": "Eat an apple", "options": ["りんごを たべる", "りんごは たべる", "りんごが たべる", "りんごの たべる"], "answer": "りんごを たべる" },
+        { "type": "translate", "question": "Drink water", "options": ["みずを のむ", "みずは のむ"], "answer": "みずを のむ" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-23",
+    "subModule": "hiragana-basics",
+    "title": "Possession Particle: の (no)",
+    "category": "Grammar",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 24,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "の", "romaji": "no", "hint": "Shows possession. Like 's in English, but backwards." },
+        { "type": "intro", "character": "わたしの ほん", "romaji": "watashi no hon", "hint": "My book (I's book)" },
+        { "type": "intro", "character": "にほんの だいがく", "romaji": "nihon no daigaku", "hint": "Japan's university" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "Which particle shows possession?", "options": ["の", "を", "は", "が"], "answer": "の" },
+        { "type": "quiz", "question": "Translate 'Teacher's book'", "options": ["せんせいの ほん", "ほんの せんせい"], "answer": "せんせいの ほん" }
+      ],
+      "play": [
+        { "type": "translate", "question": "My cat", "options": ["わたしの ねこ", "わたしは ねこ", "わたしを ねこ", "わたしが ねこ"], "answer": "わたしの ねこ" },
+        { "type": "translate", "question": "Japan's university", "options": ["にほんの だいがく", "だいがくの にほん"], "answer": "にほんの だいがく" }
+      ]
+    }
+  },
+  {
+    "id": "lesson-24",
+    "subModule": "hiragana-basics",
+    "title": "Sentence Structure (SOV)",
+    "category": "Grammar",
+    "difficulty": 2,
+    "xpReward": 40,
+    "order": 25,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "わたし は りんご を たべる", "romaji": "watashi wa ringo o taberu", "hint": "Subject(topic) + Object + Verb" },
+        { "type": "intro", "character": "わたし は ほん を よむ", "romaji": "watashi wa hon o yomu", "hint": "I read a book (Subject + Object + Verb)" },
+        { "type": "intro", "character": "ねこ は みるく を のむ", "romaji": "neko wa miruku o nomu", "hint": "Cat drinks milk" },
+        { "type": "intro", "character": "いぬ は にく を たべる", "romaji": "inu wa niku o taberu", "hint": "Dog eats meat" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the typical Japanese sentence order?", "options": ["Subject-Object-Verb", "Subject-Verb-Object", "Verb-Subject-Object", "Object-Subject-Verb"], "answer": "Subject-Object-Verb" },
+        { "type": "quiz", "question": "Where does the verb go in a Japanese sentence?", "options": ["At the very end", "In the middle", "At the beginning"], "answer": "At the very end" },
+        { "type": "quiz", "question": "Which sentence follows the SOV structure?", "options": ["わたしは りんごを たべる", "わたしは たべる りんごを"], "answer": "わたしは りんごを たべる" },
+        { "type": "quiz", "question": "Which particle marks the subject/topic in an SOV sentence?", "options": ["は (wa)", "を (o)", "の (no)"], "answer": "は (wa)" }
+      ],
+      "play": [
+        { "type": "translate", "question": "I read a book", "options": ["わたしは ほんを よむ", "わたしは よむ ほんを", "ほんを わたしは よむ"], "answer": "わたしは ほんを よむ" },
+        { "type": "translate", "question": "I eat an apple", "options": ["わたしは りんごを たべる", "わたしは たべる りんごを"], "answer": "わたしは りんごを たべる" },
+        { "type": "translate", "question": "The cat drinks milk", "options": ["ねこは みるくを のむ", "ねこは のむ みるくを"], "answer": "ねこは みるくを のむ" },
+        { "type": "translate", "question": "I study Japanese", "options": ["わたしは にほんごを べんきょうする", "わたしは べんきょうする にほんごを"], "answer": "わたしは にほんごを べんきょうする" },
+        { "type": "translate", "question": "The dog eats meat", "options": ["いぬは にくを たべる", "にくを たべる いぬは"], "answer": "いぬは にくを たべる" },
+        { "type": "translate", "question": "I buy a car", "options": ["わたしは くるまを かう", "わたしは かう くるまを"], "answer": "わたしは くるまを かう" },
+        { "type": "quiz", "question": "Identify the object: 'わたしは いぬを みる' (I see a dog)", "options": ["いぬ (dog)", "わたし (I)", "みる (see)"], "answer": "いぬ (dog)" },
+        { "type": "quiz", "question": "Identify the verb: 'ねこは さかなを たべる' (Cat eats fish)", "options": ["たべる (eats)", "さかな (fish)", "ねこ (cat)"], "answer": "たべる (eats)" }
+      ]
+    }
+  },
+  {
+    "id": "boss-hiragana-4",
+    "subModule": "hiragana-basics",
+    "title": "Hiragana Boss Challenge 4",
+    "category": "Grammar",
+    "difficulty": 3,
+    "xpReward": 100,
+    "order": 26,
+    "timeLimit": 120,
+    "content": [
+      { "type": "quiz", "question": "Which particle marks the topic?", "options": ["は (wa)", "を (o)", "の (no)", "が (ga)"], "answer": "は (wa)" },
+      { "type": "translate", "question": "My book", "options": ["わたしの ほん", "わたしは ほん", "わたしを ほん"], "answer": "わたしの ほん" },
+      { "type": "translate", "question": "Eat an apple", "options": ["りんごを たべる", "りんごは たべる", "りんごの たべる"], "answer": "りんごを たべる" },
+      { "type": "quiz", "question": "What is the Japanese word order?", "options": ["Subject-Object-Verb", "Subject-Verb-Object"], "answer": "Subject-Object-Verb" }
+    ]
+  },
+  {
+    "id": "boss-hiragana-mastery",
+    "subModule": "hiragana-basics",
+    "title": "Hiragana Mastery Test",
+    "category": "Hiragana",
+    "difficulty": 4,
+    "xpReward": 250,
+    "order": 27,
+    "timeLimit": 180,
+    "content": [
+      { "type": "typing", "question": "Type the reading for 'あいうえお'", "character": "あいうえお", "answer": "aiueo" },
+      { "type": "typing", "question": "Type the reading for 'がっこう'", "character": "がっこう", "answer": "gakkou" },
+      { "type": "translate", "question": "My cat", "options": ["わたしの ねこ", "わたしは ねこ", "わたしを ねこ"], "answer": "わたしの ねこ" },
+      { "type": "typing", "question": "Type the reading for 'きょう' (Today)", "character": "きょう", "answer": "kyou" },
+      { "type": "translate", "question": "I am a student", "options": ["わたしは がくせいです", "わたしが がくせいです"], "answer": "わたしは がくせいです" },
+      { "type": "typing", "question": "Type the reading for 'ありがとう'", "character": "ありがとう", "answer": "arigatou" },
+      { "type": "translate", "question": "I read a book", "options": ["わたしは ほんを よむ", "わたしは ふんを よむ", "わたしは へんを よむ"], "answer": "わたしは ほんを よむ" },
+      { "type": "quiz", "question": "How is 'を' pronounced as a particle?", "character": "を", "options": ["o (wo)", "wa", "no"], "answer": "o (wo)" }
+    ]
+  },
+  {
+    "id": "m2-lesson-1",
+    "subModule": "hiragana-sounds",
+    "title": "Dakuten Introduction",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 1,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "゛", "romaji": "dakuten", "hint": "Two small dots added to certain kana to voice them. E.g. か → が" },
+        { "type": "intro", "character": "か → が", "romaji": "ka → ga", "hint": "Adding dakuten (゛) to K-row gives G-row" },
+        { "type": "intro", "character": "さ → ざ", "romaji": "sa → za", "hint": "Adding dakuten (゛) to S-row gives Z-row" },
+        { "type": "intro", "character": "た → だ", "romaji": "ta → da", "hint": "Adding dakuten (゛) to T-row gives D-row" },
+        { "type": "intro", "character": "は → ば", "romaji": "ha → ba", "hint": "Adding dakuten (゛) to H-row gives B-row" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does adding dakuten (゛) do to a kana?", "options": ["Voices the consonant", "Silences the vowel", "Doubles the sound", "Nothing"], "answer": "Voices the consonant" },
+        { "type": "quiz", "question": "Which row does か become when dakuten is added?", "options": ["GA (が)", "ZA (ざ)", "DA (だ)", "BA (ば)"], "answer": "GA (が)" },
+        { "type": "quiz", "question": "Which row does さ become when dakuten is added?", "options": ["ZA (ざ)", "GA (が)", "DA (だ)", "BA (ば)"], "answer": "ZA (ざ)" },
+        { "type": "quiz", "question": "Which row does は become when dakuten is added?", "options": ["BA (ば)", "GA (が)", "DA (だ)", "ZA (ざ)"], "answer": "BA (ば)" }
+      ]
+    }
+  },
+  {
+    "id": "m2-lesson-2",
+    "subModule": "hiragana-sounds",
+    "title": "GA Row: が ぎ ぐ げ ご",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 2,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "が", "romaji": "ga", "hint": "Like 'ga' in 'gal'" },
+        { "type": "intro", "character": "ぎ", "romaji": "gi", "hint": "Like 'gi' in 'give'" },
+        { "type": "intro", "character": "ぐ", "romaji": "gu", "hint": "Like 'gu' in 'guru'" },
+        { "type": "intro", "character": "げ", "romaji": "ge", "hint": "Like 'ge' in 'get'" },
+        { "type": "intro", "character": "ご", "romaji": "go", "hint": "Like 'go' in 'go'" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'が'?", "options": ["ga", "ka", "gi", "go"], "answer": "ga" },
+        { "type": "quiz", "question": "What is the reading for 'ぎ'?", "options": ["gi", "ki", "ga", "ge"], "answer": "gi" },
+        { "type": "quiz", "question": "What is the reading for 'ぐ'?", "options": ["gu", "ku", "go", "ge"], "answer": "gu" },
+        { "type": "quiz", "question": "What is the reading for 'げ'?", "options": ["ge", "ke", "ga", "gi"], "answer": "ge" },
+        { "type": "quiz", "question": "What is the reading for 'ご'?", "options": ["go", "ko", "gu", "ge"], "answer": "go" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'が'", "character": "が", "answer": "ga" },
+        { "type": "typing", "question": "Type the reading for 'ぎ'", "character": "ぎ", "answer": "gi" },
+        { "type": "typing", "question": "Type the reading for 'ぐ'", "character": "ぐ", "answer": "gu" },
+        { "type": "typing", "question": "Type the reading for 'げ'", "character": "げ", "answer": "ge" },
+        { "type": "typing", "question": "Type the reading for 'ご'", "character": "ご", "answer": "go" },
+        { "type": "translate", "question": "How do you say 'University' (だいがく)?", "options": ["だいがく", "たいかく", "だいかく", "たいがく"], "answer": "だいがく" },
+        { "type": "translate", "question": "How do you say 'Bank' (ぎんこう)?", "options": ["ぎんこう", "きんこう", "ぎんごう", "きんごう"], "answer": "ぎんこう" }
+      ]
+    }
+  },
+  {
+    "id": "m2-lesson-3",
+    "subModule": "hiragana-sounds",
+    "title": "ZA Row: ざ じ ず ぜ ぞ",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 3,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ざ", "romaji": "za", "hint": "Like 'za' in 'zap'" },
+        { "type": "intro", "character": "じ", "romaji": "ji", "hint": "Like 'ji' in 'jeep'" },
+        { "type": "intro", "character": "ず", "romaji": "zu", "hint": "Like 'zu' in 'zoo'" },
+        { "type": "intro", "character": "ぜ", "romaji": "ze", "hint": "Like 'ze' in 'zeal'" },
+        { "type": "intro", "character": "ぞ", "romaji": "zo", "hint": "Like 'zo' in 'zone'" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'ざ'?", "options": ["za", "sa", "ji", "zo"], "answer": "za" },
+        { "type": "quiz", "question": "What is the reading for 'じ'?", "options": ["ji", "shi", "za", "ze"], "answer": "ji" },
+        { "type": "quiz", "question": "What is the reading for 'ず'?", "options": ["zu", "su", "zo", "ze"], "answer": "zu" },
+        { "type": "quiz", "question": "What is the reading for 'ぜ'?", "options": ["ze", "se", "za", "ji"], "answer": "ze" },
+        { "type": "quiz", "question": "What is the reading for 'ぞ'?", "options": ["zo", "so", "zu", "ze"], "answer": "zo" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'ざ'", "character": "ざ", "answer": "za" },
+        { "type": "typing", "question": "Type the reading for 'じ'", "character": "じ", "answer": "ji" },
+        { "type": "typing", "question": "Type the reading for 'ず'", "character": "ず", "answer": "zu" },
+        { "type": "typing", "question": "Type the reading for 'ぜ'", "character": "ぜ", "answer": "ze" },
+        { "type": "typing", "question": "Type the reading for 'ぞ'", "character": "ぞ", "answer": "zo" },
+        { "type": "translate", "question": "How do you say 'Wind' (かぜ)?", "options": ["かぜ", "かせ", "かぞ", "かじ"], "answer": "かぜ" },
+        { "type": "translate", "question": "How do you say 'Magazine' (ざっし)?", "options": ["ざっし", "さっし", "ぞっし", "じっし"], "answer": "ざっし" }
+      ]
+    }
+  },
+  {
+    "id": "m2-lesson-4",
+    "subModule": "hiragana-sounds",
+    "title": "DA Row: だ ぢ づ で ど",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 4,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "だ", "romaji": "da", "hint": "Like 'da' in 'dark'" },
+        { "type": "intro", "character": "ぢ", "romaji": "ji", "hint": "Rare; same sound as じ. Like 'ji' in 'jeep'" },
+        { "type": "intro", "character": "づ", "romaji": "zu", "hint": "Rare; same sound as ず. Like 'zu' in 'zoo'" },
+        { "type": "intro", "character": "で", "romaji": "de", "hint": "Like 'de' in 'desk'" },
+        { "type": "intro", "character": "ど", "romaji": "do", "hint": "Like 'do' in 'dog'" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'だ'?", "options": ["da", "ta", "do", "de"], "answer": "da" },
+        { "type": "quiz", "question": "What is the reading for 'で'?", "options": ["de", "te", "da", "do"], "answer": "de" },
+        { "type": "quiz", "question": "What is the reading for 'ど'?", "options": ["do", "to", "de", "da"], "answer": "do" },
+        { "type": "quiz", "question": "Which two characters in the DA row are rare and share sounds with ZA-row characters?", "options": ["ぢ and づ", "だ and ど", "で and ぢ"], "answer": "ぢ and づ" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'だ'", "character": "だ", "answer": "da" },
+        { "type": "typing", "question": "Type the reading for 'で'", "character": "で", "answer": "de" },
+        { "type": "typing", "question": "Type the reading for 'ど'", "character": "ど", "answer": "do" },
+        { "type": "translate", "question": "How do you say 'University' (だいがく)?", "options": ["だいがく", "たいかく", "だいかく", "たいがく"], "answer": "だいがく" },
+        { "type": "translate", "question": "どこ means what?", "options": ["Where", "Who", "When", "What"], "answer": "Where" }
+      ]
+    }
+  },
+  {
+    "id": "m2-lesson-5",
+    "subModule": "hiragana-sounds",
+    "title": "BA Row: ば び ぶ べ ぼ",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 5,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ば", "romaji": "ba", "hint": "Like 'ba' in 'bar'" },
+        { "type": "intro", "character": "び", "romaji": "bi", "hint": "Like 'bi' in 'bit'" },
+        { "type": "intro", "character": "ぶ", "romaji": "bu", "hint": "Like 'bu' in 'bull'" },
+        { "type": "intro", "character": "べ", "romaji": "be", "hint": "Like 'be' in 'bed'" },
+        { "type": "intro", "character": "ぼ", "romaji": "bo", "hint": "Like 'bo' in 'bop'" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'ば'?", "options": ["ba", "ha", "bi", "bo"], "answer": "ba" },
+        { "type": "quiz", "question": "What is the reading for 'び'?", "options": ["bi", "hi", "ba", "be"], "answer": "bi" },
+        { "type": "quiz", "question": "What is the reading for 'ぶ'?", "options": ["bu", "fu", "bo", "be"], "answer": "bu" },
+        { "type": "quiz", "question": "What is the reading for 'べ'?", "options": ["be", "he", "ba", "bi"], "answer": "be" },
+        { "type": "quiz", "question": "What is the reading for 'ぼ'?", "options": ["bo", "ho", "bu", "be"], "answer": "bo" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'ば'", "character": "ば", "answer": "ba" },
+        { "type": "typing", "question": "Type the reading for 'び'", "character": "び", "answer": "bi" },
+        { "type": "typing", "question": "Type the reading for 'ぶ'", "character": "ぶ", "answer": "bu" },
+        { "type": "typing", "question": "Type the reading for 'べ'", "character": "べ", "answer": "be" },
+        { "type": "typing", "question": "Type the reading for 'ぼ'", "character": "ぼ", "answer": "bo" },
+        { "type": "translate", "question": "How do you say 'Tokyo Tower'? (とうきょうタワー – hint: ぼうし = hat)", "options": ["ぼうし", "ほうし", "ぼっし", "ほっし"], "answer": "ぼうし" },
+        { "type": "translate", "question": "How do you say 'Graveyard' (はかば)?", "options": ["はかば", "はかは", "はかぱ", "はかだ"], "answer": "はかば" }
+      ]
+    }
+  },
+  {
+    "id": "m2-lesson-6",
+    "subModule": "hiragana-sounds",
+    "title": "Handakuten Introduction",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 20,
+    "order": 6,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "゜", "romaji": "handakuten", "hint": "A small circle added to H-row kana to create P sounds" },
+        { "type": "intro", "character": "は → ぱ", "romaji": "ha → pa", "hint": "Adding handakuten (゜) to H-row gives P-row" },
+        { "type": "intro", "character": "ひ → ぴ", "romaji": "hi → pi", "hint": "hi becomes pi" },
+        { "type": "intro", "character": "ふ → ぷ", "romaji": "fu → pu", "hint": "fu becomes pu" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does adding handakuten (゜) to H-row kana create?", "options": ["P sounds", "B sounds", "G sounds", "Z sounds"], "answer": "P sounds" },
+        { "type": "quiz", "question": "What does は become when handakuten is added?", "options": ["ぱ (pa)", "ば (ba)", "だ (da)", "が (ga)"], "answer": "ぱ (pa)" },
+        { "type": "quiz", "question": "What is the difference between dakuten and handakuten?", "options": ["Dakuten = two dots → voiced; Handakuten = circle → P sounds", "Both create the same sounds", "Handakuten = two dots; Dakuten = circle"], "answer": "Dakuten = two dots → voiced; Handakuten = circle → P sounds" }
+      ]
+    }
+  },
+  {
+    "id": "m2-lesson-7",
+    "subModule": "hiragana-sounds",
+    "title": "PA Row: ぱ ぴ ぷ ぺ ぽ",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 7,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ぱ", "romaji": "pa", "hint": "Like 'pa' in 'park'" },
+        { "type": "intro", "character": "ぴ", "romaji": "pi", "hint": "Like 'pi' in 'piece'" },
+        { "type": "intro", "character": "ぷ", "romaji": "pu", "hint": "Like 'pu' in 'push'" },
+        { "type": "intro", "character": "ぺ", "romaji": "pe", "hint": "Like 'pe' in 'pen'" },
+        { "type": "intro", "character": "ぽ", "romaji": "po", "hint": "Like 'po' in 'pot'" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'ぱ'?", "options": ["pa", "ba", "ha", "pi"], "answer": "pa" },
+        { "type": "quiz", "question": "What is the reading for 'ぴ'?", "options": ["pi", "bi", "hi", "pa"], "answer": "pi" },
+        { "type": "quiz", "question": "What is the reading for 'ぷ'?", "options": ["pu", "bu", "fu", "po"], "answer": "pu" },
+        { "type": "quiz", "question": "What is the reading for 'ぺ'?", "options": ["pe", "be", "he", "pa"], "answer": "pe" },
+        { "type": "quiz", "question": "What is the reading for 'ぽ'?", "options": ["po", "bo", "ho", "pu"], "answer": "po" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'ぱ'", "character": "ぱ", "answer": "pa" },
+        { "type": "typing", "question": "Type the reading for 'ぴ'", "character": "ぴ", "answer": "pi" },
+        { "type": "typing", "question": "Type the reading for 'ぷ'", "character": "ぷ", "answer": "pu" },
+        { "type": "typing", "question": "Type the reading for 'ぺ'", "character": "ぺ", "answer": "pe" },
+        { "type": "typing", "question": "Type the reading for 'ぽ'", "character": "ぽ", "answer": "po" },
+        { "type": "translate", "question": "How do you say 'Bread' (ぱん)?", "options": ["ぱん", "ばん", "はん", "ぴん"], "answer": "ぱん" },
+        { "type": "translate", "question": "How do you say 'Pencil' (えんぴつ)?", "options": ["えんぴつ", "えんびつ", "えんひつ", "えんぷつ"], "answer": "えんぴつ" }
+      ]
+    }
+  },
+  {
+    "id": "m2-lesson-8",
+    "subModule": "hiragana-sounds",
+    "title": "Sound Comparison: Unvoiced vs Voiced vs P",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 8,
+    "content": [
+      { "type": "quiz", "question": "Which is the voiced version of 'か'?", "options": ["が", "ぱ", "ば", "さ"], "answer": "が" },
+      { "type": "quiz", "question": "Which is the voiced version of 'は'?", "options": ["ば", "ぱ", "が", "ざ"], "answer": "ば" },
+      { "type": "quiz", "question": "Which is the P-sound (handakuten) version of 'は'?", "options": ["ぱ", "ば", "が", "ざ"], "answer": "ぱ" },
+      { "type": "quiz", "question": "What is the unvoiced form of 'げ'?", "options": ["け", "せ", "て", "へ"], "answer": "け" },
+      { "type": "quiz", "question": "What is the unvoiced form of 'ぞ'?", "options": ["そ", "と", "こ", "ほ"], "answer": "そ" },
+      { "type": "quiz", "question": "What is the unvoiced form of 'ぼ'?", "options": ["ほ", "こ", "そ", "と"], "answer": "ほ" },
+      { "type": "quiz", "question": "Which sound does 'ぴ' make?", "options": ["pi", "bi", "hi", "gi"], "answer": "pi" },
+      { "type": "quiz", "question": "Which is the correct group? All three share the same base kana row?", "options": ["は, ば, ぱ", "か, が, さ", "た, だ, ぱ"], "answer": "は, ば, ぱ" }
+    ]
+  },
+  {
+    "id": "m2-lesson-9",
+    "subModule": "hiragana-sounds",
+    "title": "Word Reading: Voiced Sounds",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 35,
+    "order": 9,
+    "content": [
+      { "type": "typing", "question": "Type the reading for 'かぜ' (Wind)", "character": "かぜ", "answer": "kaze" },
+      { "type": "typing", "question": "Type the reading for 'ぎんこう' (Bank)", "character": "ぎんこう", "answer": "ginkou" },
+      { "type": "typing", "question": "Type the reading for 'だいがく' (University)", "character": "だいがく", "answer": "daigaku" },
+      { "type": "typing", "question": "Type the reading for 'ざっし' (Magazine)", "character": "ざっし", "answer": "zasshi" },
+      { "type": "typing", "question": "Type the reading for 'ぱん' (Bread)", "character": "ぱん", "answer": "pan" },
+      { "type": "typing", "question": "Type the reading for 'えんぴつ' (Pencil)", "character": "えんぴつ", "answer": "enpitsu" },
+      { "type": "typing", "question": "Type the reading for 'かぞく' (Family)", "character": "かぞく", "answer": "kazoku" },
+      { "type": "typing", "question": "Type the reading for 'どこ' (Where)", "character": "どこ", "answer": "doko" },
+      { "type": "translate", "question": "What does 'ぱん' mean?", "options": ["Bread", "Bank", "Wind", "Pencil"], "answer": "Bread" },
+      { "type": "translate", "question": "What does 'かざ' NOT mean – which word actually means 'Wind'?", "options": ["かぜ", "かざ", "かじ", "かそ"], "answer": "かぜ" }
+    ]
+  },
+  {
+    "id": "m2-lesson-10",
+    "subModule": "hiragana-sounds",
+    "title": "Speed Recognition: Dakuten & Handakuten",
+    "category": "Hiragana",
+    "difficulty": 3,
+    "xpReward": 40,
+    "order": 10,
+    "content": [
+      { "type": "quiz", "question": "Quick! What is 'ぞ'?", "options": ["zo", "so", "do", "go"], "answer": "zo" },
+      { "type": "quiz", "question": "Quick! What is 'ぐ'?", "options": ["gu", "ku", "zu", "bu"], "answer": "gu" },
+      { "type": "quiz", "question": "Quick! What is 'ぺ'?", "options": ["pe", "be", "he", "ge"], "answer": "pe" },
+      { "type": "quiz", "question": "Quick! What is 'ぼ'?", "options": ["bo", "po", "ho", "do"], "answer": "bo" },
+      { "type": "quiz", "question": "Quick! What is 'じ'?", "options": ["ji", "shi", "gi", "zi"], "answer": "ji" },
+      { "type": "quiz", "question": "Quick! What is 'ぷ'?", "options": ["pu", "bu", "fu", "gu"], "answer": "pu" },
+      { "type": "quiz", "question": "Quick! What is 'ど'?", "options": ["do", "to", "bo", "go"], "answer": "do" },
+      { "type": "quiz", "question": "Quick! What is 'ぎ'?", "options": ["gi", "ki", "ji", "pi"], "answer": "gi" },
+      { "type": "quiz", "question": "Quick! What is 'だ'?", "options": ["da", "ta", "ba", "ga"], "answer": "da" },
+      { "type": "quiz", "question": "Quick! What is 'ぽ'?", "options": ["po", "bo", "ho", "go"], "answer": "po" }
+    ]
+  },
+  {
+    "id": "boss-m2",
+    "subModule": "hiragana-sounds",
+    "isBoss": true,
+    "title": "Module 2 Boss: Dakuten & Handakuten Mastery",
+    "category": "Hiragana",
+    "difficulty": 3,
+    "xpReward": 150,
+    "order": 11,
+    "timeLimit": 120,
+    "content": [
+      { "type": "quiz", "question": "What sound does 'が' make?", "character": "が", "options": ["ga", "ka", "za", "ba"], "answer": "ga" },
+      { "type": "typing", "question": "Type the reading for 'ぎんこう' (Bank)", "character": "ぎんこう", "answer": "ginkou" },
+      { "type": "quiz", "question": "What sound does 'ぞ' make?", "character": "ぞ", "options": ["zo", "so", "do", "go"], "answer": "zo" },
+      { "type": "typing", "question": "Type the reading for 'だいがく' (University)", "character": "だいがく", "answer": "daigaku" },
+      { "type": "quiz", "question": "What sound does 'ぴ' make?", "character": "ぴ", "options": ["pi", "bi", "hi", "gi"], "answer": "pi" },
+      { "type": "typing", "question": "Type the reading for 'えんぴつ' (Pencil)", "character": "えんぴつ", "answer": "enpitsu" },
+      { "type": "quiz", "question": "Which is the voiced (dakuten) version of 'ふ'?", "options": ["ぶ", "ぷ", "ほ", "ぼ"], "answer": "ぶ" },
+      { "type": "quiz", "question": "Which is the P-sound (handakuten) version of 'ふ'?", "options": ["ぷ", "ぶ", "ほ", "ぼ"], "answer": "ぷ" },
+      { "type": "typing", "question": "Type the reading for 'かぜ' (Wind)", "character": "かぜ", "answer": "kaze" },
+      { "type": "quiz", "question": "What sound does 'ど' make?", "character": "ど", "options": ["do", "to", "bo", "go"], "answer": "do" },
+      { "type": "quiz", "question": "Match: Which three share the same base H-row kana?", "options": ["は, ば, ぱ", "か, が, ぞ", "た, だ, ぷ"], "answer": "は, ば, ぱ" },
+      { "type": "typing", "question": "Type the reading for 'ぱん' (Bread)", "character": "ぱん", "answer": "pan" }
+    ]
+  },
+  {
+    "id": "m3-lesson-1",
+    "subModule": "advanced-kana",
+    "title": "Yōon Introduction",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 1,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "きゃ", "romaji": "kya", "hint": "Yōon: a small や/ゆ/よ is added after an i-row kana to form a new sound" },
+        { "type": "intro", "character": "き + ゃ = きゃ", "romaji": "ki + ya = kya", "hint": "The small よ/ゆ/や blends with the i-row kana" },
+        { "type": "intro", "character": "し + ゅ = しゅ", "romaji": "shi + yu = shu", "hint": "Small ゅ merges with し to make 'shu'" },
+        { "type": "intro", "character": "ち + ょ = ちょ", "romaji": "chi + yo = cho", "hint": "Small ょ merges with ち to make 'cho'" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What makes a Yōon sound?", "options": ["A small ya/yu/yo combined with an i-row kana", "Two large kana side by side", "A double consonant mark", "A voiced kana"], "answer": "A small ya/yu/yo combined with an i-row kana" },
+        { "type": "quiz", "question": "How many morae (sound units) does 'きゃ' represent?", "options": ["1", "2", "3"], "answer": "1" },
+        { "type": "quiz", "question": "Which combination creates 'shu'?", "options": ["し + ゅ", "す + ゅ", "さ + ゅ", "せ + ゅ"], "answer": "し + ゅ" },
+        { "type": "quiz", "question": "What is the small kana in 'にょ'?", "options": ["ょ", "よ", "ゆ", "や"], "answer": "ょ" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-2",
+    "subModule": "advanced-kana",
+    "title": "Kya / Kyu / Kyo (きゃ きゅ きょ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 2,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "きゃ", "romaji": "kya", "hint": "き + small ゃ = kya" },
+        { "type": "intro", "character": "きゅ", "romaji": "kyu", "hint": "き + small ゅ = kyu" },
+        { "type": "intro", "character": "きょ", "romaji": "kyo", "hint": "き + small ょ = kyo" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'きゃ'?", "options": ["kya", "kyu", "kyo", "ki"], "answer": "kya" },
+        { "type": "quiz", "question": "What is the reading for 'きゅ'?", "options": ["kyu", "kya", "kyo", "ku"], "answer": "kyu" },
+        { "type": "quiz", "question": "What is the reading for 'きょ'?", "options": ["kyo", "kya", "kyu", "ko"], "answer": "kyo" },
+        { "type": "translate", "question": "How do you write 'kyo' in hiragana?", "options": ["きょ", "きゅ", "きゃ", "きよ"], "answer": "きょ" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'きゃ'", "character": "きゃ", "answer": "kya" },
+        { "type": "typing", "question": "Type the reading for 'きゅ'", "character": "きゅ", "answer": "kyu" },
+        { "type": "typing", "question": "Type the reading for 'きょ'", "character": "きょ", "answer": "kyo" },
+        { "type": "translate", "question": "How do you say 'today' (きょう)?", "options": ["きょう", "きゅう", "きゃう", "きよう"], "answer": "きょう" },
+        { "type": "translate", "question": "How do you say 'music' (おんがく)? Which has Yōon? Pick きょく", "options": ["きょく", "きゅく", "きゃく", "きく"], "answer": "きょく" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-3",
+    "subModule": "advanced-kana",
+    "title": "Sha / Shu / Sho (しゃ しゅ しょ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 3,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "しゃ", "romaji": "sha", "hint": "し + small ゃ = sha" },
+        { "type": "intro", "character": "しゅ", "romaji": "shu", "hint": "し + small ゅ = shu" },
+        { "type": "intro", "character": "しょ", "romaji": "sho", "hint": "し + small ょ = sho" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'しゃ'?", "options": ["sha", "shu", "sho", "shi"], "answer": "sha" },
+        { "type": "quiz", "question": "What is the reading for 'しゅ'?", "options": ["shu", "sha", "sho", "su"], "answer": "shu" },
+        { "type": "quiz", "question": "What is the reading for 'しょ'?", "options": ["sho", "sha", "shu", "so"], "answer": "sho" },
+        { "type": "translate", "question": "How do you write 'sha' in hiragana?", "options": ["しゃ", "しゅ", "しょ", "しや"], "answer": "しゃ" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'しゃ'", "character": "しゃ", "answer": "sha" },
+        { "type": "typing", "question": "Type the reading for 'しゅ'", "character": "しゅ", "answer": "shu" },
+        { "type": "typing", "question": "Type the reading for 'しょ'", "character": "しょ", "answer": "sho" },
+        { "type": "translate", "question": "How do you write 'shakuhachi' (a flute) first syllable?", "options": ["しゃ", "しゅ", "しょ", "さ"], "answer": "しゃ" },
+        { "type": "quiz", "question": "Which hiragana combination makes the sound 'sho'?", "options": ["しょ", "しゅ", "しゃ", "そ"], "answer": "しょ" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-4",
+    "subModule": "advanced-kana",
+    "title": "Cha / Chu / Cho (ちゃ ちゅ ちょ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 4,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ちゃ", "romaji": "cha", "hint": "ち + small ゃ = cha (like 'cha' in 'chat')" },
+        { "type": "intro", "character": "ちゅ", "romaji": "chu", "hint": "ち + small ゅ = chu (like 'chew')" },
+        { "type": "intro", "character": "ちょ", "romaji": "cho", "hint": "ち + small ょ = cho (like 'cho' in 'chocolate')" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'ちゃ'?", "options": ["cha", "chu", "cho", "chi"], "answer": "cha" },
+        { "type": "quiz", "question": "What is the reading for 'ちゅ'?", "options": ["chu", "cha", "cho", "tsu"], "answer": "chu" },
+        { "type": "quiz", "question": "What is the reading for 'ちょ'?", "options": ["cho", "cha", "chu", "to"], "answer": "cho" },
+        { "type": "translate", "question": "How do you write 'cho' (a bit) in hiragana? ちょっと", "options": ["ちょ", "ちゅ", "ちゃ", "ちよ"], "answer": "ちょ" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'ちゃ'", "character": "ちゃ", "answer": "cha" },
+        { "type": "typing", "question": "Type the reading for 'ちゅ'", "character": "ちゅ", "answer": "chu" },
+        { "type": "typing", "question": "Type the reading for 'ちょ'", "character": "ちょ", "answer": "cho" },
+        { "type": "translate", "question": "What does 'おちゃ' (ocha) mean?", "options": ["Tea", "Milk", "Water", "Juice"], "answer": "Tea" },
+        { "type": "quiz", "question": "Which combination makes 'cha'?", "options": ["ちゃ", "ちゅ", "ちょ", "ちや"], "answer": "ちゃ" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-5",
+    "subModule": "advanced-kana",
+    "title": "Nya / Nyu / Nyo (にゃ にゅ にょ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 5,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "にゃ", "romaji": "nya", "hint": "に + small ゃ = nya (like a cat sound!)" },
+        { "type": "intro", "character": "にゅ", "romaji": "nyu", "hint": "に + small ゅ = nyu" },
+        { "type": "intro", "character": "にょ", "romaji": "nyo", "hint": "に + small ょ = nyo" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'にゃ'?", "options": ["nya", "nyu", "nyo", "ni"], "answer": "nya" },
+        { "type": "quiz", "question": "What is the reading for 'にゅ'?", "options": ["nyu", "nya", "nyo", "nu"], "answer": "nyu" },
+        { "type": "quiz", "question": "What is the reading for 'にょ'?", "options": ["nyo", "nya", "nyu", "no"], "answer": "nyo" },
+        { "type": "translate", "question": "How do you write 'nyan' (cat sound)?", "options": ["にゃん", "にゅん", "にょん", "にん"], "answer": "にゃん" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'にゃ'", "character": "にゃ", "answer": "nya" },
+        { "type": "typing", "question": "Type the reading for 'にゅ'", "character": "にゅ", "answer": "nyu" },
+        { "type": "typing", "question": "Type the reading for 'にょ'", "character": "にょ", "answer": "nyo" },
+        { "type": "quiz", "question": "What sound does 'にゃ' make?", "options": ["nya", "nyu", "nyo", "ni"], "answer": "nya" },
+        { "type": "translate", "question": "How do you say 'cat (nya sound)'? Pick the Yōon", "options": ["にゃ", "ねこ", "にゅ", "の"], "answer": "にゃ" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-6",
+    "subModule": "advanced-kana",
+    "title": "Hya / Hyu / Hyo (ひゃ ひゅ ひょ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 6,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ひゃ", "romaji": "hya", "hint": "ひ + small ゃ = hya (like 'hya' in 'hyaku' = 100)" },
+        { "type": "intro", "character": "ひゅ", "romaji": "hyu", "hint": "ひ + small ゅ = hyu" },
+        { "type": "intro", "character": "ひょ", "romaji": "hyo", "hint": "ひ + small ょ = hyo" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'ひゃ'?", "options": ["hya", "hyu", "hyo", "hi"], "answer": "hya" },
+        { "type": "quiz", "question": "What is the reading for 'ひゅ'?", "options": ["hyu", "hya", "hyo", "fu"], "answer": "hyu" },
+        { "type": "quiz", "question": "What is the reading for 'ひょ'?", "options": ["hyo", "hya", "hyu", "ho"], "answer": "hyo" },
+        { "type": "translate", "question": "How do you write 'hyaku' (100) first part?", "options": ["ひゃ", "ひゅ", "ひょ", "ひや"], "answer": "ひゃ" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'ひゃ'", "character": "ひゃ", "answer": "hya" },
+        { "type": "typing", "question": "Type the reading for 'ひゅ'", "character": "ひゅ", "answer": "hyu" },
+        { "type": "typing", "question": "Type the reading for 'ひょ'", "character": "ひょ", "answer": "hyo" },
+        { "type": "translate", "question": "ひゃく means?", "options": ["100", "10", "1000", "1"], "answer": "100" },
+        { "type": "quiz", "question": "Which combination makes the sound 'hyo'?", "options": ["ひょ", "ひゃ", "ひゅ", "ほよ"], "answer": "ひょ" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-7",
+    "subModule": "advanced-kana",
+    "title": "Mya / Myu / Myo (みゃ みゅ みょ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 7,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "みゃ", "romaji": "mya", "hint": "み + small ゃ = mya" },
+        { "type": "intro", "character": "みゅ", "romaji": "myu", "hint": "み + small ゅ = myu" },
+        { "type": "intro", "character": "みょ", "romaji": "myo", "hint": "み + small ょ = myo" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'みゃ'?", "options": ["mya", "myu", "myo", "mi"], "answer": "mya" },
+        { "type": "quiz", "question": "What is the reading for 'みゅ'?", "options": ["myu", "mya", "myo", "mu"], "answer": "myu" },
+        { "type": "quiz", "question": "What is the reading for 'みょ'?", "options": ["myo", "mya", "myu", "mo"], "answer": "myo" },
+        { "type": "translate", "question": "How do you write 'myo' in hiragana?", "options": ["みょ", "みゅ", "みゃ", "みよ"], "answer": "みょ" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'みゃ'", "character": "みゃ", "answer": "mya" },
+        { "type": "typing", "question": "Type the reading for 'みゅ'", "character": "みゅ", "answer": "myu" },
+        { "type": "typing", "question": "Type the reading for 'みょ'", "character": "みょ", "answer": "myo" },
+        { "type": "quiz", "question": "Which combination makes 'myu'?", "options": ["みゅ", "みゃ", "みょ", "むゆ"], "answer": "みゅ" },
+        { "type": "translate", "question": "Which is 'mya' in hiragana?", "options": ["みゃ", "みゅ", "みょ", "みや"], "answer": "みゃ" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-8",
+    "subModule": "advanced-kana",
+    "title": "Rya / Ryu / Ryo (りゃ りゅ りょ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 8,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "りゃ", "romaji": "rya", "hint": "り + small ゃ = rya" },
+        { "type": "intro", "character": "りゅ", "romaji": "ryu", "hint": "り + small ゅ = ryu (like the name 'Ryu'!)" },
+        { "type": "intro", "character": "りょ", "romaji": "ryo", "hint": "り + small ょ = ryo (like 'ryokan' = traditional inn)" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is the reading for 'りゃ'?", "options": ["rya", "ryu", "ryo", "ri"], "answer": "rya" },
+        { "type": "quiz", "question": "What is the reading for 'りゅ'?", "options": ["ryu", "rya", "ryo", "ru"], "answer": "ryu" },
+        { "type": "quiz", "question": "What is the reading for 'りょ'?", "options": ["ryo", "rya", "ryu", "ro"], "answer": "ryo" },
+        { "type": "translate", "question": "How do you write 'ryokan' (inn) first part?", "options": ["りょ", "りゅ", "りゃ", "りよ"], "answer": "りょ" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the reading for 'りゃ'", "character": "りゃ", "answer": "rya" },
+        { "type": "typing", "question": "Type the reading for 'りゅ'", "character": "りゅ", "answer": "ryu" },
+        { "type": "typing", "question": "Type the reading for 'りょ'", "character": "りょ", "answer": "ryo" },
+        { "type": "translate", "question": "りょこう means 'travel'. What is the first Yōon?", "options": ["りょ", "りゅ", "りゃ", "り"], "answer": "りょ" },
+        { "type": "quiz", "question": "Which makes 'ryu'?", "options": ["りゅ", "りゃ", "りょ", "るゆ"], "answer": "りゅ" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-9",
+    "subModule": "advanced-kana",
+    "title": "Small Tsu Rule (っ)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 9,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "っ", "romaji": "small tsu", "hint": "A small っ doubles the following consonant. It represents a brief pause." },
+        { "type": "intro", "character": "きって", "romaji": "kitte", "hint": "Stamp — the small っ doubles the 'tt'" },
+        { "type": "intro", "character": "きっぷ", "romaji": "kippu", "hint": "Ticket — the small っ doubles the 'pp'" },
+        { "type": "intro", "character": "ざっし", "romaji": "zasshi", "hint": "Magazine — the small っ doubles the 'ss'" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does the small っ do?", "options": ["Doubles the following consonant", "Adds a vowel sound", "Voices the consonant", "Creates a glide"], "answer": "Doubles the following consonant" },
+        { "type": "quiz", "question": "How is 'きって' (stamp) romanized?", "options": ["kitte", "kite", "kipe", "kide"], "answer": "kitte" },
+        { "type": "quiz", "question": "How is 'きっぷ' (ticket) romanized?", "options": ["kippu", "kipu", "kibu", "kiku"], "answer": "kippu" },
+        { "type": "quiz", "question": "What sound does っ represent before 'か'?", "options": ["kk (a pause/glottal stop)", "no sound", "extra vowel", "n sound"], "answer": "kk (a pause/glottal stop)" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the romaji for 'きって' (stamp)", "character": "きって", "answer": "kitte" },
+        { "type": "typing", "question": "Type the romaji for 'きっぷ' (ticket)", "character": "きっぷ", "answer": "kippu" },
+        { "type": "typing", "question": "Type the romaji for 'ざっし' (magazine)", "character": "ざっし", "answer": "zasshi" },
+        { "type": "translate", "question": "Which correctly reads 'にっき' (diary)?", "options": ["nikki", "niki", "nikey", "nikk"], "answer": "nikki" },
+        { "type": "quiz", "question": "How many morae does 'きって' have?", "options": ["3", "2", "4", "1"], "answer": "3" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-10",
+    "subModule": "advanced-kana",
+    "title": "Long Vowels (のばす/ー)",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 10,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "おかあさん", "romaji": "okaasan", "hint": "Long 'a' sound: add あ to extend the vowel (mother)" },
+        { "type": "intro", "character": "おにいさん", "romaji": "oniisan", "hint": "Long 'i' sound: add い to extend (older brother)" },
+        { "type": "intro", "character": "おとうさん", "romaji": "otousan", "hint": "Long 'o' sound: add う to extend (father)" },
+        { "type": "intro", "character": "がっこう", "romaji": "gakkou", "hint": "Long 'o' sound extended by う (school)" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "How do you extend an 'a' vowel in hiragana?", "options": ["Add あ", "Add い", "Add う", "Add え"], "answer": "Add あ" },
+        { "type": "quiz", "question": "How do you extend an 'o' vowel in hiragana?", "options": ["Add う", "Add あ", "Add い", "Add お"], "answer": "Add う" },
+        { "type": "quiz", "question": "What is the long vowel reading of 'おかあさん'?", "options": ["okaasan", "okasan", "okasan", "okaan"], "answer": "okaasan" },
+        { "type": "translate", "question": "Which word has a long vowel? Pick 'school'.", "options": ["がっこう", "なに", "かわ", "みず"], "answer": "がっこう" }
+      ],
+      "play": [
+        { "type": "typing", "question": "Type the romaji for 'おかあさん' (mother)", "character": "おかあさん", "answer": "okaasan" },
+        { "type": "typing", "question": "Type the romaji for 'がっこう' (school)", "character": "がっこう", "answer": "gakkou" },
+        { "type": "typing", "question": "Type the romaji for 'おとうさん' (father)", "character": "おとうさん", "answer": "otousan" },
+        { "type": "translate", "question": "Which is the correct romaji for おにいさん (older brother)?", "options": ["oniisan", "onisan", "oniisan", "onisan"], "answer": "oniisan" },
+        { "type": "quiz", "question": "How many sounds does 'がっこう' have?", "options": ["4", "3", "5", "2"], "answer": "4" }
+      ]
+    }
+  },
+  {
+    "id": "m3-lesson-11",
+    "subModule": "advanced-kana",
+    "title": "Word Reading: Yōon Sounds",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 35,
+    "order": 11,
+    "content": [
+      { "type": "typing", "question": "Type the romaji for 'きょう' (today)", "character": "きょう", "answer": "kyou" },
+      { "type": "typing", "question": "Type the romaji for 'しゃしん' (photo)", "character": "しゃしん", "answer": "shashin" },
+      { "type": "typing", "question": "Type the romaji for 'おちゃ' (tea)", "character": "おちゃ", "answer": "ocha" },
+      { "type": "typing", "question": "Type the romaji for 'りょこう' (travel)", "character": "りょこう", "answer": "ryokou" },
+      { "type": "typing", "question": "Type the romaji for 'にっき' (diary)", "character": "にっき", "answer": "nikki" },
+      { "type": "typing", "question": "Type the romaji for 'ひゃく' (100)", "character": "ひゃく", "answer": "hyaku" },
+      { "type": "typing", "question": "Type the romaji for 'がっこう' (school)", "character": "がっこう", "answer": "gakkou" },
+      { "type": "translate", "question": "What does 'しゃしん' mean?", "options": ["Photo", "Music", "Travel", "School"], "answer": "Photo" },
+      { "type": "translate", "question": "What does 'りょこう' mean?", "options": ["Travel", "Diary", "Tea", "Family"], "answer": "Travel" },
+      { "type": "translate", "question": "What does 'おちゃ' mean?", "options": ["Tea", "Water", "Coffee", "Juice"], "answer": "Tea" }
+    ]
+  },
+  {
+    "id": "boss-m3",
+    "subModule": "advanced-kana",
+    "isBoss": true,
+    "title": "Module 3 Boss: Yōon Mastery",
+    "category": "Hiragana",
+    "difficulty": 3,
+    "xpReward": 150,
+    "order": 12,
+    "timeLimit": 120,
+    "content": [
+      { "type": "quiz", "question": "What is 'きゃ'?", "options": ["kya", "kyu", "kyo", "ki"], "answer": "kya" },
+      { "type": "typing", "question": "Type the romaji for 'しゅ'", "character": "しゅ", "answer": "shu" },
+      { "type": "quiz", "question": "What is 'ちょ'?", "options": ["cho", "cha", "chu", "chi"], "answer": "cho" },
+      { "type": "typing", "question": "Type the romaji for 'りょこう' (travel)", "character": "りょこう", "answer": "ryokou" },
+      { "type": "quiz", "question": "What does the small っ do?", "options": ["Doubles the next consonant", "Adds a vowel", "Changes pitch", "Silences the kana"], "answer": "Doubles the next consonant" },
+      { "type": "typing", "question": "Type the romaji for 'きって' (stamp)", "character": "きって", "answer": "kitte" },
+      { "type": "quiz", "question": "How do you lengthen an 'o' vowel in hiragana?", "options": ["Add う", "Add お", "Add あ", "Add い"], "answer": "Add う" },
+      { "type": "typing", "question": "Type the romaji for 'おちゃ' (tea)", "character": "おちゃ", "answer": "ocha" },
+      { "type": "quiz", "question": "What is the reading for 'にゃ'?", "options": ["nya", "nyu", "nyo", "ni"], "answer": "nya" },
+      { "type": "typing", "question": "Type the romaji for 'ひゃく' (100)", "character": "ひゃく", "answer": "hyaku" },
+      { "type": "quiz", "question": "Which represents a long vowel?", "options": ["おかあさん", "かわ", "いぬ", "ねこ"], "answer": "おかあさん" },
+      { "type": "typing", "question": "Type the romaji for 'みゅ'", "character": "みゅ", "answer": "myu" }
+    ]
+  },
+  {
+    "id": "m4-lesson-1",
+    "subModule": "word-building",
+    "title": "Word Formation Basics",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 1,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ね + こ", "romaji": "neko (cat)", "hint": "Combine 'ne' and 'ko' to form the word for cat." },
+        { "type": "intro", "character": "い + ぬ", "romaji": "inu (dog)", "hint": "Combine 'i' and 'nu' to form the word for dog." },
+        { "type": "intro", "character": "や + ま", "romaji": "yama (mountain)", "hint": "Combine 'ya' and 'ma' to form the word for mountain." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "Build the word: ね + こ", "options": ["ねこ", "こね", "いぬ", "ぬいい"], "answer": "ねこ" },
+        { "type": "quiz", "question": "Build the word: い + ぬ", "options": ["いぬ", "ぬいい", "ねこ", "こい"], "answer": "いぬ" },
+        { "type": "quiz", "question": "Which word means cat?", "options": ["ねこ", "いぬ", "やま", "うみ"], "answer": "ねこ" },
+        { "type": "quiz", "question": "Build the word: や + ま", "options": ["やま", "まや", "うみ", "ねこ"], "answer": "やま" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which is the correct order for cat?", "options": ["ね + こ", "こ + ね", "い + ぬ", "ぬ + い"], "answer": "ね + こ" },
+        { "type": "typing", "question": "Build the word cat", "character": "ね + こ", "answer": "ねこ" },
+        { "type": "typing", "question": "Build the word dog", "character": "い + ぬ", "answer": "いぬ" },
+        { "type": "typing", "question": "Build the word: う + み", "character": "う + み", "answer": "うみ" },
+        { "type": "quiz", "question": "Which word means sea?", "options": ["うみ", "やま", "ねこ", "とり"], "answer": "うみ" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-2",
+    "subModule": "word-building",
+    "title": "Animals",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 2,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ねこ", "romaji": "cat", "hint": "Neko means cat." },
+        { "type": "intro", "character": "いぬ", "romaji": "dog", "hint": "Inu means dog." },
+        { "type": "intro", "character": "とり", "romaji": "bird", "hint": "Tori means bird." },
+        { "type": "intro", "character": "うま", "romaji": "horse", "hint": "Uma means horse." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does ねこ mean?", "options": ["cat", "dog", "bird", "horse"], "answer": "cat" },
+        { "type": "quiz", "question": "What does とり mean?", "options": ["bird", "cat", "dog", "horse"], "answer": "bird" },
+        { "type": "quiz", "question": "Build dog", "options": ["い + ぬ", "い + ね", "う + ま", "と + り"], "answer": "い + ぬ" },
+        { "type": "quiz", "question": "Build horse", "options": ["う + ま", "う + め", "と + り", "い + ぬ"], "answer": "う + ま" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which is cat?", "options": ["ねこ", "いぬ", "うま", "とり"], "answer": "ねこ" },
+        { "type": "quiz", "question": "Which word means dog?", "options": ["いぬ", "ねこ", "うま", "とり"], "answer": "いぬ" },
+        { "type": "quiz", "question": "What animal is うま?", "options": ["horse", "cat", "dog", "bird"], "answer": "horse" },
+        { "type": "typing", "question": "Build horse", "character": "う + ま", "answer": "うま" },
+        { "type": "typing", "question": "Build bird", "character": "と + り", "answer": "とり" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-3",
+    "subModule": "word-building",
+    "title": "Nature",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 3,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "やま", "romaji": "mountain", "hint": "Yama means mountain." },
+        { "type": "intro", "character": "うみ", "romaji": "sea", "hint": "Umi means sea." },
+        { "type": "intro", "character": "かわ", "romaji": "river", "hint": "Kawa means river." },
+        { "type": "intro", "character": "そら", "romaji": "sky", "hint": "Sora means sky." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does やま mean?", "options": ["mountain", "sea", "river", "sky"], "answer": "mountain" },
+        { "type": "quiz", "question": "Build sea", "options": ["う + み", "う + ま", "か + わ", "そ + ら"], "answer": "う + み" },
+        { "type": "quiz", "question": "What does かわ mean?", "options": ["river", "mountain", "sea", "sky"], "answer": "river" },
+        { "type": "quiz", "question": "Which word means sky?", "options": ["そら", "やま", "かわ", "うみ"], "answer": "そら" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which means mountain?", "options": ["やま", "うみ", "そら", "かわ"], "answer": "やま" },
+        { "type": "quiz", "question": "What does うみ mean?", "options": ["sea", "mountain", "river", "sky"], "answer": "sea" },
+        { "type": "typing", "question": "Build mountain", "character": "や + ま", "answer": "やま" },
+        { "type": "typing", "question": "Build sky", "character": "そ + ら", "answer": "そら" },
+        { "type": "quiz", "question": "Which means river?", "options": ["かわ", "やま", "うみ", "そら"], "answer": "かわ" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-4",
+    "subModule": "word-building",
+    "title": "Food",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 4,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "すし", "romaji": "sushi", "hint": "Sushi is popular Japanese food." },
+        { "type": "intro", "character": "パン", "romaji": "bread", "hint": "Pan (from Portuguese) means bread." },
+        { "type": "intro", "character": "みず", "romaji": "water", "hint": "Mizu means water." },
+        { "type": "intro", "character": "ちゃ", "romaji": "tea", "hint": "Cha means tea (O-cha)." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does すし mean?", "options": ["sushi", "bread", "water", "tea"], "answer": "sushi" },
+        { "type": "quiz", "question": "Build tea", "options": ["ちゃ", "ち", "つ", "た"], "answer": "ちゃ" },
+        { "type": "quiz", "question": "What does みず mean?", "options": ["water", "tea", "sushi", "bread"], "answer": "みず" },
+        { "type": "quiz", "question": "Which word means bread?", "options": ["パン", "みず", "すし", "ちゃ"], "answer": "パン" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which means water?", "options": ["みず", "ちゃ", "パン", "すし"], "answer": "みず" },
+        { "type": "typing", "question": "Build water", "character": "み + ず", "answer": "みず" },
+        { "type": "quiz", "question": "What does ちゃ mean?", "options": ["tea", "water", "bread", "sushi"], "answer": "tea" },
+        { "type": "quiz", "question": "Choose sushi", "options": ["すし", "いぬ", "ねこ", "やま"], "answer": "すし" },
+        { "type": "typing", "question": "Build bread", "character": "パ + ン", "answer": "パン" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-5",
+    "subModule": "word-building",
+    "title": "Objects",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 5,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "ほん", "romaji": "book", "hint": "Hon means book." },
+        { "type": "intro", "character": "くつ", "romaji": "shoes", "hint": "Kutsu means shoes." },
+        { "type": "intro", "character": "かばん", "romaji": "bag", "hint": "Kaban means bag." },
+        { "type": "intro", "character": "かぎ", "romaji": "key", "hint": "Kagi means key." }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does ほん mean?", "options": ["book", "shoes", "bag", "key"], "answer": "book" },
+        { "type": "quiz", "question": "Build bag", "options": ["か + ば + ん", "か + ぱ + ん", "は + は", "き + れ"], "answer": "か + ば + ん" },
+        { "type": "quiz", "question": "What does くつ mean?", "options": ["shoes", "bag", "key", "book"], "answer": "shoes" },
+        { "type": "quiz", "question": "Which word means key?", "options": ["かぎ", "かき", "かみ", "かび"], "answer": "かぎ" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which word means bag?", "options": ["かばん", "ほん", "くつ", "かぎ"], "answer": "かばん" },
+        { "type": "quiz", "question": "What does かぎ mean?", "options": ["key", "bag", "book", "shoes"], "answer": "key" },
+        { "type": "typing", "question": "Build book", "character": "ほ + ん", "answer": "ほん" },
+        { "type": "quiz", "question": "Which means book?", "options": ["ほん", "かばん", "かぎ", "くつ"], "answer": "ほん" },
+        { "type": "typing", "question": "Build shoes", "character": "く + つ", "answer": "くつ" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-6",
+    "subModule": "word-building",
+    "title": "Numbers",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 6,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "いち (1)", "romaji": "1", "hint": "Ichi" },
+        { "type": "intro", "character": "に (2)", "romaji": "2", "hint": "Ni" },
+        { "type": "intro", "character": "さん (3)", "romaji": "3", "hint": "San" },
+        { "type": "intro", "character": "よん (4)", "romaji": "4", "hint": "Yon" },
+        { "type": "intro", "character": "ご (5)", "romaji": "5", "hint": "Go" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What is いち?", "options": ["1", "2", "3", "4"], "answer": "1" },
+        { "type": "quiz", "question": "Buildさん", "options": ["さ + ん", "さ + い", "し + ん", "す + ん"], "answer": "さ + ん" },
+        { "type": "quiz", "question": "What is に?", "options": ["2", "1", "3", "4"], "answer": "2" },
+        { "type": "quiz", "question": "What is ご?", "options": ["5", "3", "1", "2"], "answer": "5" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which number is 4?", "options": ["よん", "さん", "に", "いち"], "answer": "よん" },
+        { "type": "typing", "question": "Build 1", "character": "い + ち", "answer": "いち" },
+        { "type": "quiz", "question": "What number is さん?", "options": ["3", "1", "2", "4"], "answer": "3" },
+        { "type": "quiz", "question": "Which is two?", "options": ["に", "ご", "いち", "よん"], "answer": "に" },
+        { "type": "typing", "question": "What is 5?", "character": "ご", "answer": "ご" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-7",
+    "subModule": "word-building",
+    "title": "Family",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 7,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "はは", "romaji": "mother", "hint": "Haha (talking about your own)" },
+        { "type": "intro", "character": "ちち", "romaji": "father", "hint": "Chichi (talking about your own)" },
+        { "type": "intro", "character": "あに", "romaji": "older brother", "hint": "Ani" },
+        { "type": "intro", "character": "あね", "romaji": "older sister", "hint": "Ane" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does はは mean?", "options": ["mother", "father", "brother", "sister"], "answer": "mother" },
+        { "type": "quiz", "question": "Build father", "options": ["ち + ち", "は + は", "あ + に", "あ + ね"], "answer": "ち + ち" },
+        { "type": "quiz", "question": "What does あに mean?", "options": ["older brother", "father", "mother", "sister"], "answer": "older brother" },
+        { "type": "quiz", "question": "Which means older sister?", "options": ["あね", "あに", "はは", "ちち"], "answer": "あね" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which means mother?", "options": ["はは", "ちち", "あね", "あに"], "answer": "はは" },
+        { "type": "quiz", "question": "What does ちち mean?", "options": ["father", "mother", "brother", "sister"], "answer": "father" },
+        { "type": "quiz", "question": "Which means brother?", "options": ["あに", "あね", "ちち", "はは"], "answer": "あni" },
+        { "type": "typing", "question": "Build sister", "character": "あ + ね", "answer": "あね" },
+        { "type": "typing", "question": "Build mother", "character": "は + は", "answer": "はは" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-8",
+    "subModule": "word-building",
+    "title": "Adjectives",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 25,
+    "order": 8,
+    "phases": {
+      "learn": [
+        { "type": "intro", "character": "おおきい", "romaji": "big", "hint": "Ookii" },
+        { "type": "intro", "character": "ちいさい", "romaji": "small", "hint": "Chiisai" },
+        { "type": "intro", "character": "あかい", "romaji": "red", "hint": "Akai" }
+      ],
+      "practice": [
+        { "type": "quiz", "question": "What does おおきい mean?", "options": ["big", "small", "red", "blue"], "answer": "big" },
+        { "type": "quiz", "question": "What does ちいさい mean?", "options": ["small", "big", "red", "long"], "answer": "small" },
+        { "type": "quiz", "question": "Which word means red?", "options": ["あかい", "あおい", "しろい", "くろい"], "answer": "あかい" },
+        { "type": "quiz", "question": "Build big", "options": ["お + お + き + い", "ち + い + さ + い", "あ + か + い", "お + い + き + い"], "answer": "お + お + き + い" }
+      ],
+      "play": [
+        { "type": "quiz", "question": "Which means big?", "options": ["おおきい", "ちいさい", "あかい", "すし"], "answer": "おおきい" },
+        { "type": "quiz", "question": "What does あかい mean?", "options": ["red", "big", "small", "fast"], "answer": "red" },
+        { "type": "typing", "question": "Build small", "character": "ち + い + さ + い", "answer": "ちいさい" },
+        { "type": "quiz", "question": "Choose small", "options": ["ちいさい", "おおきい", "あかい", "いぬ"], "answer": "ちいさい" },
+        { "type": "typing", "question": "Build red", "character": "あ + か + い", "answer": "あかい" }
+      ]
+    }
+  },
+  {
+    "id": "m4-lesson-9",
+    "subModule": "word-building",
+    "title": "Word Puzzle Game",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 9,
+    "content": [
+      { "type": "typing", "question": "Build: ね + こ", "character": "ね + こ", "answer": "ねこ" },
+      { "type": "typing", "question": "Build: い + ぬ", "character": "い + ぬ", "answer": "いぬ" },
+      { "type": "typing", "question": "Build: や + ま", "character": "や + ま", "answer": "やま" },
+      { "type": "typing", "question": "Build: う + み", "character": "う + み", "answer": "うみ" },
+      { "type": "typing", "question": "Build: か + わ", "character": "か + わ", "answer": "かわ" },
+      { "type": "typing", "question": "Build: と + り", "character": "と + り", "answer": "とり" },
+      { "type": "typing", "question": "Build: ほ + ん", "character": "ほ + ん", "answer": "ほん" },
+      { "type": "typing", "question": "Build: す + し", "character": "す + し", "answer": "すし" }
+    ]
+  },
+  {
+    "id": "m4-lesson-10",
+    "subModule": "word-building",
+    "title": "Word Recognition Quiz",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 10,
+    "content": [
+      { "type": "quiz", "question": "What does やま mean?", "options": ["mountain", "sea", "river", "sky"], "answer": "mountain" },
+      { "type": "quiz", "question": "What does ねえこ mean?", "options": ["cat", "dog", "bird", "horse"], "answer": "cat" },
+      { "type": "quiz", "question": "What does みず mean?", "options": ["water", "tea", "sushi", "bread"], "answer": "water" },
+      { "type": "quiz", "question": "What does ほん mean?", "options": ["book", "bag", "key", "shoes"], "answer": "book" },
+      { "type": "quiz", "question": "What is いち?", "options": ["1", "5", "10", "100"], "answer": "1" },
+      { "type": "quiz", "question": "What does あかい mean?", "options": ["red", "big", "small", "blue"], "answer": "red" },
+      { "type": "quiz", "question": "What is はは?", "options": ["mother", "father", "sister", "brother"], "answer": "mother" }
+    ]
+  },
+  {
+    "id": "m4-lesson-11",
+    "subModule": "word-building",
+    "title": "Word Reading",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 30,
+    "order": 11,
+    "content": [
+      { "type": "typing", "question": "Type the romaji for いぬ", "character": "いぬ", "answer": "inu" },
+      { "type": "typing", "question": "Type the romaji for ねこ", "character": "ねこ", "answer": "neko" },
+      { "type": "typing", "question": "Type the romaji for とり", "character": "とり", "answer": "tori" },
+      { "type": "typing", "question": "Type the romaji for うみ", "character": "うみ", "answer": "umi" },
+      { "type": "typing", "question": "Type the romaji for やま", "character": "やま", "answer": "yama" },
+      { "type": "typing", "question": "Type the romaji for みず", "character": "みず", "answer": "mizu" },
+      { "type": "typing", "question": "Type the romaji for かばん", "character": "かばん", "answer": "kaban" }
+    ]
+  },
+  {
+    "id": "m4-lesson-12",
+    "subModule": "word-building",
+    "title": "Speed Builder Game",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 40,
+    "order": 12,
+    "timeLimit": 45,
+    "content": [
+      { "type": "typing", "question": "Build: う + み", "character": "う + み", "answer": "うみ" },
+      { "type": "typing", "question": "Build: そ + ら", "character": "そ + ら", "answer": "そら" },
+      { "type": "typing", "question": "Build: は + は", "character": "は + は", "answer": "はは" },
+      { "type": "typing", "question": "Build: ち + ち", "character": "ち + ち", "answer": "ちち" },
+      { "type": "typing", "question": "Build: お + お + き + い", "character": "お + お + き + い", "answer": "おおきい" },
+      { "type": "typing", "question": "Build: か + ぎ", "character": "か + ぎ", "answer": "かぎ" },
+      { "type": "typing", "question": "Build: す + し", "character": "す + し", "answer": "すし" }
+    ]
+  },
+  {
+    "id": "m4-lesson-13",
+    "subModule": "word-building",
+    "title": "Memory Matching",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 35,
+    "order": 13,
+    "content": [
+      { "type": "match", "question": "Match the words to their meanings", "pairs": [
+        { "left": "ねこ", "right": "cat" },
+        { "left": "うみ", "right": "sea" },
+        { "left": "ほん", "right": "book" },
+        { "left": "いぬ", "right": "dog" },
+        { "left": "やま", "right": "mountain" }
+      ]},
+      { "type": "match", "question": "Match the food and drinks", "pairs": [
+        { "left": "すし", "right": "sushi" },
+        { "left": "みず", "right": "water" },
+        { "left": "パン", "right": "bread" },
+        { "left": "ちゃ", "right": "tea" }
+      ]},
+      { "type": "match", "question": "Match the numbers", "pairs": [
+        { "left": "いち", "right": "1" },
+        { "left": "に", "right": "2" },
+        { "left": "さん", "right": "3" },
+        { "left": "ご", "right": "5" }
+      ]}
+    ]
+  },
+  {
+    "id": "m4-lesson-14",
+    "subModule": "word-building",
+    "title": "Reading Challenge",
+    "category": "Hiragana",
+    "difficulty": 2,
+    "xpReward": 35,
+    "order": 14,
+    "content": [
+      { "type": "translate", "question": "What does this mean: いぬ", "options": ["dog", "cat", "bird", "horse"], "answer": "dog" },
+      { "type": "translate", "question": "What does this mean: かばん", "options": ["bag", "book", "shoes", "key"], "answer": "bag" },
+      { "type": "translate", "question": "What does this mean: ちいさい", "options": ["small", "big", "red", "fast"], "answer": "small" },
+      { "type": "translate", "question": "What does this mean: ほん", "options": ["book", "paper", "pen", "desk"], "answer": "book" },
+      { "type": "translate", "question": "What does this mean: そら", "options": ["sky", "sea", "mountain", "river"], "answer": "sky" }
+    ]
+  },
+  {
+    "id": "boss-m4",
+    "subModule": "word-building",
+    "isBoss": true,
+    "title": "Module 4 Boss: Word Builder",
+    "category": "Hiragana",
+    "difficulty": 3,
+    "xpReward": 150,
+    "order": 15,
+    "timeLimit": 60,
+    "content": [
+      { "type": "typing", "question": "Build dog", "character": "い + ぬ", "answer": "いぬ" },
+      { "type": "typing", "question": "Build cat", "character": "ね + こ", "answer": "ねこ" },
+      { "type": "quiz", "question": "What does うみ mean?", "options": ["sea", "mountain", "sky", "river"], "answer": "sea" },
+      { "type": "quiz", "question": "Which word means mountain?", "options": ["やま", "うみ", "かわ", "そら"], "answer": "やま" },
+      { "type": "quiz", "question": "What does ほん mean?", "options": ["book", "bag", "shoes", "key"], "answer": "book" },
+      { "type": "quiz", "question": "Which word means water?", "options": ["みず", "ちゃ", "すし", "パン"], "answer": "みず" },
+      { "type": "typing", "question": "Build river", "character": "か + わ", "answer": "かわ" },
+      { "type": "quiz", "question": "What does すし mean?", "options": ["sushi", "fish", "rice", "bread"], "answer": "sushi" },
+      { "type": "quiz", "question": "Which word means bird?", "options": ["とり", "いぬ", "ねこ", "うま"], "answer": "とり" },
+      { "type": "typing", "question": "Build sky", "character": "そ + ら", "answer": "そら" }
+    ]
+  }
+]
