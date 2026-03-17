@@ -66,4 +66,16 @@ const upsert = (collection, predicate, item) => {
   }
 };
 
-module.exports = { read, write, find, findMany, create, update, upsert };
+const remove = (collection, id) => {
+  let data = read(collection);
+  data = data.filter(item => item.id !== id);
+  write(collection, data);
+};
+
+const removeMany = (collection, predicate) => {
+  let data = read(collection);
+  data = data.filter(item => !predicate(item));
+  write(collection, data);
+};
+
+module.exports = { read, write, find, findMany, create, update, upsert, remove, removeMany };

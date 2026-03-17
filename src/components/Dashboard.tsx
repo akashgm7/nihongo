@@ -177,7 +177,8 @@ export default function Dashboard() {
     setIsGenerating(true);
     setError(null);
     try {
-      const response = await fetch('http://localhost:5000/api/ai/generate', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+      const response = await fetch(`${apiUrl}/ai/generate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ topic: genTopic })
@@ -198,7 +199,8 @@ export default function Dashboard() {
   const handleRefresh = async (lessonId: string) => {
     setIsGenerating(true);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/ai/refresh`, {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+      const res = await fetch(`${apiUrl}/ai/refresh`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -226,7 +228,8 @@ export default function Dashboard() {
     
     setIsDeleting(id);
     try {
-      const resp = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/lessons/${id}`, {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+      const resp = await fetch(`${apiUrl}/lessons/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -469,6 +472,15 @@ export default function Dashboard() {
                     color="#8338EC"
                     onClick={() => setSelectedModule('kanji')}
                   />
+                  <ModuleFolderCard 
+                    title="AI Laboratory" 
+                    subtitle="Custom practice lessons"
+                    lessonCount={aiLessons.length}
+                    completedCount={aiLessons.filter(l => l.completed).length}
+                    icon="🧪"
+                    color="#8B5CF6"
+                    onClick={() => setShowAiFolder(true)}
+                  />
                 </div>
               ) : !selectedSubModule ? (
                 /* Sub-modules list for the selected module */
@@ -529,6 +541,24 @@ export default function Dashboard() {
                           color="#10B981"
                           onClick={() => setSelectedSubModule('word-building')}
                         />
+                        <ModuleFolderCard 
+                          title="Module 5: Grammar Basics" 
+                          subtitle="Particles and structure"
+                          lessonCount={officialLessons.filter(l => l.subModule === 'grammar-basics').length}
+                          completedCount={officialLessons.filter(l => l.subModule === 'grammar-basics' && l.completed).length}
+                          icon="文法"
+                          color="#EF4444"
+                          onClick={() => setSelectedSubModule('grammar-basics')}
+                        />
+                        <ModuleFolderCard 
+                          title="Module 6: Sentence Formation" 
+                          subtitle="Verbs and SOV structure"
+                          lessonCount={officialLessons.filter(l => l.subModule === 'sentence-formation').length}
+                          completedCount={officialLessons.filter(l => l.subModule === 'sentence-formation' && l.completed).length}
+                          icon="文章"
+                          color="#3B82F6"
+                          onClick={() => setSelectedSubModule('sentence-formation')}
+                        />
                       </>
                     )}
                     {(selectedModule === 'katakana' || selectedModule === 'kanji') && (
@@ -583,6 +613,8 @@ export default function Dashboard() {
                       bossLessonId={
                         selectedSubModule === 'hiragana-basics' ? 'boss-hiragana-1' : 
                         selectedSubModule === 'word-building' ? 'boss-m4' : 
+                        selectedSubModule === 'grammar-basics' ? 'boss-m5' : 
+                        selectedSubModule === 'sentence-formation' ? 'boss-m6' : 
                         undefined
                       }
                     />

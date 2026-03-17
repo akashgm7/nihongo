@@ -163,21 +163,35 @@ const completeLesson = async (req, res) => {
 
 const deleteLesson = async (req, res) => {
   const { id } = req.params;
+  console.log(`[DELETE] Request for lesson ID: ${id}`);
   try {
     const lesson = db.find('lessons', l => l.id === id);
-    if (!lesson) return res.status(404).json({ message: 'Lesson not found' });
+    if (!lesson) {
+      console.log(`[DELETE] Lesson not found: ${id}`);
+      return res.status(404).json({ message: 'Lesson not found' });
+    }
+    
+    console.log(`[DELETE] Found lesson: ${lesson.title}, Category: ${lesson.category}`);
     
     // Only allow deleting AI Generated lessons to prevent breaking regular flow
     if (lesson.category !== 'AI Generated') {
+      console.log(`[DELETE] Forbidden: Not an AI lesson`);
       return res.status(403).json({ message: 'Only AI generated lessons can be deleted' });
+    }
+
+    if (typeof db.remove !== 'function') {
+      console.error(`[DELETE] CRITICAL: db.remove is not a function! Check if server was restarted.`);
+      throw new Error('Database remove function not found');
     }
 
     db.remove('lessons', id);
     // Also remove associated progress
     db.removeMany('progress', p => p.lessonId === id);
 
+    console.log(`[DELETE] Success: ${id} deleted`);
     res.json({ message: 'AI Lesson deleted successfully' });
   } catch (error) {
+    console.error(`[DELETE] Error:`, error);
     res.status(500).json({ message: 'Error deleting lesson', error: error.message });
   }
 };
