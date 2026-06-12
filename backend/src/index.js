@@ -67,7 +67,7 @@ app.get('/api/debug-db', (req, res) => {
   res.json(result);
 });
 
-app.post('/api/force-seed', (req, res) => {
+app.get('/api/force-seed', (req, res) => {
   const fs = require('fs');
   const path = require('path');
   
