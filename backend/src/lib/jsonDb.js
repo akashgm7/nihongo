@@ -12,14 +12,26 @@ const getFilePath = (collection) => path.join(DATA_DIR, `${collection}.json`);
 
 const read = (collection) => {
   const filePath = getFilePath(collection);
+  
+  let needsSeed = false;
   if (!fs.existsSync(filePath)) {
+    needsSeed = true;
+  } else {
+    // If it exists but is just an empty array, we should re-seed it (especially for lessons)
+    const content = fs.readFileSync(filePath, 'utf-8').trim();
+    if (content === '[]' || content === '') {
+      needsSeed = true;
+    }
+  }
+
+  if (needsSeed) {
     const defaultPath = path.join(__dirname, '../../default_data', `${collection}.json`);
     if (fs.existsSync(defaultPath)) {
       console.log(`Copying default data for ${collection}`);
       fs.copyFileSync(defaultPath, filePath);
       return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     }
-    fs.writeFileSync(filePath, JSON.stringify([]));
+    if (!fs.existsSync(filePath)) fs.writeFileSync(filePath, JSON.stringify([]));
     return [];
   }
   return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
