@@ -8,7 +8,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Zap, Sparkles, LogOut, CheckCircle2, Plus, X, Lock, RotateCw, Trash2, Library, FolderOpen, Shield, Compass, BookOpen, Search, Crown, Flame, Play, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { ChartsSidebar } from '@/components/ui/ChartsSidebar';
 import { VocabSidebar } from '@/components/ui/VocabSidebar';
 import { getRankInfo, getAllRanks } from '@/utils/ranks';
@@ -123,6 +123,13 @@ export default function Dashboard() {
   const [isDeleting, setIsDeleting] = React.useState<string | null>(null);
   const [showRankModal, setShowRankModal] = React.useState(false);
   const prevLevelRef = React.useRef<number | null>(null);
+  const router = useRouter();
+
+  React.useEffect(() => {
+    if (!authLoading && !token) {
+      router.push('/login');
+    }
+  }, [authLoading, token, router]);
 
   // Level-up effect (Persistent across navigation)
   React.useEffect(() => {
