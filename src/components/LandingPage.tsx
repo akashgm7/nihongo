@@ -31,11 +31,11 @@ export default function LandingPage() {
             transition={{ delay: 0.2 }}
             className="flex flex-col space-y-4 pt-4"
           >
-            <Link href="/signup">
+            <Link href="/dashboard">
               <Button size="lg" className="w-full md:w-64">Get Started</Button>
             </Link>
-            <Link href="/login">
-              <Button variant="white" size="lg" className="w-full md:w-64">I already have an account</Button>
+            <Link href="/dashboard">
+              <Button variant="secondary" size="lg" className="w-full md:w-64">Go to Dashboard</Button>
             </Link>
           </motion.div>
         </div>
