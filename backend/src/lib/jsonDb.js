@@ -13,6 +13,12 @@ const getFilePath = (collection) => path.join(DATA_DIR, `${collection}.json`);
 const read = (collection) => {
   const filePath = getFilePath(collection);
   if (!fs.existsSync(filePath)) {
+    const defaultPath = path.join(__dirname, '../../default_data', `${collection}.json`);
+    if (fs.existsSync(defaultPath)) {
+      console.log(`Copying default data for ${collection}`);
+      fs.copyFileSync(defaultPath, filePath);
+      return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    }
     fs.writeFileSync(filePath, JSON.stringify([]));
     return [];
   }

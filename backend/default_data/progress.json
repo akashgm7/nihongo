@@ -1,0 +1,169 @@
+[
+  {
+    "id": "ed32b854-9b37-4da2-8785-039c0f694bed",
+    "userId": "c893879e-db9d-484c-a78a-f46dc70bf86f",
+    "lessonId": "lesson-1",
+    "completed": true,
+    "score": 100,
+    "createdAt": "2026-03-12T10:20:56.083Z",
+    "updatedAt": "2026-03-12T17:20:23.033Z"
+  },
+  {
+    "id": "2a14f096-533a-41df-89db-0fc7d002ffce",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "lesson-3",
+    "completed": true,
+    "score": 95,
+    "correctCount": 19,
+    "totalCount": 20,
+    "stars": 4,
+    "createdAt": "2026-03-13T05:04:57.249Z",
+    "updatedAt": "2026-03-13T11:23:58.530Z"
+  },
+  {
+    "id": "afdeba0a-80da-4824-bdef-f47342b6c5c2",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "lesson-2",
+    "completed": true,
+    "score": 100,
+    "correctCount": 5,
+    "totalCount": 5,
+    "stars": 5,
+    "createdAt": "2026-03-13T06:56:38.033Z",
+    "updatedAt": "2026-03-15T07:40:17.303Z"
+  },
+  {
+    "id": "10df1d70-fb11-4dfa-88af-a72882bac749",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "lesson-5",
+    "completed": true,
+    "score": 75,
+    "correctCount": 15,
+    "totalCount": 20,
+    "stars": 3,
+    "createdAt": "2026-03-13T09:57:12.659Z",
+    "updatedAt": "2026-03-13T10:54:00.358Z"
+  },
+  {
+    "id": "398c86ae-7acb-4243-9a47-85d8cbb43bec",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "boss-hiragana-1",
+    "completed": true,
+    "score": 100,
+    "correctCount": 15,
+    "totalCount": 15,
+    "stars": 5,
+    "createdAt": "2026-03-15T07:11:56.673Z"
+  },
+  {
+    "id": "adb00474-8574-4750-afbd-c9a3b93073c3",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "lesson-1",
+    "completed": true,
+    "score": 100,
+    "correctCount": 5,
+    "totalCount": 5,
+    "stars": 5,
+    "createdAt": "2026-03-15T07:35:06.873Z",
+    "updatedAt": "2026-03-15T08:00:09.495Z"
+  },
+  {
+    "id": "d989535c-d22b-498a-9222-47ca2546d1da",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "lesson-24",
+    "completed": true,
+    "score": 100,
+    "correctCount": 1,
+    "totalCount": 1,
+    "stars": 5,
+    "createdAt": "2026-03-16T07:39:20.500Z"
+  },
+  {
+    "id": "cb44db42-0d3c-4751-8f82-b4b7c3ca1b40",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m2-lesson-7",
+    "completed": true,
+    "score": 100,
+    "correctCount": 5,
+    "totalCount": 5,
+    "stars": 5,
+    "createdAt": "2026-03-16T08:45:02.381Z"
+  },
+  {
+    "id": "37f57acb-e981-464d-9753-de2a18a16eec",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m2-lesson-1",
+    "completed": false,
+    "score": 0,
+    "correctCount": 0,
+    "totalCount": 0,
+    "stars": 0,
+    "createdAt": "2026-03-16T08:45:10.417Z"
+  },
+  {
+    "id": "b08cf954-5a6a-4afc-8bdd-1f0d70bbe283",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m3-lesson-10",
+    "completed": true,
+    "score": 100,
+    "correctCount": 4,
+    "totalCount": 4,
+    "stars": 5,
+    "createdAt": "2026-03-16T10:20:39.863Z"
+  },
+  {
+    "id": "1c09894b-dac9-41b2-afd2-7ec111d1c105",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m3-lesson-1",
+    "completed": true,
+    "score": 100,
+    "correctCount": 4,
+    "totalCount": 4,
+    "stars": 5,
+    "createdAt": "2026-03-16T10:27:53.939Z"
+  },
+  {
+    "id": "97a3ccce-7463-4b55-b20d-735e7e92bbf5",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m3-lesson-2",
+    "completed": true,
+    "score": 100,
+    "correctCount": 3,
+    "totalCount": 3,
+    "stars": 5,
+    "createdAt": "2026-03-16T10:28:28.704Z"
+  },
+  {
+    "id": "af01d83b-bf6b-48bc-abbf-7a59598a0cf5",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m4-lesson-2",
+    "completed": false,
+    "score": 100,
+    "correctCount": 4,
+    "totalCount": 4,
+    "stars": 0,
+    "createdAt": "2026-03-16T11:37:45.674Z"
+  },
+  {
+    "id": "6e633f46-c37a-4ee8-b1d0-8aeceaef7d2f",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m6-lesson-4",
+    "completed": false,
+    "score": 100,
+    "correctCount": 1,
+    "totalCount": 1,
+    "stars": 0,
+    "createdAt": "2026-03-17T06:02:27.513Z"
+  },
+  {
+    "id": "472fbc22-e50e-4e53-8275-303d92737fda",
+    "userId": "8d53820b-f496-4768-b3a8-e77438950123",
+    "lessonId": "m6-lesson-5",
+    "completed": false,
+    "score": 100,
+    "correctCount": 1,
+    "totalCount": 1,
+    "stars": 0,
+    "createdAt": "2026-03-17T06:02:38.925Z"
+  }
+]
