@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: japanese-backend
+    env: node
+    buildCommand: "cd backend && npm install"
+    startCommand: "cd backend && npm start"
+    envVars:
+      - key: PORT
+        value: 5000
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/backend/data
+      sizeGB: 1
+
+  - type: web
+    name: japanese-frontend
+    env: node
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm start"
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: japanese-backend
+          envVarKey: RENDER_EXTERNAL_URL
