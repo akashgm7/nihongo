@@ -49,3 +49,5 @@ test_gen.js
 verify_gemini.js
 db_dumps/
 
+
+/src/generated/prisma
