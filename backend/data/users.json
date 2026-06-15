@@ -57,5 +57,38 @@
     "hearts": 5,
     "level": 1,
     "createdAt": "2026-03-13T10:01:33.731Z"
+  },
+  {
+    "id": "9a9501d7-0c3a-49fb-9ac3-c226789a62b5",
+    "email": "akaafsd@gmail.com",
+    "password": "$2b$12$Ss7c74ZtNXbQCe8F2h1AVOnKW/SbJa53Hx8euROtNPaw9swLumT2K",
+    "name": "af",
+    "xp": 0,
+    "streak": 0,
+    "hearts": 5,
+    "level": 1,
+    "createdAt": "2026-06-12T17:45:38.349Z"
+  },
+  {
+    "id": "d59ace1d-1582-45c0-96e9-78359c14e6db",
+    "email": "wreg@gmail.com",
+    "password": "$2b$12$Ouf5D0WjsXdXpwFe27/0iu31hcdWvPZJe9ZsxuxAjqh0kML.ZIBeW",
+    "name": "wqrhoe",
+    "xp": 0,
+    "streak": 0,
+    "hearts": 5,
+    "level": 1,
+    "createdAt": "2026-06-12T17:52:47.302Z"
+  },
+  {
+    "id": "35a79a64-0c81-4e4e-96e9-04be1c662819",
+    "email": "test@gmail.com",
+    "password": "$2b$12$YWtG/IsgKeiPFzCvWUJv2evJOYCWQm/Svoi7MHmvcXcnOcPa1RHU2",
+    "name": "akash",
+    "xp": 0,
+    "streak": 0,
+    "hearts": 5,
+    "level": 1,
+    "createdAt": "2026-06-12T17:58:31.428Z"
   }
 ]
