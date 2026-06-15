@@ -30,60 +30,58 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Japanese Learning App API is running' });
 });
 
-app.get('/api/debug-db', (req, res) => {
-  const fs = require('fs');
-  const path = require('path');
-  
-  const dataDir = path.join(__dirname, '../data');
-  const defaultDir = path.join(__dirname, '../../default_data');
-  
-  let result = {
-    dataDirFiles: [],
-    defaultDirFiles: [],
-    lessonsContent: null,
-    lessonsExists: false,
-    defaultLessonsExists: false
-  };
-
+app.get('/api/debug-db', async (req, res) => {
+  const prisma = require('./lib/db');
   try {
-    if (fs.existsSync(dataDir)) result.dataDirFiles = fs.readdirSync(dataDir);
-    if (fs.existsSync(defaultDir)) result.defaultDirFiles = fs.readdirSync(defaultDir);
-    
-    const lessonsFile = path.join(dataDir, 'lessons.json');
-    if (fs.existsSync(lessonsFile)) {
-      result.lessonsExists = true;
-      result.lessonsContent = fs.readFileSync(lessonsFile, 'utf-8').substring(0, 100);
-    }
-    
-    const defaultLessonsFile = path.join(defaultDir, 'lessons.json');
-    if (fs.existsSync(defaultLessonsFile)) {
-      result.defaultLessonsExists = true;
-    }
-    
-  } catch(e) {
-    result.error = e.message;
+    const usersCount = await prisma.user.count();
+    const lessonsCount = await prisma.lesson.count();
+    const progressCount = await prisma.userProgress.count();
+    res.json({
+      status: 'ok',
+      usersCount,
+      lessonsCount,
+      progressCount
+    });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
   }
-  
-  res.json(result);
 });
 
-app.get('/api/force-seed', (req, res) => {
+app.get('/api/force-seed', async (req, res) => {
   const fs = require('fs');
   const path = require('path');
+  const prisma = require('./lib/db');
   
-  const collections = ['lessons', 'achievements'];
   let results = [];
-  
-  collections.forEach(c => {
-    const defaultPath = path.join(__dirname, '../../default_data', `${c}.json`);
-    const filePath = path.join(__dirname, '../data', `${c}.json`);
-    if (fs.existsSync(defaultPath)) {
-      fs.copyFileSync(defaultPath, filePath);
-      results.push(`Seeded ${c}`);
+  try {
+    const defaultLessonsPath = path.join(__dirname, '../../default_data/lessons.json');
+    if (fs.existsSync(defaultLessonsPath)) {
+      const lessons = JSON.parse(fs.readFileSync(defaultLessonsPath, 'utf-8'));
+      
+      for (const lesson of lessons) {
+        const dbLesson = {
+          id: lesson.id,
+          title: lesson.title,
+          category: lesson.category,
+          difficulty: lesson.difficulty || 1,
+          xpReward: lesson.xpReward || 10,
+          order: lesson.order || 0,
+          content: lesson.content ? JSON.stringify(lesson.content) : null,
+          phases: lesson.phases ? JSON.stringify(lesson.phases) : null,
+          subModule: lesson.subModule || null
+        };
+        await prisma.lesson.upsert({
+          where: { id: lesson.id },
+          update: dbLesson,
+          create: dbLesson
+        });
+      }
+      results.push(`Upserted ${lessons.length} lessons`);
     }
-  });
-  
-  res.json({ message: 'Seed attempted', results });
+    res.json({ message: 'Database force-seed successful', results });
+  } catch (err) {
+    res.status(500).json({ message: 'Force-seed failed', error: err.message });
+  }
 });
 
 app.listen(PORT, () => {

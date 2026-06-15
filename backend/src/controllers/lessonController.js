@@ -1,11 +1,33 @@
-const db = require('../lib/jsonDb');
+const prisma = require('../lib/db');
+
+const parseLesson = (lesson) => {
+  if (!lesson) return null;
+  const parsed = { ...lesson };
+  if (parsed.phases && typeof parsed.phases === 'string') {
+    try {
+      parsed.phases = JSON.parse(parsed.phases);
+    } catch (e) {
+      console.error('Failed to parse lesson phases:', e);
+    }
+  }
+  if (parsed.content && typeof parsed.content === 'string') {
+    try {
+      parsed.content = JSON.parse(parsed.content);
+    } catch (e) {
+      console.error('Failed to parse lesson content:', e);
+    }
+  }
+  return parsed;
+};
 
 const getLessons = async (req, res) => {
   const userId = req.userId;
   try {
-    const lessons = db.findMany('lessons');
-    const progress = db.findMany('progress', p => p.userId === userId);
+    const dbLessons = await prisma.lesson.findMany();
+    const progress = await prisma.userProgress.findMany({ where: { userId } });
     
+    const lessons = dbLessons.map(parseLesson);
+
     // Join lessons with progress
     const lessonsWithProgress = lessons.map(lesson => {
       const userProgress = progress.find(p => p.lessonId === lesson.id);
@@ -29,10 +51,15 @@ const getLessonById = async (req, res) => {
   const { id } = req.params;
   const userId = req.userId;
   try {
-    const lesson = db.find('lessons', l => l.id === id);
-    if (!lesson) return res.status(404).json({ message: 'Lesson not found' });
+    const dbLesson = await prisma.lesson.findUnique({ where: { id } });
+    if (!dbLesson) return res.status(404).json({ message: 'Lesson not found' });
     
-    const userProgress = db.find('progress', p => p.userId === userId && p.lessonId === id);
+    const lesson = parseLesson(dbLesson);
+    const userProgress = await prisma.userProgress.findUnique({
+      where: {
+        userId_lessonId: { userId, lessonId: id }
+      }
+    });
     
     res.json({
       ...lesson,
@@ -53,8 +80,9 @@ const completeLesson = async (req, res) => {
   const { score, correctCount, totalCount } = req.body;
 
   try {
-    const lesson = db.find('lessons', l => l.id === id);
-    if (!lesson) return res.status(404).json({ message: 'Lesson not found' });
+    const dbLesson = await prisma.lesson.findUnique({ where: { id } });
+    if (!dbLesson) return res.status(404).json({ message: 'Lesson not found' });
+    const lesson = parseLesson(dbLesson);
 
     console.log(`--- LESSON COMPLETION REQUEST ---`);
     console.log(`Lesson ID: ${id}`);
@@ -72,7 +100,11 @@ const completeLesson = async (req, res) => {
     console.log(`Calculated Stars: ${stars}`);
 
     // Find existing progress to compare
-    const existingProgress = db.find('progress', p => p.userId === userId && p.lessonId === id);
+    const existingProgress = await prisma.userProgress.findUnique({
+      where: {
+        userId_lessonId: { userId, lessonId: id }
+      }
+    });
     const previousBestCorrect = (existingProgress && existingProgress.correctCount) || 0;
     const previousBestScore = (existingProgress && existingProgress.score) || 0;
     const previousWasCompleted = (existingProgress && existingProgress.completed) || false;
@@ -82,10 +114,9 @@ const completeLesson = async (req, res) => {
     
     // Check if the lesson has a play phase
     const hasPlayPhase = lesson.phases && Array.isArray(lesson.phases.play) && lesson.phases.play.length > 0;
-    const isBoss = lesson.isBoss === true;
+    const isBoss = lesson.isBoss === true || lesson.id.startsWith('boss');
     
     // Completion and rewards are tied to the 'final phase' of a lesson
-    // For most lessons, this is 'play'. For intros/vocab, it might be 'learn' (if no play exists).
     const isFinalPhase = mode === 'play' || isBoss || !hasPlayPhase;
     const awardXPMode = isFinalPhase;
     
@@ -98,7 +129,6 @@ const completeLesson = async (req, res) => {
     }
 
     // Update progress only if it's better or wasn't completed before
-    // Only mark as completed if it's the final phase
     const isCompleted = previousWasCompleted || (isFinalPhase && (score >= 100 || (isBoss && score >= 80)));
     
     // Only save stars if it's the final phase
@@ -108,14 +138,24 @@ const completeLesson = async (req, res) => {
 
     let updatedProgress;
     if (shouldUpdateProgress) {
-      updatedProgress = db.upsert('progress', p => p.userId === userId && p.lessonId === id, {
-        userId,
-        lessonId: id,
+      const data = {
         completed: isCompleted,
         score: score || 0,
         correctCount: correctCount || 0,
         totalCount: totalCount || 0,
         stars: finalStars
+      };
+
+      updatedProgress = await prisma.userProgress.upsert({
+        where: {
+          userId_lessonId: { userId, lessonId: id }
+        },
+        update: data,
+        create: {
+          userId,
+          lessonId: id,
+          ...data
+        }
       });
       console.log(`Improved progress for lesson ${id} saved:`, updatedProgress);
     } else {
@@ -124,7 +164,7 @@ const completeLesson = async (req, res) => {
     }
 
     const { updateUserStreak } = require('./userController');
-    const user = updateUserStreak(userId);
+    const user = await updateUserStreak(userId);
     
     let newXp = (user.xp || 0) + xpEarned;
     let newLevel = user.level || 1;
@@ -135,9 +175,12 @@ const completeLesson = async (req, res) => {
     }
     
     if (user) {
-      db.update('users', user.id, { 
-        xp: newXp,
-        level: newLevel
+      await prisma.user.update({
+        where: { id: user.id },
+        data: { 
+          xp: newXp,
+          level: newLevel
+        }
       });
     }
 
@@ -165,7 +208,7 @@ const deleteLesson = async (req, res) => {
   const { id } = req.params;
   console.log(`[DELETE] Request for lesson ID: ${id}`);
   try {
-    const lesson = db.find('lessons', l => l.id === id);
+    const lesson = await prisma.lesson.findUnique({ where: { id } });
     if (!lesson) {
       console.log(`[DELETE] Lesson not found: ${id}`);
       return res.status(404).json({ message: 'Lesson not found' });
@@ -179,14 +222,9 @@ const deleteLesson = async (req, res) => {
       return res.status(403).json({ message: 'Only AI generated lessons can be deleted' });
     }
 
-    if (typeof db.remove !== 'function') {
-      console.error(`[DELETE] CRITICAL: db.remove is not a function! Check if server was restarted.`);
-      throw new Error('Database remove function not found');
-    }
-
-    db.remove('lessons', id);
+    await prisma.lesson.delete({ where: { id } });
     // Also remove associated progress
-    db.removeMany('progress', p => p.lessonId === id);
+    await prisma.userProgress.deleteMany({ where: { lessonId: id } });
 
     console.log(`[DELETE] Success: ${id} deleted`);
     res.json({ message: 'AI Lesson deleted successfully' });

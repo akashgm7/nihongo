@@ -47,3 +47,5 @@ test_api.js
 test_streak.js
 test_gen.js
 verify_gemini.js
+db_dumps/
+

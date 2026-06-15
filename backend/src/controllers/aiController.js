@@ -1,9 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const fs = require('fs');
-const path = require('path');
+const prisma = require('../lib/db');
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const lessonsFilePath = path.join(__dirname, '../../data/lessons.json');
 
 exports.generateLesson = async (req, res) => {
   const { topic } = req.body;
@@ -57,15 +55,22 @@ exports.generateLesson = async (req, res) => {
       return res.status(500).json({ message: "Failed to parse AI response into valid JSON", raw: cleanedText });
     }
 
-    // Save to lessons.json
-    const data = fs.readFileSync(lessonsFilePath, 'utf8');
-    const lessons = JSON.parse(data);
-    
-    // Update order based on current list
-    newLesson.order = lessons.length + 1;
-    lessons.push(newLesson);
-    
-    fs.writeFileSync(lessonsFilePath, JSON.stringify(lessons, null, 2));
+    // Save to SQLite via Prisma
+    const lessonCount = await prisma.lesson.count();
+    newLesson.order = lessonCount + 1;
+
+    await prisma.lesson.create({
+      data: {
+        id: newLesson.id,
+        title: newLesson.title,
+        category: newLesson.category,
+        difficulty: newLesson.difficulty || 1,
+        xpReward: newLesson.xpReward || 30,
+        order: newLesson.order,
+        content: JSON.stringify(newLesson.content),
+        subModule: 'ai-generated'
+      }
+    });
 
     res.status(201).json({
       message: "Lesson generated successfully!",
@@ -137,19 +142,18 @@ exports.refreshLesson = async (req, res) => {
       return res.status(500).json({ message: "AI response is not an array" });
     }
 
-    // Update lessons.json
-    const data = fs.readFileSync(lessonsFilePath, 'utf8');
-    const lessons = JSON.parse(data);
-    
-    const lessonIndex = lessons.findIndex(l => l.id === lessonId);
-    if (lessonIndex === -1) {
+    // Update in SQLite via Prisma
+    const lesson = await prisma.lesson.findUnique({ where: { id: lessonId } });
+    if (!lesson) {
       return res.status(404).json({ message: "Lesson not found" });
     }
 
-    // Overwrite content
-    lessons[lessonIndex].content = newContent;
-    
-    fs.writeFileSync(lessonsFilePath, JSON.stringify(lessons, null, 2));
+    await prisma.lesson.update({
+      where: { id: lessonId },
+      data: {
+        content: JSON.stringify(newContent)
+      }
+    });
 
     res.json({
       message: "Lesson refreshed successfully!",

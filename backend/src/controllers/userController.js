@@ -1,4 +1,4 @@
-const db = require('../lib/jsonDb');
+const prisma = require('../lib/db');
 
 const RECOVERY_TIME_MS = 15 * 60 * 1000; // 15 minutes
 const MAX_HEARTS = 5;
@@ -32,8 +32,8 @@ const calculateHeartRecovery = (user) => {
   return { hearts: user.hearts, lastHeartRefillTime: user.lastHeartRefillTime };
 };
 
-const updateUserStreak = (userId) => {
-  const user = db.find('users', u => u.id === userId);
+const updateUserStreak = async (userId) => {
+  const user = await prisma.user.findUnique({ where: { id: userId } });
   if (!user) return null;
 
   const now = new Date();
@@ -41,7 +41,10 @@ const updateUserStreak = (userId) => {
   
   let lastActive = user.lastActive ? new Date(user.lastActive) : null;
   if (!lastActive) {
-    return db.update('users', userId, { streak: 1, lastActive: now });
+    return prisma.user.update({
+      where: { id: userId },
+      data: { streak: 1, lastActive: now }
+    });
   }
 
   const lastActiveDay = new Date(lastActive.getFullYear(), lastActive.getMonth(), lastActive.getDate());
@@ -61,27 +64,33 @@ const updateUserStreak = (userId) => {
     if (newStreak === 0) newStreak = 1;
   }
 
-  return db.update('users', userId, { streak: newStreak, lastActive: now });
+  return prisma.user.update({
+    where: { id: userId },
+    data: { streak: newStreak, lastActive: now }
+  });
 };
 
 const getProfile = async (req, res) => {
   try {
     // Automatically update/maintain streak when profile is fetched (e.g. on Dashboard load)
-    const user = updateUserStreak(req.userId);
+    const user = await updateUserStreak(req.userId);
     if (!user) return res.status(404).json({ message: 'User not found' });
     
     // Get progress and achievements
-    const progress = db.findMany('progress', p => p.userId === req.userId);
-    const achievements = db.findMany('achievements', a => a.userId === req.userId);
+    const progress = await prisma.userProgress.findMany({ where: { userId: req.userId } });
+    const achievements = await prisma.achievement.findMany({ where: { userId: req.userId } });
 
     // Calculate heart recovery
     const recovery = calculateHeartRecovery(user);
     let updatedUser = user;
     
     if (recovery.hearts !== user.hearts || recovery.lastHeartRefillTime !== user.lastHeartRefillTime) {
-      updatedUser = db.update('users', req.userId, { 
-        hearts: recovery.hearts, 
-        lastHeartRefillTime: recovery.lastHeartRefillTime 
+      updatedUser = await prisma.user.update({
+        where: { id: req.userId },
+        data: { 
+          hearts: recovery.hearts, 
+          lastHeartRefillTime: recovery.lastHeartRefillTime 
+        }
       });
     }
 
@@ -100,7 +109,7 @@ const getProfile = async (req, res) => {
 
 const deductHeart = async (req, res) => {
   try {
-    const user = db.find('users', u => u.id === req.userId);
+    const user = await prisma.user.findUnique({ where: { id: req.userId } });
     if (!user) return res.status(404).json({ message: 'User not found' });
 
     if (user.hearts <= 0) {
@@ -114,7 +123,10 @@ const deductHeart = async (req, res) => {
       updates.lastHeartRefillTime = new Date();
     }
 
-    const updatedUser = db.update('users', req.userId, updates);
+    const updatedUser = await prisma.user.update({
+      where: { id: req.userId },
+      data: updates
+    });
     res.json({ 
       hearts: updatedUser.hearts,
       lastHeartRefillTime: updatedUser.lastHeartRefillTime,
@@ -127,7 +139,7 @@ const deductHeart = async (req, res) => {
 
 const recordActivity = async (req, res) => {
   try {
-    const user = updateUserStreak(req.userId);
+    const user = await updateUserStreak(req.userId);
     if (!user) return res.status(404).json({ message: 'User not found' });
     
     res.json({ 
