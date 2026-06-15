@@ -34,7 +34,43 @@ const read = (collection) => {
     if (!fs.existsSync(filePath)) fs.writeFileSync(filePath, JSON.stringify([]));
     return [];
   }
-  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+  const currentData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+  // Auto-merge new default lessons into the database file on start/read
+  if (collection === 'lessons') {
+    const defaultPath = path.join(__dirname, '../../default_data', 'lessons.json');
+    if (fs.existsSync(defaultPath)) {
+      try {
+        const defaultData = JSON.parse(fs.readFileSync(defaultPath, 'utf-8'));
+        let merged = [...currentData];
+        let hasNew = false;
+
+        defaultData.forEach(defaultLesson => {
+          // Check if lesson already exists by ID, or title + category
+          const exists = currentData.some(l => 
+            l.id === defaultLesson.id || 
+            (l.title === defaultLesson.title && l.category === defaultLesson.category)
+          );
+          if (!exists) {
+            merged.push(defaultLesson);
+            hasNew = true;
+          }
+        });
+
+        if (hasNew) {
+          console.log(`Merging ${merged.length - currentData.length} new default lessons into database.`);
+          merged.sort((a, b) => (a.order || 0) - (b.order || 0));
+          fs.writeFileSync(filePath, JSON.stringify(merged, null, 2));
+          return merged;
+        }
+      } catch (e) {
+        console.error('Error merging default lessons:', e);
+      }
+    }
+  }
+
+  return currentData;
 };
 
 const write = (collection, data) => {
