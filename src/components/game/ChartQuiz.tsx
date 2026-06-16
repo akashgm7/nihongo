@@ -117,7 +117,7 @@ export function ChartQuiz({ items, onClose, title }: ChartQuizProps) {
 
   const handleHome = () => {
     onClose();
-    router.push('/');
+    router.push('/dashboard');
   };
 
   if (isFinished) {

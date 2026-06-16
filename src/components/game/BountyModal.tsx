@@ -33,7 +33,7 @@ export function BountyModal({ isOpen, onClose, title = "Mastery Reward" }: Bount
 
   const handleHome = () => {
     onClose();
-    router.push('/');
+    router.push('/dashboard');
   };
 
   return (
