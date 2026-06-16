@@ -22,9 +22,16 @@ const userRoutes = require('./routes/userRoutes');
 const aiRoutes = require('./routes/aiRoutes');
 
 app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes); // Fallback for Render external URL without /api
+
 app.use('/api/lessons', lessonRoutes);
+app.use('/lessons', lessonRoutes);
+
 app.use('/api/users', userRoutes);
+app.use('/users', userRoutes);
+
 app.use('/api/ai', aiRoutes);
+app.use('/ai', aiRoutes);
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Japanese Learning App API is running' });
