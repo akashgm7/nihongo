@@ -11,6 +11,11 @@ import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { ChartsSidebar } from '@/components/ui/ChartsSidebar';
 import { VocabSidebar } from '@/components/ui/VocabSidebar';
+import { KanjiSidebar } from '@/components/ui/KanjiSidebar';
+import { GrammarSidebar } from '@/components/ui/GrammarSidebar';
+import { FlashcardSidebar } from '@/components/ui/FlashcardSidebar';
+import { JLPTProgressSidebar } from '@/components/ui/JLPTProgressSidebar';
+import { DailyQuestSidebar } from '@/components/ui/DailyQuestSidebar';
 import { getRankInfo, getAllRanks } from '@/utils/ranks';
 
 function GlowingFlame({ size = 22 }: { size?: number }) {
@@ -421,6 +426,33 @@ export default function Dashboard() {
 
         {/* Main lessons */}
         <main style={{ flex: 1, padding: '32px 0' }}>
+          
+          <div style={{
+            background: 'linear-gradient(135deg, #FFD93D 0%, #FF8400 100%)',
+            borderRadius: 24, padding: '32px 40px', marginBottom: 32,
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            boxShadow: '0 12px 32px rgba(255, 132, 0, 0.2)'
+          }}>
+            <div>
+              <span style={{ fontSize: 13, fontWeight: 800, color: '#6B3C00', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Jump Back In</span>
+              <h2 style={{ fontSize: 28, fontWeight: 900, color: '#3d2b1f', margin: '4px 0 8px 0' }}>Continue Learning</h2>
+              <p style={{ fontSize: 15, color: '#6B3C00', margin: 0, opacity: 0.9 }}>You're currently on <strong>Hiragana Basics</strong>. Let's master the alphabet!</p>
+            </div>
+            <button 
+              onClick={() => setSelectedSubModule('hiragana-basics')}
+              style={{
+                background: '#fff', border: 'none', borderRadius: 16,
+                padding: '16px 32px', fontSize: 16, fontWeight: 800, color: '#FF8400',
+                cursor: 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'transform 0.2s',
+              }}
+              onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              Start Session
+            </button>
+          </div>
+
           <div style={{ marginBottom: 28 }}>
             <span style={{
               display: 'inline-flex', alignItems: 'center',
@@ -568,7 +600,47 @@ export default function Dashboard() {
                         />
                       </>
                     )}
-                    {(selectedModule === 'katakana' || selectedModule === 'kanji') && (
+                    {selectedModule === 'katakana' && (
+                      <>
+                        <ModuleFolderCard 
+                          title="Module 1: Katakana Basics" 
+                          subtitle="The foreign script"
+                          lessonCount={officialLessons.filter(l => l.subModule === 'katakana-basics').length}
+                          completedCount={officialLessons.filter(l => l.subModule === 'katakana-basics' && l.completed).length}
+                          icon="ア"
+                          color="#00B4D8"
+                          onClick={() => setSelectedSubModule('katakana-basics')}
+                        />
+                        <ModuleFolderCard 
+                          title="Module 2: Katakana Sounds" 
+                          subtitle="Dakuten and Handakuten"
+                          lessonCount={officialLessons.filter(l => l.subModule === 'katakana-sounds').length}
+                          completedCount={officialLessons.filter(l => l.subModule === 'katakana-sounds' && l.completed).length}
+                          icon="濁音"
+                          color="#0284C7"
+                          onClick={() => setSelectedSubModule('katakana-sounds')}
+                        />
+                        <ModuleFolderCard 
+                          title="Module 3: Advanced Katakana" 
+                          subtitle="Combination sounds"
+                          lessonCount={officialLessons.filter(l => l.subModule === 'advanced-katakana').length}
+                          completedCount={officialLessons.filter(l => l.subModule === 'advanced-katakana' && l.completed).length}
+                          icon="拗音"
+                          color="#2563EB"
+                          onClick={() => setSelectedSubModule('advanced-katakana')}
+                        />
+                        <ModuleFolderCard 
+                          title="Module 4: Loanwords" 
+                          subtitle="Gairaigo and long vowels"
+                          lessonCount={officialLessons.filter(l => l.subModule === 'loanwords').length}
+                          completedCount={officialLessons.filter(l => l.subModule === 'loanwords' && l.completed).length}
+                          icon="外来語"
+                          color="#4F46E5"
+                          onClick={() => setSelectedSubModule('loanwords')}
+                        />
+                      </>
+                    )}
+                    {selectedModule === 'kanji' && (
                       <div style={{ gridColumn: '1 / -1', padding: '60px 0', textAlign: 'center' }}>
                         <div style={{ 
                           display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: 16,
@@ -577,16 +649,16 @@ export default function Dashboard() {
                         }}>
                           <div style={{ 
                             width: 60, height: 60, borderRadius: 16, 
-                            background: selectedModule === 'katakana' ? 'rgba(0,180,216,0.1)' : 'rgba(131,56,236,0.1)',
+                            background: 'rgba(131,56,236,0.1)',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            fontSize: 28, color: selectedModule === 'katakana' ? '#00B4D8' : '#8338EC'
+                            fontSize: 28, color: '#8338EC'
                           }}>
-                            {selectedModule === 'katakana' ? 'ア' : '日'}
+                            日
                           </div>
                           <div>
                             <h3 style={{ margin: 0, fontSize: 18, fontWeight: 800, color: '#2B2B2B' }}>Coming Soon</h3>
                             <p style={{ margin: '4px 0 0', fontSize: 14, color: '#9696A8' }}>
-                              We're currently preparing the {selectedModule} curriculum.
+                              We're currently preparing the kanji curriculum.
                             </p>
                           </div>
                         </div>
@@ -705,7 +777,15 @@ export default function Dashboard() {
               </div>
             </div>
             
-            <VocabSidebar />
+            <DailyQuestSidebar />
+            <JLPTProgressSidebar vocabCount={145} kanjiCount={25} grammarCount={12} />
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              <VocabSidebar />
+              <KanjiSidebar />
+              <GrammarSidebar />
+              <FlashcardSidebar />
+            </div>
 
             {/* AI Generate */}
             <button

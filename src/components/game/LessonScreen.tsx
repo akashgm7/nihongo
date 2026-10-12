@@ -20,6 +20,8 @@ import { MatchQuestion } from '@/components/game/MatchQuestion';
 import { TranslateQuestion } from '@/components/game/TranslateQuestion';
 import { DragDropQuestion } from '@/components/game/DragDropQuestion';
 import { TypingQuestion } from '@/components/game/TypingQuestion';
+import { ListeningQuestion } from '@/components/game/ListeningQuestion';
+import { ReadingQuestion } from '@/components/game/ReadingQuestion';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { playFeedbackSound } from '@/utils/audio';
@@ -875,6 +877,35 @@ export default function LessonScreen({ lessonId }: { lessonId: string }) {
               onSubmit={handleCheck}
               disabled={status !== 'idle'}
               onSpeak={speak}
+            />
+          ) : activeQuestion?.type === 'listening' ? (
+            <ListeningQuestion 
+              key={`listening-${currentIndex}`}
+              data={activeQuestion}
+              onAnswer={(isCorrect) => {
+                if (isCorrect) setCanProceed(true);
+                else {
+                  setStatus('wrong');
+                  setMistakeCount(m => m + 1);
+                  deductMainHeart();
+                  playFeedbackSound(false);
+                }
+              }}
+              isAudioEnabled={isAudioEnabled}
+            />
+          ) : activeQuestion?.type === 'reading' ? (
+            <ReadingQuestion 
+              key={`reading-${currentIndex}`}
+              data={activeQuestion}
+              onAnswer={(isCorrect) => {
+                if (isCorrect) setCanProceed(true);
+                else {
+                  setStatus('wrong');
+                  setMistakeCount(m => m + 1);
+                  deductMainHeart();
+                  playFeedbackSound(false);
+                }
+              }}
             />
           ) : (
             <div style={{ 

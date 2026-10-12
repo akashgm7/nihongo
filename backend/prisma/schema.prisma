@@ -8,27 +8,34 @@ datasource db {
 }
 
 model User {
-  id                  String         @id @default(uuid())
-  email               String         @unique
+  id                  String            @id @default(uuid())
+  email               String            @unique
   password            String
   name                String
-  xp                  Int            @default(0)
-  streak              Int            @default(0)
-  lastActive          DateTime       @default(now())
-  hearts              Int            @default(5)
-  maxHearts           Int            @default(5)
-  level               Int            @default(1)
+  xp                  Int               @default(0)
+  streak              Int               @default(0)
+  lastActive          DateTime          @default(now())
+  hearts              Int               @default(5)
+  maxHearts           Int               @default(5)
+  level               Int               @default(1)
+  role                String            @default("user") // "user" or "admin"
   lastHeartRefillTime DateTime?
   progress            UserProgress[]
   achievements        Achievement[]
-  createdAt           DateTime       @default(now())
-  updatedAt           DateTime       @updatedAt
+  vocabProgress       VocabProgress[]
+  kanjiProgress       KanjiProgress[]
+  grammarProgress     GrammarProgress[]
+  flashcards          Flashcard[]
+  dailyTasks          DailyTask[]
+  studySessions       StudySession[]
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
 }
 
 model Lesson {
   id           String         @id
   title        String
-  category     String         // e.g., "Hiragana", "Katakana", "Vocabulary"
+  category     String         // e.g., "Hiragana", "Katakana", "Vocabulary", "Course"
   difficulty   Int            // 1-10
   content      String?        // Array of exercises (JSON stringified)
   phases       String?        // learn, practice, play phases (JSON stringified)
@@ -60,6 +67,174 @@ model Achievement {
   id          String   @id @default(uuid())
   userId      String
   user        User     @relation(fields: [userId], references: [id])
-  type        String   // e.g., "STREAK_7_DAYS", "COMPLETED_HIRAGANA"
+  type        String   // e.g., "STREAK_7_DAYS", "COMPLETED_HIRAGANA", "VOCAB_100"
   unlockedAt  DateTime @default(now())
+}
+
+// ─── Vocabulary System ───────────────────────────────────────
+
+model Vocabulary {
+  id              String          @id @default(uuid())
+  word            String          // e.g., "食べる"
+  reading         String          // e.g., "たべる"
+  meaning         String          // e.g., "to eat"
+  partOfSpeech    String?         // e.g., "verb", "noun", "adjective"
+  exampleSentence String?         // e.g., "ご飯を食べます。"
+  exampleMeaning  String?         // e.g., "I eat rice."
+  lessonNum       Int?            // Links to Genki lesson number (1-23)
+  jlptLevel       String          @default("N5") // "N5" or "N4"
+  category        String?         // e.g., "greetings", "food", "time"
+  order           Int             @default(0)
+  progress        VocabProgress[]
+  flashcards      Flashcard[]
+  createdAt       DateTime        @default(now())
+}
+
+model VocabProgress {
+  id           String     @id @default(uuid())
+  userId       String
+  user         User       @relation(fields: [userId], references: [id])
+  vocabId      String
+  vocab        Vocabulary @relation(fields: [vocabId], references: [id])
+  mastery      Int        @default(0) // 0-5 scale
+  reviewCount  Int        @default(0)
+  correctCount Int        @default(0)
+  lastReviewed DateTime?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@unique([userId, vocabId])
+}
+
+// ─── Kanji System ────────────────────────────────────────────
+
+model Kanji {
+  id              String          @id @default(uuid())
+  character       String          @unique // e.g., "食"
+  meaning         String          // e.g., "eat, food"
+  onyomi          String?         // e.g., "ショク、ジキ"
+  kunyomi         String?         // e.g., "た.べる、く.う"
+  strokeCount     Int             @default(0)
+  strokeOrderUrl  String?         // SVG/image URL for stroke order
+  jlptLevel       String          @default("N5") // "N5" or "N4"
+  grade           Int?            // Japanese school grade
+  lessonNum       Int?            // Links to Genki lesson number
+  exampleWords    String?         // JSON: [{word, reading, meaning}]
+  exampleSentences String?        // JSON: [{japanese, english}]
+  radicals        String?         // e.g., "食, 人"
+  order           Int             @default(0)
+  progress        KanjiProgress[]
+  flashcards      Flashcard[]
+  createdAt       DateTime        @default(now())
+}
+
+model KanjiProgress {
+  id           String   @id @default(uuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id])
+  kanjiId      String
+  kanji        Kanji    @relation(fields: [kanjiId], references: [id])
+  mastery      Int      @default(0) // 0-5 scale
+  reviewCount  Int      @default(0)
+  correctCount Int      @default(0)
+  lastReviewed DateTime?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([userId, kanjiId])
+}
+
+// ─── Grammar System ──────────────────────────────────────────
+
+model GrammarPoint {
+  id              String            @id @default(uuid())
+  title           String            // e.g., "は (wa) — Topic Marker"
+  explanation     String            // Full explanation (markdown supported)
+  structure       String?           // e.g., "[Topic] は [Comment] です"
+  examples        String?           // JSON: [{japanese, english, notes}]
+  lessonNum       Int?              // Links to Genki lesson number
+  jlptLevel       String            @default("N5")
+  category        String?           // e.g., "particles", "verb-forms", "conjugation"
+  order           Int               @default(0)
+  exercises       String?           // JSON: [{type, question, options, answer}]
+  progress        GrammarProgress[]
+  createdAt       DateTime          @default(now())
+}
+
+model GrammarProgress {
+  id           String       @id @default(uuid())
+  userId       String
+  user         User         @relation(fields: [userId], references: [id])
+  grammarId    String
+  grammar      GrammarPoint @relation(fields: [grammarId], references: [id])
+  mastery      Int          @default(0)
+  completed    Boolean      @default(false)
+  reviewCount  Int          @default(0)
+  lastReviewed DateTime?
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@unique([userId, grammarId])
+}
+
+// ─── SRS Flashcard System ────────────────────────────────────
+
+model Flashcard {
+  id          String            @id @default(uuid())
+  userId      String
+  user        User              @relation(fields: [userId], references: [id])
+  cardType    String            // "vocabulary", "kanji", "grammar"
+  vocabId     String?
+  vocab       Vocabulary?       @relation(fields: [vocabId], references: [id])
+  kanjiId     String?
+  kanji       Kanji?            @relation(fields: [kanjiId], references: [id])
+  front       String            // Question side
+  back        String            // Answer side
+  interval    Int               @default(1)   // Days until next review
+  easeFactor  Float             @default(2.5) // SM-2 ease factor
+  repetitions Int               @default(0)
+  nextReview  DateTime          @default(now())
+  lastReview  DateTime?
+  reviews     FlashcardReview[]
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+}
+
+model FlashcardReview {
+  id          String    @id @default(uuid())
+  flashcardId String
+  flashcard   Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+  rating      Int       // 0=Again, 1=Hard, 2=Good, 3=Easy
+  reviewedAt  DateTime  @default(now())
+}
+
+// ─── Daily Task Planner ──────────────────────────────────────
+
+model DailyTask {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  date        DateTime @db.Date
+  taskType    String   // "vocab", "kanji", "flashcard", "grammar", "lesson", "listening"
+  description String
+  targetId    String?  // Optional: specific lesson/vocab/kanji ID
+  target      Int      @default(0)    // e.g., 15 words to learn
+  completed   Int      @default(0)    // e.g., 7 words completed
+  isComplete  Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  @@unique([userId, date, taskType])
+}
+
+// ─── Study Session Tracking ──────────────────────────────────
+
+model StudySession {
+  id        String    @id @default(uuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id])
+  duration  Int       @default(0) // seconds
+  type      String    // "lesson", "flashcard", "quiz", "vocab", "kanji", "grammar"
+  itemCount Int       @default(0) // number of items studied
+  startedAt DateTime  @default(now())
+  endedAt   DateTime?
 }

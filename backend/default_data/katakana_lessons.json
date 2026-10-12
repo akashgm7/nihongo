@@ -1,0 +1,71 @@
+[
+  {
+    "id": "katakana-lesson-1",
+    "title": "Katakana Basics: A-I-U-E-O",
+    "category": "Katakana",
+    "subModule": "katakana-basics",
+    "difficulty": 1,
+    "xpReward": 10,
+    "order": 1,
+    "phases": {
+      "learn": [
+        {
+          "type": "intro",
+          "character": "ア",
+          "romaji": "a",
+          "hint": "Looks like an axe."
+        },
+        {
+          "type": "intro",
+          "character": "イ",
+          "romaji": "i",
+          "hint": "Looks like an eagle standing."
+        },
+        {
+          "type": "intro",
+          "character": "ウ",
+          "romaji": "u",
+          "hint": "Looks like an umbrella."
+        },
+        {
+          "type": "intro",
+          "character": "エ",
+          "romaji": "e",
+          "hint": "Looks like an elevator."
+        },
+        {
+          "type": "intro",
+          "character": "オ",
+          "romaji": "o",
+          "hint": "Looks like a singer opening mouth."
+        }
+      ],
+      "practice": [
+        {
+          "type": "quiz",
+          "question": "What sound does this character make?",
+          "character": "ア",
+          "options": ["a", "i", "u", "e"],
+          "answer": "a"
+        },
+        {
+          "type": "quiz",
+          "question": "What sound does this character make?",
+          "character": "イ",
+          "options": ["a", "i", "u", "e"],
+          "answer": "i"
+        }
+      ],
+      "play": [
+        {
+          "type": "matching",
+          "pairs": [
+            { "left": "ア", "right": "a" },
+            { "left": "イ", "right": "i" },
+            { "left": "ウ", "right": "u" }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "title": "XはYです — \"X is Y\"",
+    "explanation": "The most basic sentence pattern in Japanese. は (wa) marks the topic of the sentence, and です (desu) is the polite copula meaning 'is/am/are'. This is used to identify or describe the topic.\n\n**Key Point:** は is written with the hiragana は but pronounced 'wa' when used as a particle.",
+    "structure": "[Topic] は [Description/Identity] です",
+    "jlptLevel": "N5",
+    "lessonNum": 1,
+    "category": "particles",
+    "order": 1,
+    "examples": "[{\"japanese\":\"わたしはがくせいです。\",\"english\":\"I am a student.\",\"notes\":\"Basic self-introduction\"},{\"japanese\":\"たなかさんはにほんじんです。\",\"english\":\"Tanaka is Japanese.\",\"notes\":\"Describing someone's nationality\"},{\"japanese\":\"これはほんです。\",\"english\":\"This is a book.\",\"notes\":\"Identifying an object\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you say 'I am a teacher' in Japanese?\",\"options\":[\"わたしはせんせいです。\",\"わたしはがくせいです。\",\"せんせいはわたしです。\",\"わたしのせんせいです。\"],\"answer\":\"わたしはせんせいです。\"},{\"type\":\"quiz\",\"question\":\"What does 'メアリーさんはアメリカじんです' mean?\",\"options\":[\"Mary is American.\",\"Mary likes America.\",\"Mary went to America.\",\"Mary is in America.\"],\"answer\":\"Mary is American.\"}]"
+  },
+  {
+    "title": "XはYじゃないです — Negative",
+    "explanation": "To make a negative sentence with です, replace です with じゃないです (informal) or ではありません (formal). Both mean 'is not'.\n\n**Note:** じゃないです is more commonly used in everyday conversation. ではありません is more formal/written.",
+    "structure": "[Topic] は [Description] じゃないです / ではありません",
+    "jlptLevel": "N5",
+    "lessonNum": 1,
+    "category": "particles",
+    "order": 2,
+    "examples": "[{\"japanese\":\"わたしはせんせいじゃないです。\",\"english\":\"I am not a teacher.\",\"notes\":\"Casual negative\"},{\"japanese\":\"これはわたしのかばんではありません。\",\"english\":\"This is not my bag.\",\"notes\":\"Formal negative\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you negate 'がくせいです'?\",\"options\":[\"がくせいじゃないです\",\"がくせいません\",\"がくせいないです\",\"がくせいじゃです\"],\"answer\":\"がくせいじゃないです\"}]"
+  },
+  {
+    "title": "XはYですか — Question",
+    "explanation": "To form a question in Japanese, simply add か (ka) at the end of a statement. Unlike English, you don't need to change word order.\n\n**Key Point:** In polite speech, the intonation rises at the end of a question, similar to English.",
+    "structure": "[Statement] か",
+    "jlptLevel": "N5",
+    "lessonNum": 1,
+    "category": "particles",
+    "order": 3,
+    "examples": "[{\"japanese\":\"がくせいですか。\",\"english\":\"Are you a student?\",\"notes\":\"Simple yes/no question\"},{\"japanese\":\"たなかさんはにほんじんですか。\",\"english\":\"Is Tanaka Japanese?\",\"notes\":\"Asking about someone\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"Turn 'せんせいです' into a question.\",\"options\":[\"せんせいですか。\",\"せんせいですね。\",\"せんせいでしょう。\",\"せんせいですよ。\"],\"answer\":\"せんせいですか。\"}]"
+  },
+  {
+    "title": "の — Possessive Particle",
+    "explanation": "The particle の (no) connects two nouns and shows possession or association, similar to 's in English or 'of'.\n\n**Usage:** The order is [Owner] の [Possession], which is opposite to English's 'of' construction.",
+    "structure": "[Noun A] の [Noun B]",
+    "jlptLevel": "N5",
+    "lessonNum": 1,
+    "category": "particles",
+    "order": 4,
+    "examples": "[{\"japanese\":\"わたしのほんです。\",\"english\":\"It is my book.\",\"notes\":\"Possession\"},{\"japanese\":\"だいがくのせんせいです。\",\"english\":\"(He is) a university professor.\",\"notes\":\"Association\"},{\"japanese\":\"にほんごのがくせいです。\",\"english\":\"(I am) a student of Japanese.\",\"notes\":\"Describing what kind\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you say 'Tanaka's friend'?\",\"options\":[\"たなかさんのともだち\",\"たなかさんはともだち\",\"たなかさんがともだち\",\"たなかさんをともだち\"],\"answer\":\"たなかさんのともだち\"}]"
+  },
+  {
+    "title": "じかん — Telling Time",
+    "explanation": "To tell time in Japanese, use the number + じ (ji) for hours. For minutes, use the number + ぷん/ふん (fun/pun). はん (han) means 'half past'.\n\n**Key Point:** Some numbers change pronunciation when combined with じ: 4時 = よじ, 7時 = しちじ, 9時 = くじ.",
+    "structure": "[Number] 時 [Number] 分",
+    "jlptLevel": "N5",
+    "lessonNum": 2,
+    "category": "expressions",
+    "order": 5,
+    "examples": "[{\"japanese\":\"いまさんじです。\",\"english\":\"It is 3 o'clock now.\",\"notes\":\"\"},{\"japanese\":\"ろくじはんにおきます。\",\"english\":\"I wake up at 6:30.\",\"notes\":\"はん = half past\"},{\"japanese\":\"なんじですか。\",\"english\":\"What time is it?\",\"notes\":\"Asking the time\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you say '9 o'clock'?\",\"options\":[\"くじ\",\"きゅうじ\",\"ここのつじ\",\"きゅじ\"],\"answer\":\"くじ\"}]"
+  },
+  {
+    "title": "Verb ます Form — Polite Present/Future",
+    "explanation": "Japanese verbs in polite speech end in ます (masu). This form is used for habitual actions and future plans. The negative is ません (masen).\n\n**Key Point:** ます form doesn't change with the subject — no conjugation for I/you/he/she!",
+    "structure": "[Verb stem] ます / ません",
+    "jlptLevel": "N5",
+    "lessonNum": 3,
+    "category": "verb-forms",
+    "order": 6,
+    "examples": "[{\"japanese\":\"コーヒーをのみます。\",\"english\":\"I drink coffee.\",\"notes\":\"Habitual action\"},{\"japanese\":\"テレビをみません。\",\"english\":\"I don't watch TV.\",\"notes\":\"Negative\"},{\"japanese\":\"あしたがっこうにいきます。\",\"english\":\"I will go to school tomorrow.\",\"notes\":\"Future plan\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"What is the negative of たべます?\",\"options\":[\"たべません\",\"たべないます\",\"たべますない\",\"たべじゃないます\"],\"answer\":\"たべません\"}]"
+  },
+  {
+    "title": "を — Object Marker",
+    "explanation": "The particle を (wo, pronounced 'o') marks the direct object of a verb — the thing that receives the action.\n\n**Key Point:** を is only used with transitive verbs (verbs that take an object).",
+    "structure": "[Object] を [Verb]",
+    "jlptLevel": "N5",
+    "lessonNum": 3,
+    "category": "particles",
+    "order": 7,
+    "examples": "[{\"japanese\":\"ほんをよみます。\",\"english\":\"I read a book.\",\"notes\":\"Object + verb\"},{\"japanese\":\"みずをのみます。\",\"english\":\"I drink water.\",\"notes\":\"\"},{\"japanese\":\"にほんごをべんきょうします。\",\"english\":\"I study Japanese.\",\"notes\":\"\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"Fill in the blank: すし＿たべます。\",\"options\":[\"を\",\"は\",\"に\",\"で\"],\"answer\":\"を\"}]"
+  },
+  {
+    "title": "に — Time/Destination Particle",
+    "explanation": "The particle に (ni) has two main uses: (1) marking a specific point in time, and (2) marking the destination/direction of movement.\n\n**Key Point:** Use に with specific times (3 o'clock, Monday) but NOT with relative times (today, tomorrow).",
+    "structure": "[Time/Place] に [Verb]",
+    "jlptLevel": "N5",
+    "lessonNum": 3,
+    "category": "particles",
+    "order": 8,
+    "examples": "[{\"japanese\":\"しちじにおきます。\",\"english\":\"I wake up at 7.\",\"notes\":\"Time marker\"},{\"japanese\":\"がっこうにいきます。\",\"english\":\"I go to school.\",\"notes\":\"Destination\"},{\"japanese\":\"にちようびにえいがをみます。\",\"english\":\"I watch a movie on Sunday.\",\"notes\":\"Day of the week\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"Fill in the blank: 三じ＿おきます。\",\"options\":[\"に\",\"を\",\"は\",\"で\"],\"answer\":\"に\"}]"
+  },
+  {
+    "title": "で — Location/Means Particle",
+    "explanation": "The particle で (de) marks: (1) the location where an action takes place, and (2) the means/method of doing something.\n\n**Key Point:** で is used for actions at a location, while に indicates existence at a location.",
+    "structure": "[Place/Means] で [Verb]",
+    "jlptLevel": "N5",
+    "lessonNum": 3,
+    "category": "particles",
+    "order": 9,
+    "examples": "[{\"japanese\":\"としょかんでべんきょうします。\",\"english\":\"I study at the library.\",\"notes\":\"Location of action\"},{\"japanese\":\"はしでたべます。\",\"english\":\"I eat with chopsticks.\",\"notes\":\"Means/instrument\"},{\"japanese\":\"バスでいきます。\",\"english\":\"I go by bus.\",\"notes\":\"Means of transport\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"Fill in the blank: レストラン＿たべます。\",\"options\":[\"で\",\"に\",\"を\",\"は\"],\"answer\":\"で\"}]"
+  },
+  {
+    "title": "が — Subject Marker & Likes/Dislikes",
+    "explanation": "The particle が (ga) marks the subject. It's especially used with: (1) existence verbs (ある/いる), (2) adjectives of desire/ability, (3) expressing likes/dislikes (すき/きらい).\n\n**は vs が:** は marks the topic (what the sentence is about), while が marks the subject (what does the action or exists).",
+    "structure": "[Subject] が [Predicate]",
+    "jlptLevel": "N5",
+    "lessonNum": 5,
+    "category": "particles",
+    "order": 10,
+    "examples": "[{\"japanese\":\"ねこがいます。\",\"english\":\"There is a cat.\",\"notes\":\"Existence\"},{\"japanese\":\"すしがすきです。\",\"english\":\"I like sushi.\",\"notes\":\"Likes\"},{\"japanese\":\"にほんごがわかります。\",\"english\":\"I understand Japanese.\",\"notes\":\"Ability\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"Fill in the blank: コーヒー＿すきです。\",\"options\":[\"が\",\"を\",\"は\",\"に\"],\"answer\":\"が\"}]"
+  },
+  {
+    "title": "ある / いる — Existence",
+    "explanation": "Japanese has two verbs for 'to exist': ある (aru) for inanimate objects and いる (iru) for animate beings (people, animals).\n\n**Pattern:** [Place] に [Thing] が あります/います",
+    "structure": "[Place] に [Subject] が あります / います",
+    "jlptLevel": "N5",
+    "lessonNum": 5,
+    "category": "verb-forms",
+    "order": 11,
+    "examples": "[{\"japanese\":\"つくえのうえにほんがあります。\",\"english\":\"There is a book on the desk.\",\"notes\":\"Inanimate = ある\"},{\"japanese\":\"こうえんにこどもがいます。\",\"english\":\"There are children in the park.\",\"notes\":\"Animate = いる\"},{\"japanese\":\"にわにねこがいます。\",\"english\":\"There is a cat in the garden.\",\"notes\":\"Animals = いる\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"Which verb do you use for a cat?\",\"options\":[\"います\",\"あります\"],\"answer\":\"います\"}]"
+  },
+  {
+    "title": "Verb ました / ませんでした — Past Tense",
+    "explanation": "To express past tense in polite form: ます → ました (did) and ません → ませんでした (didn't).\n\nFor です: です → でした (was) and じゃないです → じゃなかったです (wasn't).",
+    "structure": "[Verb stem] ました / ませんでした",
+    "jlptLevel": "N5",
+    "lessonNum": 4,
+    "category": "verb-forms",
+    "order": 12,
+    "examples": "[{\"japanese\":\"きのうえいがをみました。\",\"english\":\"I watched a movie yesterday.\",\"notes\":\"Past affirmative\"},{\"japanese\":\"あさごはんをたべませんでした。\",\"english\":\"I didn't eat breakfast.\",\"notes\":\"Past negative\"},{\"japanese\":\"きのうはあめでした。\",\"english\":\"It was rainy yesterday.\",\"notes\":\"です past = でした\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"What is the past tense of いきます?\",\"options\":[\"いきました\",\"いくました\",\"いきたです\",\"いったです\"],\"answer\":\"いきました\"}]"
+  },
+  {
+    "title": "い-Adjectives — Conjugation",
+    "explanation": "い-adjectives end in い and conjugate by dropping the い:\n- Present: おおきい (big)\n- Negative: おおきくない (not big)\n- Past: おおきかった (was big)\n- Past Negative: おおきくなかった (wasn't big)\n\n**Exception:** いい (good) conjugates irregularly: よくない, よかった, よくなかった.",
+    "structure": "Adj-い / Adj-くない / Adj-かった / Adj-くなかった",
+    "jlptLevel": "N5",
+    "lessonNum": 5,
+    "category": "adjectives",
+    "order": 13,
+    "examples": "[{\"japanese\":\"このレストランはたかいです。\",\"english\":\"This restaurant is expensive.\",\"notes\":\"Present\"},{\"japanese\":\"きょうはさむくないです。\",\"english\":\"It's not cold today.\",\"notes\":\"Negative\"},{\"japanese\":\"きのうはあつかったです。\",\"english\":\"It was hot yesterday.\",\"notes\":\"Past\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"What is the negative of おおきい?\",\"options\":[\"おおきくない\",\"おおきじゃない\",\"おおきない\",\"おおきません\"],\"answer\":\"おおきくない\"}]"
+  },
+  {
+    "title": "な-Adjectives — Conjugation",
+    "explanation": "な-adjectives don't end in い (except きれい and ゆうめい). They behave like nouns with です:\n- Present: しずかです (quiet)\n- Negative: しずかじゃないです (not quiet)\n- Past: しずかでした (was quiet)\n- Modifying a noun: しずかな + noun",
+    "structure": "Adj-な + Noun / Adj です / Adj じゃないです",
+    "jlptLevel": "N5",
+    "lessonNum": 5,
+    "category": "adjectives",
+    "order": 14,
+    "examples": "[{\"japanese\":\"ここはしずかです。\",\"english\":\"This place is quiet.\",\"notes\":\"Present\"},{\"japanese\":\"しずかなへやがすきです。\",\"english\":\"I like quiet rooms.\",\"notes\":\"Modifying a noun\"},{\"japanese\":\"きれいじゃなかったです。\",\"english\":\"It wasn't pretty.\",\"notes\":\"Past negative\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you say 'a quiet park'?\",\"options\":[\"しずかなこうえん\",\"しずかいこうえん\",\"しずかのこうえん\",\"しずかこうえん\"],\"answer\":\"しずかなこうえん\"}]"
+  },
+  {
+    "title": "Te-form (て form) — Connecting & Requesting",
+    "explanation": "The て-form is one of the most important verb forms. It's used for:\n1. Making requests: ～てください (Please do...)\n2. Connecting actions: ～て、～て (do X, then do Y)\n3. Ongoing actions: ～ている (is doing)\n\n**Rules for making て-form:**\n- う/つ/る → って\n- む/ぶ/ぬ → んで\n- く → いて (except 行く → 行って)\n- ぐ → いで\n- す → して",
+    "structure": "[Verb-て form] ください",
+    "jlptLevel": "N5",
+    "lessonNum": 6,
+    "category": "verb-forms",
+    "order": 15,
+    "examples": "[{\"japanese\":\"すわってください。\",\"english\":\"Please sit down.\",\"notes\":\"Request\"},{\"japanese\":\"あさおきて、シャワーをあびて、ごはんをたべます。\",\"english\":\"I wake up, take a shower, and eat.\",\"notes\":\"Connecting actions\"},{\"japanese\":\"いまべんきょうしています。\",\"english\":\"I am studying now.\",\"notes\":\"Ongoing action\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"What is the て-form of 食べる?\",\"options\":[\"食べて\",\"食べって\",\"食べんで\",\"食べいて\"],\"answer\":\"食べて\"}]"
+  },
+  {
+    "title": "～ている — Progressive/State",
+    "explanation": "Verb て-form + いる expresses:\n1. An ongoing action (progressive): 食べている = is eating\n2. A habitual action: 毎日走っている = runs every day\n3. A resultant state: 結婚している = is married (result of getting married)\n\nPolite form: ～ています",
+    "structure": "[Verb て-form] います / いません",
+    "jlptLevel": "N5",
+    "lessonNum": 7,
+    "category": "verb-forms",
+    "order": 16,
+    "examples": "[{\"japanese\":\"いまテレビをみています。\",\"english\":\"I am watching TV now.\",\"notes\":\"Progressive\"},{\"japanese\":\"とうきょうにすんでいます。\",\"english\":\"I live in Tokyo.\",\"notes\":\"State\"},{\"japanese\":\"たなかさんをしっています。\",\"english\":\"I know Tanaka.\",\"notes\":\"Resultant state\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"What does 'すんでいます' mean?\",\"options\":[\"I live (somewhere)\",\"I am swimming\",\"I am sitting\",\"I am sleeping\"],\"answer\":\"I live (somewhere)\"}]"
+  },
+  {
+    "title": "～たい — Want to Do",
+    "explanation": "To express desire to do something, replace ます with たいです. The object can be marked with を or が.\n\n**Note:** ～たい is only used for your own desires. For asking others, use ～たいですか (casual) or ～ませんか (polite invitation).",
+    "structure": "[Verb stem] たいです",
+    "jlptLevel": "N5",
+    "lessonNum": 8,
+    "category": "verb-forms",
+    "order": 17,
+    "examples": "[{\"japanese\":\"すしをたべたいです。\",\"english\":\"I want to eat sushi.\",\"notes\":\"\"},{\"japanese\":\"にほんにいきたいです。\",\"english\":\"I want to go to Japan.\",\"notes\":\"\"},{\"japanese\":\"のみたくないです。\",\"english\":\"I don't want to drink.\",\"notes\":\"Negative\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you say 'I want to read'?\",\"options\":[\"よみたいです\",\"よむたいです\",\"よみたです\",\"よんたいです\"],\"answer\":\"よみたいです\"}]"
+  },
+  {
+    "title": "～てもいいですか — Permission",
+    "explanation": "To ask for permission, use the て-form + もいいですか (May I...?). To grant permission: いいですよ (Yes, you may). To refuse: ちょっと... (Well...) or ～てはいけません (You must not).",
+    "structure": "[Verb て-form] もいいですか",
+    "jlptLevel": "N5",
+    "lessonNum": 8,
+    "category": "expressions",
+    "order": 18,
+    "examples": "[{\"japanese\":\"しゃしんをとってもいいですか。\",\"english\":\"May I take a photo?\",\"notes\":\"Asking permission\"},{\"japanese\":\"いいですよ。\",\"english\":\"Yes, that's fine.\",\"notes\":\"Granting permission\"},{\"japanese\":\"ここでたべてはいけません。\",\"english\":\"You must not eat here.\",\"notes\":\"Prohibition\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you ask 'May I sit here'?\",\"options\":[\"ここにすわってもいいですか。\",\"ここにすわりますか。\",\"ここにすわれますか。\",\"ここにすわりたいですか。\"],\"answer\":\"ここにすわってもいいですか。\"}]"
+  },
+  {
+    "title": "～ないでください — Negative Request",
+    "explanation": "To ask someone NOT to do something, use the negative て-form: ない → ないで + ください.\n\nThis is the polite way to say 'Please don't...'.",
+    "structure": "[Verb ない-form] で ください",
+    "jlptLevel": "N5",
+    "lessonNum": 8,
+    "category": "expressions",
+    "order": 19,
+    "examples": "[{\"japanese\":\"ここでたばこをすわないでください。\",\"english\":\"Please don't smoke here.\",\"notes\":\"\"},{\"japanese\":\"しんぱいしないでください。\",\"english\":\"Please don't worry.\",\"notes\":\"\"},{\"japanese\":\"わすれないでください。\",\"english\":\"Please don't forget.\",\"notes\":\"\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"How do you say 'Please don't run'?\",\"options\":[\"はしらないでください\",\"はしってください\",\"はしりません\",\"はしらないます\"],\"answer\":\"はしらないでください\"}]"
+  },
+  {
+    "title": "から / まで — From / Until",
+    "explanation": "から (kara) means 'from' (time/place) and まで (made) means 'until/to' (time/place). They are often used together.\n\n**Note:** から can also mean 'because' when placed after a clause.",
+    "structure": "[Start] から [End] まで",
+    "jlptLevel": "N5",
+    "lessonNum": 9,
+    "category": "particles",
+    "order": 20,
+    "examples": "[{\"japanese\":\"くじからごじまではたらきます。\",\"english\":\"I work from 9 to 5.\",\"notes\":\"Time range\"},{\"japanese\":\"とうきょうからおおさかまでしんかんせんでいきます。\",\"english\":\"I go from Tokyo to Osaka by bullet train.\",\"notes\":\"Place range\"},{\"japanese\":\"あめですから、かさをもっていきます。\",\"english\":\"Because it's raining, I'll take an umbrella.\",\"notes\":\"Because\"}]",
+    "exercises": "[{\"type\":\"quiz\",\"question\":\"Fill in: 8時＿5時＿べんきょうします。\",\"options\":[\"から...まで\",\"に...を\",\"で...に\",\"は...が\"],\"answer\":\"から...まで\"}]"
+  }
+]

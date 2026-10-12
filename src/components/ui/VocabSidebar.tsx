@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export function VocabSidebar() {
   return (
-    <Link href="/daily-conversation" style={{ textDecoration: 'none' }}>
+    <Link href="/vocabulary" style={{ textDecoration: 'none' }}>
       <motion.div
         whileHover={{ y: -4, boxShadow: '0 12px 24px rgba(230,57,70,0.12)', borderColor: '#E63946' }}
         whileTap={{ scale: 0.98 }}
@@ -52,8 +52,8 @@ export function VocabSidebar() {
             <BookOpen size={20} />
           </div>
           <div>
-            <h3 style={{ fontSize: 15, fontWeight: 800, color: '#2B2B2B', margin: 0, letterSpacing: '-0.01em' }}>Daily Conversation</h3>
-            <p style={{ fontSize: 11, fontWeight: 600, color: '#9696A8', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em' }}>10 Levels Available</p>
+            <h3 style={{ fontSize: 15, fontWeight: 800, color: '#2B2B2B', margin: 0, letterSpacing: '-0.01em' }}>Vocabulary Master</h3>
+            <p style={{ fontSize: 11, fontWeight: 600, color: '#9696A8', margin: 0, textTransform: 'uppercase', letterSpacing: '0.04em' }}>N5 & N4 Available</p>
           </div>
         </div>
 

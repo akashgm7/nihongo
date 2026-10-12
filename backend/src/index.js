@@ -20,6 +20,12 @@ const authRoutes = require('./routes/authRoutes');
 const lessonRoutes = require('./routes/lessonRoutes');
 const userRoutes = require('./routes/userRoutes');
 const aiRoutes = require('./routes/aiRoutes');
+const vocabRoutes = require('./routes/vocabRoutes');
+const kanjiRoutes = require('./routes/kanjiRoutes');
+const grammarRoutes = require('./routes/grammarRoutes');
+const flashcardRoutes = require('./routes/flashcardRoutes');
+const dailyTaskRoutes = require('./routes/dailyTaskRoutes');
+const studyRoutes = require('./routes/studyRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/auth', authRoutes); // Fallback for Render external URL without /api
@@ -32,6 +38,24 @@ app.use('/users', userRoutes);
 
 app.use('/api/ai', aiRoutes);
 app.use('/ai', aiRoutes);
+
+app.use('/api/vocabulary', vocabRoutes);
+app.use('/vocabulary', vocabRoutes);
+
+app.use('/api/kanji', kanjiRoutes);
+app.use('/kanji', kanjiRoutes);
+
+app.use('/api/grammar', grammarRoutes);
+app.use('/grammar', grammarRoutes);
+
+app.use('/api/flashcards', flashcardRoutes);
+app.use('/flashcards', flashcardRoutes);
+
+app.use('/api/daily-tasks', dailyTaskRoutes);
+app.use('/daily-tasks', dailyTaskRoutes);
+
+app.use('/api/study', studyRoutes);
+app.use('/study', studyRoutes);
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Japanese Learning App API is running' });
